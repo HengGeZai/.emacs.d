@@ -1,0 +1,5 @@
+* 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
+  file:~/.emacs.d/init-functions.org::快速打开配置文件
+  #+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "<f2>") 'open-init-file)
+  #+END_SRC

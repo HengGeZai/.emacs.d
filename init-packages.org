@@ -1,0 +1,20 @@
+* Company
+** 开启全局 Company 补全
+#+BEGIN_SRC emacs-lisp
+(global-company-mode 1)
+#+END_SRC
+* smartparens
+  #+BEGIN_SRC emacs-lisp
+;; 全局匹配符号
+  (smartparens-global-mode t)
+;; 全局显示配对符号
+  (show-smartparens-global-mode)
+  #+END_SRC
+* monokai-theme
+  #+BEGIN_SRC emacs-lisp
+  (load-theme 'monokai 1)
+  #+END_SRC
+* hungry-delete
+  #+BEGIN_SRC emacs-lisp
+  (global-hungry-delete-mode)
+  #+END_SRC

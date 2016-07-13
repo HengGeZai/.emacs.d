@@ -1,0 +1,34 @@
+* 显示行号
+  #+BEGIN_SRC emacs-lisp
+  (global-linum-mode 1)
+  #+END_SRC
+  
+* 更改光标的样式
+  #+BEGIN_SRC emacs-lisp
+  (setq-default cursor-type 'bar)
+  #+END_SRC
+
+* 关闭启动帮助画面
+  #+BEGIN_SRC emacs-lisp
+  (setq inhibit-splash-screen 1)
+  #+END_SRC
+
+* 记录最近打开的文件
+  #+BEGIN_SRC emacs-lisp
+  (require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-item 10)
+  #+END_SRC
+
+* 输入字符时替换选中的字符
+  #+BEGIN_SRC emacs-lisp
+  (delete-selection-mode 1)
+  #+END_SRC
+* 高亮当前行
+  #+BEGIN_SRC emacs-lisp
+  (global-hl-line-mode 1)
+  #+END_SRC
+* 默认最大化打开emcas
+  #+BEGIN_SRC emacs-lisp
+  (setq initial-frame-alist (quote ((fullscreen . maximized))))
+  #+END_SRC
