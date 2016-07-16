@@ -2,40 +2,76 @@
   #+BEGIN_SRC emacs-lisp
   (defun open-init-file()
   (interactive)
-  (find-file "~/.emacs.d/init.el"))
+  (find-file "~/.emacs.d/my.configs.org"))
   #+END_SRC
-
 * 包管理函数
   #+BEGIN_SRC emacs-lisp
-;; 加载源
-(when (>= emacs-major-version 24)
-    (require 'package)
-    (package-initialize)
-    (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t))
-
-;; cl - Common Lisp Extension
-(require 'cl)
-
-(defvar my/packages '(
-	       company
-	       hungry-delete
-	       swiper
-	       counsel
-	       smartparens
-	       monokai-theme
-	       ) "Default packages")
-
-(setq package-selected-packages my/packages)
-
-(defun my/packages-installed-p ()
-    (loop for pkg in my/packages
-	  when (not (package-installed-p pkg)) do (return nil)
-	  finally (return t)))
-
-(unless (my/packages-installed-p)
-    (message "%s" "Refreshing package database...")
-    (package-refresh-contents)
-    (dolist (pkg my/packages)
-      (when (not (package-installed-p pkg))
-	(package-install pkg))))  
+    ;; 加载源
+    (when (>= emacs-major-version 24)
+        (require 'package)
+        (package-initialize)
+        (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t))
+    
+    ;; cl - Common Lisp Extension
+    (require 'cl)
+    (defvar my/packages '(
+                     company
+                     monokai-theme
+                     hungry-delete
+                     swiper
+                     counsel
+                     smartparens
+                     exec-path-from-shell
+                     popwin
+                     expand-region
+                     iedit
+                   ) "Default packages")
+    
+    (setq package-selected-packages my/packages)
+    
+    (defun my/packages-installed-p ()
+        (loop for pkg in my/packages
+              when (not (package-installed-p pkg)) do (return nil)
+              finally (return t)))
+    
+    (unless (my/packages-installed-p)
+        (message "%s" "Refreshing package database...")
+        (package-refresh-contents)
+        (dolist (pkg my/packages)
+          (when (not (package-installed-p pkg))
+            (package-install pkg))))  
+  #+END_SRC
+* 自动缩进函数
+  #+BEGIN_SRC emacs-lisp
+    (defun indent-buffer ()
+      "Indent the currently visited buffer."
+      (interactive)
+      (indent-region (point-min) (point-max)))
+    
+    (defun indent-region-or-buffer ()
+      "Indent a region if selected, otherwise the whole buffer. "
+      (interactive)
+      (save-excursion
+        (if (region-active-p)
+            (progn
+              (indent-region (region-beginning) (region-end))
+              (message "Indented selected region."))
+          (progn
+            (indent-buffer)
+    (message "Indented buffer.")))))
+  #+END_SRC
+* occur自动匹配光标所在词-occur-dwim
+  #+BEGIN_SRC emacs-lisp
+    (defun occur-dwim ()
+      "Call `occur' with a sane default."
+      (interactive)
+      (push (if (region-active-p)
+                (buffer-substring-no-properties
+                 (region-beginning)
+                 (region-end))
+              (let ((sym (thing-at-point 'symbol)))
+                (when (stringp sym)
+                  (regexp-quote sym))))
+            regexp-history)
+      (call-interactively 'occur))
   #+END_SRC

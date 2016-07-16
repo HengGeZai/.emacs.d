@@ -1,20 +1,44 @@
 * Company
-** 开启全局 Company 补全
 #+BEGIN_SRC emacs-lisp
-(global-company-mode 1)
+  ;; 开启全局 Company 补全
+  (global-company-mode 1)
+  ;; 设置从1个字符开始补全，延时为0.01秒 
+  (setq company-minimum-prefix-length 1)
+  (setq company-idle-delay 0.01)
 #+END_SRC
 * smartparens
   #+BEGIN_SRC emacs-lisp
-;; 全局匹配符号
-  (smartparens-global-mode t)
-;; 全局显示配对符号
-  (show-smartparens-global-mode)
+    ;; 全局匹配符号
+      (smartparens-global-mode t)
+    ;; 全局显示配对符号
+      (show-smartparens-global-mode)
   #+END_SRC
 * monokai-theme
   #+BEGIN_SRC emacs-lisp
-  (load-theme 'monokai 1)
+    (load-theme 'monokai 1)
   #+END_SRC
 * hungry-delete
   #+BEGIN_SRC emacs-lisp
-  (global-hungry-delete-mode)
+    (global-hungry-delete-mode)
   #+END_SRC
+* ivy-mode
+  #+BEGIN_SRC emacs-lisp
+    (ivy-mode 1)
+    (setq ivy-use-virtual-buffers t)
+  #+END_SRC
+* popwin-mode
+  #+BEGIN_SRC emacs-lisp
+    (require 'popwin)
+    (popwin-mode t)
+  #+END_SRC
+* org-mode
+  #+BEGIN_SRC emacs-lisp
+    (require 'org)
+    ;; 代码高亮
+    (setq org-src-fontify-natively t)
+    ;; agenda目录
+    (setq org-agenda-files '("~/GTD"))
+    ;; 自动折行
+    (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil))) 
+  #+END_SRC
+

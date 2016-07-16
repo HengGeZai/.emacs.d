@@ -1,7 +1,7 @@
 * 配置引导文件init.el
   file:~/.emacs.d/init.el
 * 配置默认值、默认环境
-  file:~/.emacs.d/init-better-default.org
+  file:~/.emacs.d/init-better-defaults.org
 * 配置函数
   file:~/.emacs.d/init-functions.org
 * 配置包
@@ -9,4 +9,4 @@
 * 配置快捷键
   file:~/.emacs.d/init-keybindings.org
 * 交互界面的设置
-  file:~/.emacs.d/customize-group.el
+  file:~/.emacs.d/lisp/customize.el
