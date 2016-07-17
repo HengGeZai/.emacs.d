@@ -59,3 +59,30 @@
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "M-s o") 'occur-dwim)
   #+END_SRC
+* 删除最后输入的一个单词
+  #+BEGIN_SRC emacs-lisp
+    (global-set-key (kbd "C-w") 'backward-kill-word)
+  #+END_SRC
+* company-mode
+  #+BEGIN_SRC emacs-lisp
+    (define-key company-active-map (kbd "M-n") nil)
+    (define-key company-active-map (kbd "M-p") nil)
+    (define-key company-active-map (kbd "C-n") #'company-select-next)
+    (define-key company-active-map (kbd "C-p") #'company-select-previous)
+  #+END_SRC
+* helm-ag
+  #+BEGIN_SRC emacs-lisp
+    ;; 缓冲区对搜索到的结果进行直接的修改
+    ;; (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
+  #+END_SRC
+* Evil-nerd-commenter
+  #+BEGIN_SRC emacs-lisp
+    ;; (evilnc-default-hotkeys)
+    ;; 设置一般模式和选择模式下的注释快捷键
+    (define-key evil-normal-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
+    (define-key evil-visual-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
+  #+END_SRC
+* helm-ag
+  #+BEGIN_SRC emacs-lisp
+    (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
+  #+END_SRC

@@ -25,6 +25,13 @@
                      popwin
                      expand-region
                      iedit
+                     evil
+                     evil-leader
+                     evil-surround
+                     evil-nerd-commenter
+                     window-numbering
+                     which-key
+                     helm-ag 
                    ) "Default packages")
     
     (setq package-selected-packages my/packages)

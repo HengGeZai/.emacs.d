@@ -1,10 +1,14 @@
+* 设置需要安装的包
+  file:~/.emacs.d/init-functions.org::包管理函数
 * Company
+  快捷键设置：
+  file:~/.emacs.d/init-keybindings.org::company-mode
 #+BEGIN_SRC emacs-lisp
   ;; 开启全局 Company 补全
   (global-company-mode 1)
   ;; 设置从1个字符开始补全，延时为0.01秒 
   (setq company-minimum-prefix-length 1)
-  (setq company-idle-delay 0.01)
+  (setq company-idle-delay 0.3)
 #+END_SRC
 * smartparens
   #+BEGIN_SRC emacs-lisp
@@ -41,4 +45,46 @@
     ;; 自动折行
     (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil))) 
   #+END_SRC
-
+* window-numbering
+  #+BEGIN_SRC emacs-lisp
+    (window-numbering-mode 1)
+  #+END_SRC
+* evil-mode
+  #+BEGIN_SRC emacs-lisp
+    (evil-mode 1)
+  #+END_SRC
+* evil-leader
+   #+BEGIN_SRC emacs-lisp
+     ;; 开启evil-leader模式
+     (global-evil-leader-mode)
+     
+     ;; leader-key 
+     (evil-leader/set-leader "<SPC>")
+     
+     ;; 设置快捷键
+     (evil-leader/set-key
+       "ff" 'find-file
+       "bb" 'switch-to-buffer
+       "0"  'select-window-0
+       "1"  'select-window-1
+       "2"  'select-window-2
+       "3"  'select-window-3
+       "w/" 'split-window-right
+       "w-" 'split-window-below
+       ":"  'counsel-M-x
+       "wM" 'delete-other-windows
+       )
+   #+END_SRC
+* evil-surround
+  #+BEGIN_SRC emacs-lisp
+    (require 'evil-surround)
+    (global-evil-surround-mode)
+  #+END_SRC
+* Evil-nerd-commenter
+  快捷键：file:~/.emacs.d/init-keybindings.org::Evil-nerd-commenter
+* which-key
+  #+BEGIN_SRC emacs-lisp
+    (which-key-mode 1)
+  #+END_SRC
+* helm-ag
+  快捷键：file:~/.emacs.d/init-keybindings.org::helm-ag
