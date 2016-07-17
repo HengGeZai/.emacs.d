@@ -88,3 +88,10 @@
   #+END_SRC
 * helm-ag
   快捷键：file:~/.emacs.d/init-keybindings.org::helm-ag
+* yasnippet
+  #+BEGIN_SRC emacs-lisp
+    (require 'yasnippet)
+    (yas-global-mode 1)
+  #+END_SRC
+* auto-yasnippet
+  快捷键：file:~/.emacs.d/init-keybindings.org::auto-yasnippet

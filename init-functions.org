@@ -32,6 +32,8 @@
                      window-numbering
                      which-key
                      helm-ag 
+                     yasnippet
+                     auto-yasnippet
                    ) "Default packages")
     
     (setq package-selected-packages my/packages)
