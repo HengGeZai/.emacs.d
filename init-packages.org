@@ -6,7 +6,7 @@
 #+BEGIN_SRC emacs-lisp
   ;; 开启全局 Company 补全
   (global-company-mode 1)
-  ;; 设置从1个字符开始补全，延时为0.01秒 
+  ;; 设置从1个字符开始补全，延时为0.01秒
   (setq company-minimum-prefix-length 1)
   (setq company-idle-delay 0.3)
 #+END_SRC
@@ -43,7 +43,20 @@
     ;; agenda目录
     (setq org-agenda-files '("~/GTD"))
     ;; 自动折行
-    (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil))) 
+    (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+    ;; 记录当一个Item标记为Done的时间并添加备注
+    (setq org-log-done 'time)
+    ;; (setq org-log-done 'note)
+    ;; orgcapture(旧org-remenber)模式设置
+    (setq org-default-notes-file (concat org-directory "/GTD/notes.org"))
+    (define-key global-map [f12] 'org-capture)
+    (setq org-capture-templates
+          '(("w" "Work-Tasks-TODO"     entry (file+headline "~/GTD/Work.org" "Tasks")     "* TODO %?\n  %i\n  %T")
+            ("h" "Home-Tasks-TODO"     entry (file+headline "~/GTD/Home.org" "Tasks")     "* TODO %?\n  %i\n  %T")
+            ("f" "Finacy-Tasks-TODO"   entry (file+headline "~/GTD/Finacy.org" "Tasks")   "* TODO %?\n  %i\n  %T")
+            ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i\n  %T")
+            ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i\n  %T")
+            ))
   #+END_SRC
 * window-numbering
   #+BEGIN_SRC emacs-lisp
@@ -57,10 +70,10 @@
    #+BEGIN_SRC emacs-lisp
      ;; 开启evil-leader模式
      (global-evil-leader-mode)
-     
-     ;; leader-key 
+
+     ;; leader-key
      (evil-leader/set-leader "<SPC>")
-     
+
      ;; 设置快捷键
      (evil-leader/set-key
        "ff" 'find-file
@@ -88,3 +101,30 @@
   #+END_SRC
 * helm-ag
   快捷键：file:~/.emacs.d/init-keybindings.org::helm-ag
+* yasnippet
+  #+BEGIN_SRC emacs-lisp
+    (require 'yasnippet)
+    (yas-global-mode 1)
+  #+END_SRC
+* auto-yasnippet
+  快捷键：file:~/.emacs.d/init-keybindings.org::auto-yasnippet
+* ESS
+  #+BEGIN_SRC emacs-lisp
+    (add-hook 'R-mode-hook #'smartparens-mode)
+    (add-hook 'ess-mode-hook
+              '(lambda()
+                 (add-hook 'write-file-functions
+                           (lambda ()
+                             (ess-nuke-trailing-whitespace)))
+                 (setq ess-nuke-trailing-whitespace-p t)
+                 (setq ess-smart-operators t)))
+    (add-hook 'ess-mode-hook 'r-autoyas-ess-activate)
+  #+END_SRC
+** ess assign key
+   file:~/.emacs.d/init-keybindings.org::ESS
+* ploymode
+  #+BEGIN_SRC emacs-lisp
+    (require 'poly-R)
+    (require 'poly-markdown)
+    (add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode))
+  #+END_SRC

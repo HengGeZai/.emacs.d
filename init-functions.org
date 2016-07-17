@@ -1,8 +1,14 @@
 * 快速打开配置文件
   #+BEGIN_SRC emacs-lisp
-  (defun open-init-file()
-  (interactive)
-  (find-file "~/.emacs.d/my.configs.org"))
+    (defun open-init-file()
+    (interactive)
+    (find-file "~/.emacs.d/my.configs.org"))
+  #+END_SRC
+* openGTD
+  #+BEGIN_SRC emacs-lisp
+    (defun open-GTD()
+    (interactive)
+    (find-file "~/GTD/GTD.org"))
   #+END_SRC
 * 包管理函数
   #+BEGIN_SRC emacs-lisp
@@ -11,7 +17,7 @@
         (require 'package)
         (package-initialize)
         (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t))
-    
+
     ;; cl - Common Lisp Extension
     (require 'cl)
     (defvar my/packages '(
@@ -31,16 +37,22 @@
                      evil-nerd-commenter
                      window-numbering
                      which-key
-                     helm-ag 
+                     helm-ag
+                     yasnippet
+                     auto-yasnippet
+                     ess
+                     electric-spacing
+                     polymode
+                     r-autoyas
                    ) "Default packages")
-    
+
     (setq package-selected-packages my/packages)
-    
+
     (defun my/packages-installed-p ()
         (loop for pkg in my/packages
               when (not (package-installed-p pkg)) do (return nil)
               finally (return t)))
-    
+
     (unless (my/packages-installed-p)
         (message "%s" "Refreshing package database...")
         (package-refresh-contents)

@@ -1,7 +1,12 @@
 * 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
   file:~/.emacs.d/init-functions.org::快速打开配置文件
   #+BEGIN_SRC emacs-lisp
-(global-set-key (kbd "<f2>") 'open-init-file)
+    (global-set-key (kbd "<f2>") 'open-init-file)
+  #+END_SRC
+* open-GTD绑定到<f3>
+  file:~/.emacs.d/init-functions.org::openGTD
+  #+BEGIN_SRC emacs-lisp
+    (global-set-key (kbd "<f3>") 'open-GTD)
   #+END_SRC
 * 打开最近浏览过的文件
   #+BEGIN_SRC emacs-lisp
@@ -85,4 +90,17 @@
 * helm-ag
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
+  #+END_SRC
+* auto-yasnippet
+  #+BEGIN_SRC emacs-lisp
+    (global-set-key (kbd "H-w") #'aya-create)
+    (global-set-key (kbd "H-y") #'aya-expand)
+  #+END_SRC
+* ESS
+  #+BEGIN_SRC emacs-lisp
+    ;; set ess assign key
+    (setq ess-S-assign-key (kbd "M--"))
+    (ess-toggle-S-assign-key t) ; enable above key definition
+    ;; leave my underscore key alone!
+    (ess-toggle-underscore nil)
   #+END_SRC

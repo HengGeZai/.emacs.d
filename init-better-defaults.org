@@ -1,8 +1,7 @@
 * 显示行号
   #+BEGIN_SRC emacs-lisp
-  (global-linum-mode 1)
+  ;; (global-linum-mode 1)
   #+END_SRC
-  
 * 设置scratch默认显示的消息
   #+BEGIN_SRC emacs-lisp
     (setq initial-scratch-message ";; This buffer is for notes you don't want to save, and for Lisp evaluation.\n;; If you want to create a file, visit that file with C-x C-f\n;; If you want to config emacs, please type F2\n;; If you want to Agenda, please type C-c a")
@@ -65,4 +64,8 @@
     (put 'dired-find-alternate-file 'disabled nil)
     (require 'dired-x)
     (setq dired-dwim-target t)
+  #+END_SRC
+* relative-row-numbering
+  #+BEGIN_SRC emacs-lisp
+    (global-relative-line-numbers-mode)
   #+END_SRC
