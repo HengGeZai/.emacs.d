@@ -99,8 +99,10 @@
 * ESS
   #+BEGIN_SRC emacs-lisp
     ;; set ess assign key
-    (setq ess-S-assign-key (kbd "M--"))
-    (ess-toggle-S-assign-key t) ; enable above key definition
-    ;; leave my underscore key alone!
-    (ess-toggle-underscore nil)
+    (add-hook 'ess-mode-hook
+              '(lambda()
+                 (setq ess-S-assign-key (kbd "M--"))
+                 (ess-toggle-S-assign-key t) ; enable above key definition
+                 ;; leave my underscore key alone!
+                 (ess-toggle-underscore nil)))
   #+END_SRC
