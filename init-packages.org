@@ -13,9 +13,12 @@
 * smartparens
   #+BEGIN_SRC emacs-lisp
     ;; 全局匹配符号
-      (smartparens-global-mode t)
+    (smartparens-global-mode t)
     ;; 全局显示配对符号
-      (show-smartparens-global-mode)
+    (show-smartparens-global-mode)
+    ;; smartparens config in different mode.
+    ;; such as remove pair of quote(') in emacs-lisp-mode
+    (require 'smartparens-config)
   #+END_SRC
 * monokai-theme
   #+BEGIN_SRC emacs-lisp
@@ -46,7 +49,7 @@
     (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
     ;; 记录当一个Item标记为Done的时间并添加备注
     (setq org-log-done 'time)
-    ;; (setq org-log-done 'note)
+    (setq org-log-done 'note)
     ;; orgcapture(旧org-remenber)模式设置
     (setq org-default-notes-file (concat org-directory "/GTD/notes.org"))
     (define-key global-map [f12] 'org-capture)
@@ -127,4 +130,8 @@
     (require 'poly-R)
     (require 'poly-markdown)
     (add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode))
+  #+END_SRC
+* flycheck
+  #+BEGIN_SRC emacs-lisp
+    (global-flycheck-mode)
   #+END_SRC
