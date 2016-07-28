@@ -1,6 +1,6 @@
 * 显示行号
   #+BEGIN_SRC emacs-lisp
-  (global-linum-mode 1)
+    ;;(global-linum-mode 1)
   #+END_SRC
   
 * 设置scratch默认显示的消息
@@ -65,4 +65,9 @@
     (put 'dired-find-alternate-file 'disabled nil)
     (require 'dired-x)
     (setq dired-dwim-target t)
+  #+END_SRC
+* 动态行号
+  #+BEGIN_SRC emacs-lisp
+    ;;relative row number
+    (global-relative-line-numbers-mode)
   #+END_SRC

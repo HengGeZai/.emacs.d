@@ -44,6 +44,24 @@
     (setq org-agenda-files '("~/GTD"))
     ;; 自动折行
     (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil))) 
+    ;; 记录当一个Item标记为Done的时间并添加备注
+    (setq org-log-done 'time)
+    ;; (setq org-log-done 'note)
+    ;; orgcapture(旧org-remenber)模式设置
+    (setq org-default-notes-file (concat org-directory "/GTD/notes.org"))
+    (define-key global-map [f12] 'org-capture)
+    (setq org-capture-templates
+          '(("w" "Work-Tasks-TODO"     entry (file+headline "~/GTD/Work.org" "Tasks")     "* TODO %?\n  %i\n  %T")
+            ("h" "Home-Tasks-TODO"     entry (file+headline "~/GTD/Home.org" "Tasks")     "* TODO %?\n  %i\n  %T")
+            ("f" "Finacy-Tasks-TODO"   entry (file+headline "~/GTD/Finacy.org" "Tasks")   "* TODO %?\n  %i\n  %T")
+            ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i\n  %T")
+            ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i\n  %T")
+            ))
+    ;; 添加Babel编译的语言
+    (org-babel-do-load-languages
+          'org-babel-load-languages
+          '((python . t)
+            (R . t)))
   #+END_SRC
 * window-numbering
   #+BEGIN_SRC emacs-lisp
@@ -95,3 +113,14 @@
   #+END_SRC
 * auto-yasnippet
   快捷键：file:~/.emacs.d/init-keybindings.org::auto-yasnippet
+* electric-spacing
+* ess-mode
+  #+BEGIN_SRC emacs-lisp
+    (add-hook 'ess-mode-hook
+              '(lambda()
+                 (add-hook 'write-file-functions
+                           (lambda ()
+                             (ess-nuke-trailing-whitespace)))
+                 (setq ess-nuke-trailing-whitespace-p t)
+                 (setq ess-smart-operators t)))
+  #+END_SRC
