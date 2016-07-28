@@ -66,3 +66,10 @@
   #+BEGIN_SRC emacs-lisp
     (global-relative-line-numbers-mode)
   #+END_SRC
+* 使用空格缩进
+  #+BEGIN_SRC emacs-lisp
+    ;; 使用空格缩进
+    (setq-default indent-tabs-mode nil)
+    (setq-default tab-width 2)
+    (setq tab-width 2)
+  #+END_SRC
