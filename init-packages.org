@@ -13,12 +13,13 @@
 * smartparens
   #+BEGIN_SRC emacs-lisp
     ;; 全局匹配符号
-    (smartparens-global-mode t)
+    (smartparens-global-strict-mode)
     ;; 全局显示配对符号
     (show-smartparens-global-mode)
     ;; smartparens config in different mode.
     ;; such as remove pair of quote(') in emacs-lisp-mode
     (require 'smartparens-config)
+    (setq sp-show-pair-delay 0)
   #+END_SRC
 * monokai-theme
   #+BEGIN_SRC emacs-lisp
@@ -49,7 +50,7 @@
     (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
     ;; 记录当一个Item标记为Done的时间并添加备注
     (setq org-log-done 'time)
-    (setq org-log-done 'note)
+    ;;; (setq org-log-done 'note)
     ;; orgcapture(旧org-remenber)模式设置
     (setq org-default-notes-file (concat org-directory "/GTD/notes.org"))
     (define-key global-map [f12] 'org-capture)
@@ -60,6 +61,11 @@
             ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i\n  %T")
             ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i\n  %T")
             ))
+    ;; 添加Babel编译的语言
+    (org-babel-do-load-languages
+          'org-babel-load-languages
+          '((python . t)
+            (R . t)))
   #+END_SRC
 * window-numbering
   #+BEGIN_SRC emacs-lisp
@@ -113,7 +119,6 @@
   快捷键：file:~/.emacs.d/init-keybindings.org::auto-yasnippet
 * ESS
   #+BEGIN_SRC emacs-lisp
-    (add-hook 'R-mode-hook #'smartparens-mode)
     (add-hook 'ess-mode-hook
               '(lambda()
                  (add-hook 'write-file-functions
@@ -121,10 +126,15 @@
                              (ess-nuke-trailing-whitespace)))
                  (setq ess-nuke-trailing-whitespace-p t)
                  (setq ess-smart-operators t)))
+    (require 'r-autoyas)
     (add-hook 'ess-mode-hook 'r-autoyas-ess-activate)
   #+END_SRC
 ** ess assign key
    file:~/.emacs.d/init-keybindings.org::ESS
+** inferior-ess-mode
+   #+BEGIN_SRC emacs-lisp
+     (add-hook 'inferior-ess-mode-hook 'electric-spacing-mode)
+   #+END_SRC
 * ploymode
   #+BEGIN_SRC emacs-lisp
     (require 'poly-R)
@@ -134,4 +144,11 @@
 * flycheck
   #+BEGIN_SRC emacs-lisp
     (global-flycheck-mode)
+  #+END_SRC
+* markdown-mode
+  #+BEGIN_SRC emacs-lisp
+    (autoload 'markdown-mode
+      "markdown-mode" "Major mode for editing Markdown files" t)
+    (add-to-list 'auto-mode-alist'("'\.markdown\'" . markdown-mode))
+    (add-to-list 'auto-mode-alist'("'\.md\'" . markdown-mode))
   #+END_SRC

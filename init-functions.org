@@ -33,6 +33,8 @@
                      polymode
                      r-autoyas
                      flycheck
+                     markdown-mode
+                     auto-complete
                    ) "Default packages")
 
     (setq package-selected-packages my/packages)
@@ -47,7 +49,7 @@
         (package-refresh-contents)
         (dolist (pkg my/packages)
           (when (not (package-installed-p pkg))
-            (package-install pkg))))  
+            (package-install pkg))))
   #+END_SRC
 * 快速打开配置文件
   #+BEGIN_SRC emacs-lisp
@@ -67,7 +69,7 @@
       "Indent the currently visited buffer."
       (interactive)
       (indent-region (point-min) (point-max)))
-    
+
     (defun indent-region-or-buffer ()
       "Indent a region if selected, otherwise the whole buffer. "
       (interactive)
