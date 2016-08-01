@@ -117,7 +117,22 @@
   #+END_SRC
 * auto-yasnippet
   快捷键：file:~/.emacs.d/init-keybindings.org::auto-yasnippet
+* r-autoyas
+  #+BEGIN_SRC emacs-lisp
+    (require 'r-autoyas)
+    (add-hook 'ess-mode-hook
+              '(lambda()
+                 ;; 保留参数名称
+                 (setq r-autoyas-remove-explicit-assignments nil)
+                 ;; 多少个参数后，每个参数折行
+                 (setq r-autoyas-number-of-commas-before-return 10)
+                 ;; (setq r-autoyas-auto-expand-with-paren t)
+                 ;; 调用r-autoyas
+                 'r-autoyas-ess-activate))
+  #+END_SRC
+
 * ESS
+  快捷键：file:~/.emacs.d/init-keybindings.org::-yasnippet
   #+BEGIN_SRC emacs-lisp
     (add-hook 'ess-mode-hook
               '(lambda()
@@ -126,8 +141,6 @@
                              (ess-nuke-trailing-whitespace)))
                  (setq ess-nuke-trailing-whitespace-p t)
                  (setq ess-smart-operators t)))
-    (require 'r-autoyas)
-    (add-hook 'ess-mode-hook 'r-autoyas-ess-activate)
   #+END_SRC
 ** ess assign key
    file:~/.emacs.d/init-keybindings.org::ESS

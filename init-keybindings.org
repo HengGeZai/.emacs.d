@@ -106,3 +106,7 @@
                  ;; leave my underscore key alone!
                  (ess-toggle-underscore nil)))
   #+END_SRC
+* r-autoyas
+  #+BEGIN_SRC emacs-lisp
+    (global-set-key (kbd "<f4>") 'r-autoyas-expand)
+  #+END_SRC
