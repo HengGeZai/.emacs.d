@@ -35,6 +35,7 @@
                      flycheck
                      markdown-mode
                      auto-complete
+                     bash-completion
                    ) "Default packages")
 
     (setq package-selected-packages my/packages)

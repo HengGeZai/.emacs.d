@@ -165,3 +165,11 @@
     (add-to-list 'auto-mode-alist'("'\.markdown\'" . markdown-mode))
     (add-to-list 'auto-mode-alist'("'\.md\'" . markdown-mode))
   #+END_SRC
+* bash-completion
+  #+BEGIN_SRC emacs-lisp
+    (autoload 'bash-completion-dynamic-complete 
+      "bash-completion"
+      "BASH completion hook")
+    (add-hook 'shell-dynamic-complete-functions
+      'bash-completion-dynamic-complete)
+  #+END_SRC
