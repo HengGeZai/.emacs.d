@@ -71,7 +71,8 @@
   #+BEGIN_SRC emacs-lisp
     (window-numbering-mode 1)
   #+END_SRC
-* evil-mode
+* Evil-mode
+  快捷键：file:~/.emacs.d/init-keybindings.org::Evil-mode
   #+BEGIN_SRC emacs-lisp
     (evil-mode 1)
   #+END_SRC

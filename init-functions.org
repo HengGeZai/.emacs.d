@@ -8,7 +8,7 @@
 
     ;; cl - Common Lisp Extension
     (require 'cl)
-    (defvar my/packages '(
+    (defvar chongliang/packages '(
                      company
                      monokai-theme
                      hungry-delete
@@ -38,17 +38,17 @@
                      bash-completion
                    ) "Default packages")
 
-    (setq package-selected-packages my/packages)
+    (setq package-selected-packages chongliang/packages)
 
-    (defun my/packages-installed-p ()
-        (loop for pkg in my/packages
+    (defun chongliang/packages-installed-p ()
+        (loop for pkg in chongliang/packages
               when (not (package-installed-p pkg)) do (return nil)
               finally (return t)))
 
-    (unless (my/packages-installed-p)
+    (unless (chongliang/packages-installed-p)
         (message "%s" "Refreshing package database...")
         (package-refresh-contents)
-        (dolist (pkg my/packages)
+        (dolist (pkg chongliang/packages)
           (when (not (package-installed-p pkg))
             (package-install pkg))))
   #+END_SRC
@@ -97,4 +97,15 @@
                   (regexp-quote sym))))
             regexp-history)
       (call-interactively 'occur))
+  #+END_SRC
+* 将org编译成elc
+  #+BEGIN_SRC emacs-lisp
+    ;; (defun chongliang/org-to-elc ()
+    ;;   (interactive)
+    ;;   (if (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/")
+    ;;       (org-babel-load-file (buffer-file-name)))
+    ;;   (if (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/")
+    ;;       (byte-compile-file
+    ;;        (concat
+    ;;         (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el"))))
   #+END_SRC

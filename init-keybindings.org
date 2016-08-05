@@ -75,11 +75,6 @@
     (define-key company-active-map (kbd "C-n") #'company-select-next)
     (define-key company-active-map (kbd "C-p") #'company-select-previous)
   #+END_SRC
-* helm-ag
-  #+BEGIN_SRC emacs-lisp
-    ;; 缓冲区对搜索到的结果进行直接的修改
-    ;; (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
-  #+END_SRC
 * Evil-nerd-commenter
   #+BEGIN_SRC emacs-lisp
     ;; (evilnc-default-hotkeys)
@@ -109,4 +104,27 @@
 * r-autoyas
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "<f4>") 'r-autoyas-expand)
+  #+END_SRC
+* hungry-mode
+  #+BEGIN_SRC emacs-lisp
+    ;; chonglaing/newline-return
+    (defun chongliang/newline-return()
+      (save-excursion
+        (funcall #'newline)))
+    ;; give advice
+    (advice-add 'hungry-delete-backward-impl :after-until #'chongliang/newline-return)
+    (advice-add 'hungry-delete-forward-impl :after-until #'chongliang/newline-return)
+    ;; global-set-key
+    (global-set-key (kbd "S-<backspace>") 'hungry-delete-backward)
+    (global-set-key (kbd "S-<delete>") 'hungry-delete-forward)
+    (define-key evil-normal-state-map (kbd "S-<backspace>") 'hungry-delete-backward)
+    (define-key evil-normal-state-map (kbd "S-<delete>") 'hungry-delete-forward)
+  #+END_SRC
+* Evil-mode
+  #+BEGIN_SRC emacs-lisp
+    (define-key evil-insert-state-map (kbd "C-y") 'evil-paste-after)
+  #+END_SRC
+* iedit-mode
+  #+BEGIN_SRC emacs-lisp
+    (global-set-key (kbd "C-;") 'iedit-mode)
   #+END_SRC
