@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: apt-get-install
+# key: install
+# --
+sudo apt-get install $0

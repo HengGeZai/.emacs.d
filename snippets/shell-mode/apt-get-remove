@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: apt-get-remove
+# key: remove
+# --
+sudo apt-get remove $0
