@@ -2,4 +2,4 @@
 # name: apt-get-install
 # key: install
 # --
-sudo apt-get install $0
+sudo apt-get install -y $0

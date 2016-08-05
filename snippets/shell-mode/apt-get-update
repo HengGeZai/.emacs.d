@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: apt-get-update
+# key: update
+# --
+sudo apt-get update -y

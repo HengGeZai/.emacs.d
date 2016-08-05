@@ -2,4 +2,7 @@
 # name: apt-get-remove
 # key: remove
 # --
-sudo apt-get remove $0
+sudo apt-get remove -y $1
+sudo apt-get autoremove -y
+sudo apt-get autoclean -y
+dpkg -l |grep ^rc|awk '{print \$2}' |sudo xargs dpkg -P $0

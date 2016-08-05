@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: apt-get-autoclean
+# key: autoclean
+# --
+sudo apt-get autoclean -y

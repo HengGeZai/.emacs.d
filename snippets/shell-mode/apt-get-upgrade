@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: apt-get-upgrade
+# key: upgrade
+# --
+sudo apt-get-upgrade -y

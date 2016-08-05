@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: apt-get-autoremove
+# key: autoremove
+# --
+sudo apt-get autoremove -y
