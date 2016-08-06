@@ -10,3 +10,5 @@
   file:~/.emacs.d/init-keybindings.org
 * 交互界面的设置
   file:~/.emacs.d/lisp/customize.el
+* abbrev
+  file:~/.emacs.d/abbrev_defs
