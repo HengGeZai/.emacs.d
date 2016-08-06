@@ -73,3 +73,7 @@
     (setq-default tab-width 2)
     (setq tab-width 2)
   #+END_SRC
+* abbrevs
+  #+BEGIN_SRC emacs-lisp
+    (setq default-abbrev-mode t)
+  #+END_SRC
