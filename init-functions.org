@@ -36,6 +36,7 @@
                      markdown-mode
                      auto-complete
                      bash-completion
+                     chinese-pyim
                    ) "Default packages")
 
     (setq package-selected-packages chongliang/packages)
@@ -100,12 +101,25 @@
   #+END_SRC
 * 将org编译成elc
   #+BEGIN_SRC emacs-lisp
-    ;; (defun chongliang/org-to-elc ()
-    ;;   (interactive)
-    ;;   (if (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/")
-    ;;       (org-babel-load-file (buffer-file-name)))
-    ;;   (if (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/")
-    ;;       (byte-compile-file
-    ;;        (concat
-    ;;         (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el"))))
+    (defun chongliang/org-to-elc ()
+      (interactive)
+      (setq-local filename (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/"))
+      (if filename
+          (org-babel-load-file (buffer-file-name)))
+      (if filename
+          (byte-compile-file
+           (concat
+            (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el"))))
+  #+END_SRC
+* newline-at-last-line
+  used in：file:~/.emacs.d/init-packages.org::ESS
+  #+BEGIN_SRC emacs-lisp
+    (defun chongliang/newline-at-last-line ()
+      (interactive)
+      (setq-local lastline (equal (line-number-at-pos) (count-lines (point-min) (point-max))))
+      (if lastline
+          (move-end-of-line 1))
+      (if lastline
+        (newline))
+      )
   #+END_SRC
