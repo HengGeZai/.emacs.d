@@ -14,12 +14,27 @@
   #+BEGIN_SRC emacs-lisp
     ;; 全局匹配符号
     (smartparens-global-strict-mode)
-    ;; 全局显示配对符号
-    (show-smartparens-global-mode)
+
     ;; smartparens config in different mode.
     ;; such as remove pair of quote(') in emacs-lisp-mode
     (require 'smartparens-config)
-    (setq sp-show-pair-delay 0)
+  #+END_SRC
+* show-paren-mode
+  #+BEGIN_SRC emacs-lisp
+    ;; 全局显示配对符号
+    (show-paren-mode)
+
+    (setq show-paren-delay 0)
+
+    ;; (setq show-paren-style 'expression)
+
+    ;; Highlight parens
+    (defadvice show-paren-function (around fix-show-paren-function activate)
+      "Highlight enclosing parens."
+      (cond ((looking-at-p "\\s(") ad-do-it)
+            (t (save-excursion
+                 (ignore-errors (backward-up-list))
+                 ad-do-it))))
   #+END_SRC
 * monokai-theme
   #+BEGIN_SRC emacs-lisp
@@ -88,6 +103,9 @@
      (evil-leader/set-key
        "ff" 'find-file
        "bb" 'switch-to-buffer
+       "bk" 'kill-buffer
+       "pg" 'counsel-git
+       "ps" 'helm-do-ag-project-root
        "0"  'select-window-0
        "1"  'select-window-1
        "2"  'select-window-2
@@ -96,6 +114,7 @@
        "w-" 'split-window-below
        ":"  'counsel-M-x
        "wM" 'delete-other-windows
+       "ppp" 'pyim-convert-pinyin-at-point
        )
    #+END_SRC
 * evil-surround
@@ -134,6 +153,7 @@
 
 * ESS
   快捷键：file:~/.emacs.d/init-keybindings.org::-yasnippet
+  newline-at-last-line：file:~/.emacs.d/init-functions.org::newline-at-last-line
   #+BEGIN_SRC emacs-lisp
     (add-hook 'ess-mode-hook
               '(lambda()
@@ -142,6 +162,9 @@
                              (ess-nuke-trailing-whitespace)))
                  (setq ess-nuke-trailing-whitespace-p t)
                  (setq ess-smart-operators t)))
+
+    ;; newline at last line
+    (advice-add 'ess-eval-region-or-line-and-step :after #'chongliang/newline-at-last-line)
   #+END_SRC
 ** ess assign key
    file:~/.emacs.d/init-keybindings.org::ESS
@@ -168,9 +191,36 @@
   #+END_SRC
 * bash-completion
   #+BEGIN_SRC emacs-lisp
-    (autoload 'bash-completion-dynamic-complete 
+    (autoload 'bash-completion-dynamic-complete
       "bash-completion"
       "BASH completion hook")
     (add-hook 'shell-dynamic-complete-functions
       'bash-completion-dynamic-complete)
+  #+END_SRC
+* chinese-pyim
+  快捷键：file:~/.emacs.d/init-keybindings.org::chinese-pyim
+  #+BEGIN_SRC emacs-lisp
+    (require 'chinese-pyim)
+
+    ;; use basedict
+    (require 'chinese-pyim-basedict)
+    (chinese-pyim-basedict-enable)
+
+    ;; dafault input method`'
+    (setq-default default-input-method "chinese-pyim")
+
+    ;; integrate and improve company-mode
+    (require 'chinese-pyim-company)
+    (setq pyim-company-max-length 6)
+
+    ;; isearch can use pinyin
+    (setq pyim-isearch-enable-pinyin-search t)
+
+    ;; english input switch
+    (setq-default pyim-english-input-switch-functions
+                  '(pyim-probe-dynamic-english pyim-probe-isearch-mode))
+
+    ;; punctuation-half-width
+    (setq-default pyim-punctuation-half-width-functions
+                  '(pyim-probe-punctuation-after-punctuation pyim-probe-punctuation-line-beginning))
   #+END_SRC
