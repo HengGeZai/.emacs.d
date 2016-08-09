@@ -1,0 +1,8 @@
+;; -*- coding: utf-8 -*-
+今天 :count 5
+天气 :count 2
+很好 :count 2
+老婆 :count 4
+快捷 :count 2
+梁礼华 :count 2
+喂奶 :count 2

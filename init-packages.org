@@ -115,6 +115,9 @@
        ":"  'counsel-M-x
        "wM" 'delete-other-windows
        "ppp" 'pyim-convert-pinyin-at-point
+       "ppd" 'pyim-delete-word-from-personal-buffer
+       "ppcp" 'pyim-create-word-at-point
+       "ppcs" 'pyim-create-word-from-selection
        )
    #+END_SRC
 * evil-surround
@@ -198,7 +201,8 @@
       'bash-completion-dynamic-complete)
   #+END_SRC
 * chinese-pyim
-  快捷键：file:~/.emacs.d/init-keybindings.org::chinese-pyim
+  快捷键1：file:~/.emacs.d/init-keybindings.org::chinese-pyim
+  快捷键2：file:~/.emacs.d/init-packages.org::evil-leader
   #+BEGIN_SRC emacs-lisp
     (require 'chinese-pyim)
 

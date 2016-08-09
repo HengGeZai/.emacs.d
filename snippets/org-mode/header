@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+#+TITLE: $1
+#+KEYWORDS: $2
+#+AUTHOR: ${3:chongliang}
+#+DATE: $4
+#+EMAIL: ${5:231111669@qq.com}
+$0

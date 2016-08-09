@@ -135,4 +135,9 @@
   设置：file:~/.emacs.d/init-packages.org::chinese-pyim
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "S-<SPC>") 'pyim-convert-pinyin-at-point)
+
+    ;; pyim forward and backward
+    ;; (global-set-key (kbd "M-f") 'pyim-forward-word)
+    ;; (global-set-key (kbd "M-b") 'pyim-backward-word)
+
   #+END_SRC
