@@ -80,8 +80,8 @@
   #+BEGIN_SRC emacs-lisp
     ;; (evilnc-default-hotkeys)
     ;; 设置一般模式和选择模式下的注释快捷键
-    (define-key evil-normal-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
-    (define-key evil-visual-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
+    (define-key evil-normal-state-map (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
+    (define-key evil-visual-state-map (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
   #+END_SRC
 * helm-ag
   #+BEGIN_SRC emacs-lisp
@@ -123,9 +123,16 @@
   #+END_SRC
 * Evil-mode
   #+BEGIN_SRC emacs-lisp
+    ;; config paste-key in insert-state
     (define-key evil-insert-state-map (kbd "C-y") 'evil-paste-after)
+
   #+END_SRC
 * iedit-mode
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "C-;") 'iedit-mode)
+  #+END_SRC
+* chinese-pyim
+  设置：file:~/.emacs.d/init-packages.org::chinese-pyim
+  #+BEGIN_SRC emacs-lisp
+    (global-set-key (kbd "S-<SPC>") 'pyim-convert-pinyin-at-point)
   #+END_SRC
