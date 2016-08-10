@@ -120,6 +120,5 @@
       (if lastline
           (move-end-of-line 1))
       (if lastline
-        (newline))
-      )
+          (newline)))
   #+END_SRC
