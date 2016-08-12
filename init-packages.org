@@ -235,13 +235,13 @@
                   '(pyim-probe-punctuation-after-punctuation pyim-probe-punctuation-line-beginning))
 
     ;; delete space after pyim convert pinyin
-    (defun pyim-delete-space-after-pyim-convert-pinyin ()
-      (interactive "*")
-      (save-excursion
-        (save-restriction
-          (save-match-data
-            (progn
-              (re-search-backward "[ ]" nil t)
-              (replace-match "" nil nil))))))
-    (advice-add 'pyim-convert-pinyin-at-point :after #'pyim-delete-space-after-pyim-convert-pinyin)
+    ;; (defun pyim-delete-space-after-pyim-convert-pinyin ()
+    ;;   (interactive "*")
+    ;;   (save-excursion
+    ;;     (save-restriction
+    ;;       (save-match-data
+    ;;         (progn
+    ;;           (re-search-backward "[ ]" nil t)
+    ;;           (replace-match "" nil nil))))))
+    ;; (advice-add 'pyim-convert-pinyin-at-point :after #'pyim-delete-space-after-pyim-convert-pinyin)
   #+END_SRC
