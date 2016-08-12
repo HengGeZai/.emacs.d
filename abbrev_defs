@@ -1,15 +1,4 @@
 ;;-*-coding: utf-8;-*-
-
-(define-abbrev-table 'global-abbrev-table
-  '(
-    ("12CL" "ChongLiang" nil 0)
-    ("12HGZ" "HengGeZai" nil 0)
-    ("12asd" "asd153246" nil 0)
-    ("12cl" "chongliang" nil 0)
-    ("12qq23" "231111669@qq.com" nil 0)
-    ("12qq52" "52655367@qq.com" nil 0)
-   ))
-
 (define-abbrev-table 'Buffer-menu-mode-abbrev-table '())
 
 (define-abbrev-table 'Info-edit-mode-abbrev-table '())
@@ -74,6 +63,16 @@
 
 (define-abbrev-table 'fundamental-mode-abbrev-table '())
 
+(define-abbrev-table 'global-abbrev-table
+  '(
+    ("12CL" "ChongLiang" nil 0)
+    ("12HGZ" "HengGeZai" nil 0)
+    ("12asd" "asd153246" nil 0)
+    ("12cl" "chongliang" nil 0)
+    ("12qq23" "231111669@qq.com" nil 0)
+    ("12qq52" "52655367@qq.com" nil 0)
+   ))
+
 (define-abbrev-table 'help-mode-abbrev-table '())
 
 (define-abbrev-table 'inferior-julia-mode-abbrev-table '())
@@ -106,9 +105,14 @@
 
 (define-abbrev-table 'prog-mode-abbrev-table '())
 
+(define-abbrev-table 'pyim-dicts-manager-mode-abbrev-table '())
+
 (define-abbrev-table 'select-tags-table-mode-abbrev-table '())
 
-(define-abbrev-table 'shell-mode-abbrev-table '())
+(define-abbrev-table 'shell-mode-abbrev-table
+  '(
+    ("12bdup" "cd ~/baiduyun/; bypy syncup -v" nil 3)
+   ))
 
 (define-abbrev-table 'snippet-mode-abbrev-table '())
 
