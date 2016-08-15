@@ -37,7 +37,19 @@
     ("`va" "\\value" nil 0)
    ))
 
+(define-abbrev-table 'awk-mode-abbrev-table
+  '(
+   ))
+
 (define-abbrev-table 'bibtex-mode-abbrev-table '())
+
+(define-abbrev-table 'c++-mode-abbrev-table
+  '(
+   ))
+
+(define-abbrev-table 'c-mode-abbrev-table
+  '(
+   ))
 
 (define-abbrev-table 'calendar-mode-abbrev-table '())
 
@@ -66,8 +78,8 @@
 (define-abbrev-table 'global-abbrev-table
   '(
     ("12CL" "ChongLiang" nil 0)
-    ("12HGZ" "HengGeZai" nil 0)
-    ("12asd" "asd153246" nil 0)
+    ("12HGZ" "HengGeZai" nil 1)
+    ("12asd" "asd153246" nil 1)
     ("12cl" "chongliang" nil 0)
     ("12qq23" "231111669@qq.com" nil 0)
     ("12qq52" "52655367@qq.com" nil 0)
@@ -75,17 +87,27 @@
 
 (define-abbrev-table 'help-mode-abbrev-table '())
 
+(define-abbrev-table 'idl-mode-abbrev-table '())
+
 (define-abbrev-table 'inferior-julia-mode-abbrev-table '())
 
 (define-abbrev-table 'ivy-occur-grep-mode-abbrev-table '())
 
 (define-abbrev-table 'ivy-occur-mode-abbrev-table '())
 
+(define-abbrev-table 'java-mode-abbrev-table
+  '(
+   ))
+
 (define-abbrev-table 'julia-mode-abbrev-table '())
 
 (define-abbrev-table 'lisp-mode-abbrev-table '())
 
 (define-abbrev-table 'messages-buffer-mode-abbrev-table '())
+
+(define-abbrev-table 'objc-mode-abbrev-table
+  '(
+   ))
 
 (define-abbrev-table 'occur-edit-mode-abbrev-table '())
 
@@ -96,6 +118,10 @@
 (define-abbrev-table 'outline-mode-abbrev-table '())
 
 (define-abbrev-table 'package-menu-mode-abbrev-table '())
+
+(define-abbrev-table 'pike-mode-abbrev-table
+  '(
+   ))
 
 (define-abbrev-table 'poly-fallback-mode-abbrev-table '())
 
@@ -112,6 +138,10 @@
 (define-abbrev-table 'shell-mode-abbrev-table
   '(
     ("12bdup" "cd ~/baiduyun/; bypy syncup -v" nil 3)
+    ("12initb" "init-better-defaults.org" nil 3)
+    ("12initf" "init-functions.org" nil 3)
+    ("12initk" "init-keybindings.org" nil 3)
+    ("12initp" "init-packages.org" nil 3)
    ))
 
 (define-abbrev-table 'snippet-mode-abbrev-table '())
