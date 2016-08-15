@@ -116,9 +116,12 @@
   #+BEGIN_SRC emacs-lisp
     (defun chongliang/newline-at-last-line ()
       (interactive)
-      (setq-local lastline (equal (line-number-at-pos) (count-lines (point-min) (point-max))))
-      (if lastline
-          (move-end-of-line 1))
-      (if lastline
-          (newline)))
+      (let ((opoint (point)) end)
+        (save-excursion
+        (forward-page)
+        (setq end (point)))
+        (if (= 0 (count-lines opoint end))
+            (progn
+              (move-end-of-line 1)
+              (newline)))))
   #+END_SRC
