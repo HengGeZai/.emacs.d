@@ -37,6 +37,7 @@
                      auto-complete
                      bash-completion
                      chinese-pyim
+                     mwim
                    ) "Default packages")
 
     (setq package-selected-packages chongliang/packages)
@@ -117,18 +118,24 @@
   #+BEGIN_SRC emacs-lisp
     (defun chongliang/newline-at-last-line ()
       (interactive)
-      (let ((opoint (point)) end)
+      (let (fpoint lpoint end)
         (save-excursion
-        (forward-page)
-        (setq end (point)))
-        (if (= 0 (count-lines opoint end))
+          (forward-page)
+          (setq end (point)))
+        (move-beginning-of-line 1)
+        (setq fpoint (point))
+        (move-end-of-line 1)
+        (setq lpoint (point))
+        (if (and
+             (= 1 (count-lines fpoint end))
+             (= 0 (count-lines lpoint end)))
             (progn
-              (move-end-of-line 1)
+              (ess-eval-line)
               (newline)))))
   #+END_SRC
 * chongliang/timestamp
   #+BEGIN_SRC emacs-lisp
     (defun chongliang/timestamp ()
       (interactive)
-      (insert (format-time-string "%Y-%m-%d  %H:%M:%S")))
+      (insert (format-time-string "%Y-%m-%d %H:%M:%S")))
   #+END_SRC
