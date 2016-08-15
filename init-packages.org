@@ -124,6 +124,8 @@
        "ppd" 'pyim-delete-word-from-personal-buffer
        "ppcp" 'pyim-create-word-at-point
        "ppcs" 'pyim-create-word-from-selection
+       "clt"  'chongliang/timestamp
+       "clo"  'chongliang/org-to-elc
        )
    #+END_SRC
 * evil-surround
