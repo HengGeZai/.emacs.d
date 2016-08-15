@@ -107,11 +107,18 @@
       (setq-local filename (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/"))
       (if filename
           (progn
+<<<<<<< HEAD
             (save-buffer)
             (org-babel-load-file (buffer-file-name))
             (byte-compile-file
              (concat
               (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el")))))
+=======
+            (org-babel-load-file (buffer-file-name))
+        (byte-compile-file
+         (concat
+          (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el")))))
+>>>>>>> a9b27910f49c9516c77712e443ab9c1d0d11086a
   #+END_SRC
 * newline-at-last-line
   used in：file:~/.emacs.d/init-packages.org::ESS
