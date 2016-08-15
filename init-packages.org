@@ -96,6 +96,8 @@
   快捷键：file:~/.emacs.d/init-keybindings.org::Evil-mode
   #+BEGIN_SRC emacs-lisp
     (evil-mode 1)
+    (setcdr evil-insert-state-map nil)
+    (define-key evil-insert-state-map [escape] 'evil-normal-state)
   #+END_SRC
 * evil-leader
    #+BEGIN_SRC emacs-lisp
@@ -175,7 +177,7 @@
                  (setq ess-smart-operators t)))
 
     ;; newline at last line
-    (advice-add 'ess-eval-region-or-line-and-step :after #'chongliang/newline-at-last-line)
+    (advice-add 'ess-eval-region-or-line-and-step :before #'chongliang/newline-at-last-line)
   #+END_SRC
 ** ess assign key
    file:~/.emacs.d/init-keybindings.org::ESS
