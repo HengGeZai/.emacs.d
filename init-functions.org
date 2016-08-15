@@ -106,10 +106,11 @@
       (setq-local filename (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/"))
       (if filename
           (progn
+            (save-buffer)
             (org-babel-load-file (buffer-file-name))
-        (byte-compile-file
-         (concat
-          (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el")))))
+            (byte-compile-file
+             (concat
+              (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el")))))
   #+END_SRC
 * newline-at-last-line
   used in：file:~/.emacs.d/init-packages.org::ESS
@@ -124,4 +125,10 @@
             (progn
               (move-end-of-line 1)
               (newline)))))
+  #+END_SRC
+* chongliang/timestamp
+  #+BEGIN_SRC emacs-lisp
+    (defun chongliang/timestamp ()
+      (interactive)
+      (insert (format-time-string "%Y-%m-%d  %H:%M:%S")))
   #+END_SRC
