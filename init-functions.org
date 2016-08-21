@@ -29,7 +29,6 @@
                      yasnippet
                      auto-yasnippet
                      ess
-                     electric-spacing
                      polymode
                      r-autoyas
                      flycheck
@@ -38,6 +37,9 @@
                      bash-completion
                      chinese-pyim
                      mwim
+                     electric-operator
+                     anaconda-mode
+                     company-anaconda
                    ) "Default packages")
 
     (setq package-selected-packages chongliang/packages)
@@ -46,13 +48,6 @@
         (loop for pkg in chongliang/packages
               when (not (package-installed-p pkg)) do (return nil)
               finally (return t)))
-
-    (unless (chongliang/packages-installed-p)
-        (message "%s" "Refreshing package database...")
-        (package-refresh-contents)
-        (dolist (pkg chongliang/packages)
-          (when (not (package-installed-p pkg))
-            (package-install pkg))))
   #+END_SRC
 * 快速打开配置文件
   #+BEGIN_SRC emacs-lisp
@@ -112,6 +107,10 @@
             (org-babel-load-file (buffer-file-name))
             (byte-compile-file
              (concat
+<<<<<<< HEAD
+              (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name)))
+              ".el")))))
+=======
               (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el")))))
 =======
             (org-babel-load-file (buffer-file-name))
@@ -119,6 +118,7 @@
          (concat
           (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el")))))
 >>>>>>> a9b27910f49c9516c77712e443ab9c1d0d11086a
+>>>>>>> e00dbb1c2a7529489fb4dd15b626174a79eaca50
   #+END_SRC
 * newline-at-last-line
   used in：file:~/.emacs.d/init-packages.org::ESS
@@ -145,4 +145,11 @@
     (defun chongliang/timestamp ()
       (interactive)
       (insert (format-time-string "%Y-%m-%d %H:%M:%S")))
+  #+END_SRC
+* chongliang/cpp-ctrl-return
+  #+BEGIN_SRC emacs-lisp
+    (defun chongliang/cpp-ctrl-return ()
+      (interactive)
+      (insert ";")
+      (newline-and-indent))
   #+END_SRC
