@@ -2,13 +2,13 @@
 chu 处
 c 从 重 成 串 处
 jin 今
-j 见 将 给 即 经 嘉 敬 今
+j 建 给 将 洁 居 见 即 经 嘉 敬 今
 zhong 中 重
-z 中 重 再 值 在 这 占 只 则 主
+z 在 中 值 章 证 重 再 这 占 只 则 主
 guo 国
 g 给 该 各 国
 zhong-guo 中国
-z-g 足够 中国
+z-g 这个 足够 中国
 tian 天
 t 它 条 同 头 天
 jin-tian 今天
@@ -18,9 +18,9 @@ t-q 天气
 hen-hao 很好
 h-h 换行 很好
 wo 我
-w 为 喂 王 五 我
+w 委 为 喂 王 五 我
 xiang 像 想
-x 先 新 下 性 循 像 想
+x 新 先 下 性 循 像 想
 dai 带
 d 的 到 对 都 读 大 段 带
 lao-po 老婆
@@ -28,25 +28,25 @@ l-p 老婆
 chu-qu 出去
 c-q 抽取 出去
 jiao-wai 郊外
-j-w 结尾 郊外
+j-w 结尾 郊外 居委
 wan-shua 玩耍
 w-s 玩耍
 yao 要
-y 右 有 用 与 以 于 异 也 已 源 预 样 运 要
+y 有 右 用 与 以 于 异 也 已 源 预 样 运 要
 qu 去
-q 前 其 去 气
+q 去 前 其 气
 mai 买
-m 每 名 敏 买
+m 买 每 名 敏
 hong 红
-h 和 化 后 好 或 会 华 红
+h 和 或 号 好 化 后 会 华 红
 jing-tian 景天
 hong-jing-tian 红景天
 h-j-t 红景天
-hao 好
+hao 号 好
 wu 五
 yun 运
-liu 流 六
-l 略 类 流 来 了 两 龙 黎 礼 梁 六
+liu 六 流
+l 六 两 略 类 流 来 了 龙 黎 礼 梁
 qi 其 气
 wu-yun-liu-qi 五运六气
 w-y-l-q 五运六气
@@ -63,7 +63,7 @@ k-j-j 快捷键
 li 黎 礼
 jing 经 敬
 bo 波
-b 不 被 吧 帮 波
+b 被 包 不 吧 帮 波
 li-jing-bo 黎敬波
 l-j-b 黎敬波
 liang 两 梁
@@ -82,17 +82,17 @@ jia 嘉
 min 敏
 long-jia-min 龙嘉敏
 l-j-m 龙嘉敏
-zai 再 在
+zai 在 再
 bang 帮
 ji 给 即
 gei 给
-wei 为 喂
+wei 委 为 喂
 nai 奶
-n 您 能 内 奶
+n 拿 您 能 内 奶
 wei-nai 喂奶
 w-n 喂奶
 zhong-yi 中医
-z-y 主要 自由 这样 中医
+z-y 座椅 主要 自由 这样 中医
 shi 是 时
 s 是 时 上
 yi-men 一门
@@ -100,9 +100,9 @@ y-m 一门
 huo 和 或
 he 和
 yi-yang 一样
-y-y 一样 应用 用于 运用 由于 一眼
+y-y 用于 一样 应用 运用 由于 一眼
 ren 人
-r 如 人
+r 柔 如 人
 ying-ge-lan 英格兰
 y-g-l 英格兰
 wo-men 我们
@@ -125,14 +125,14 @@ gai 该
 cheng-xu 程序
 c-x 程序 出现
 jin-hang 进行
-j-h 进行
+j-h 将会 进行
 jin-xing 进行
 j-x 进行 继续
 zhu 主
 bian-yi 编译
 b-y 编译
 zhi-qian 之前
-z-q 知情 之前
+z-q 之前 知情
 dui 对
 yuan 源
 wen-jian 文件
@@ -156,18 +156,18 @@ cao-zuo 操作
 c-z 存在 操作
 lai 来
 diao-yong 调用
-d-y 打印 单元 都有 定义 调用
+d-y 定义 调用 打印 单元 都有
 tiao-yong 调用
 t-y 调用
 ta 它
 kuai 会
 hui 会
 zi-dong 自动
-z-d 自动 指定
+z-d 知道 重点 自动 指定
 yun-hang 运行
-y-h 运行 一行 引号
+y-h 一行 运行 引号
 yun-xing 运行
-y-x 运行 一项 一行 有些 以下
+y-x 一行 原形 圆形 一些 运行 一项 有些 以下
 zhi-ling 指令
 z-l 指令
 shi-li 示例
@@ -203,13 +203,13 @@ q-t 其他
 qi-shi 起始
 q-s 起始
 lei-xing 类型
-l-x 连续 两项 类型
+l-x 类型 连续 两项
 yue-ding 约定
 y-d 约定
 shuo-ming 说明
 s-m 声明 说明
 jiu-shi 旧式
-j-s 接收 减少 结束 加上 旧式
+j-s 结束 接收 减少 加上 旧式
 feng-ge 风格
 f-g 风格
 jie-wei 结尾
@@ -235,7 +235,7 @@ m-c 名称
 kong-jian 空间
 yong-yu 用于
 jie-jue 解决
-j-j 简介 解决
+j-j 技嘉 简介 解决
 zhi-ding 指定
 da-xing 大型
 d-x 对象 等效 大型
@@ -262,7 +262,7 @@ yun-yong 运用
 yu-ju 语句
 y-j 语句 以及
 ming-ming 命名
-m-m 命名
+m-m 妈妈 命名
 ze 则
 zuo-wei 作为 做为
 z-w 周围 作为 做为
@@ -283,9 +283,9 @@ da 大
 xiang-mu 项目
 x-m 下面 项目
 shi-hou 时候
-s-h 时候
+s-h 上海 时候
 tui-jian 推荐
-t-j 推荐
+t-j 添加 推荐
 zhe-zhong 这种
 z-z 这种
 zuo-fa 做法
@@ -298,9 +298,9 @@ c-r 插入
 yun-suan-fu 运算符
 y-s-f 运算符
 lian-jie 连接
-l-j 立即 连接
+l-j 了解 立即 连接
 zhi-jian 之间
-z-j 之间
+z-j 针灸 纸巾 之间
 ye-shi 也是
 y-s 也是 有时
 hu-xiang 互相
@@ -338,7 +338,7 @@ qian 前
 shua-xin 刷新
 s-x 刷新
 shu-chu 输出
-s-c 输出 首次
+s-c 生成 输出 首次
 jiang 将
 li-ji 立即
 xian-shi 显示
@@ -349,7 +349,7 @@ e 而
 bu-neng 不能
 b-n 不能
 ti-gong 提供
-t-g 通过 提高 提供
+t-g 提供 通过 提高
 bao-zheng 保证
 b-z 保证
 zhe 这
@@ -364,7 +364,7 @@ shu-ru 输入
 s-r 输入
 xin-xi 信息
 cai-hui 才会
-c-h 才会
+c-h 产后 才会
 chu-xian 出现
 ti-shi 提示
 yuan-dai-ma 源代码
@@ -393,7 +393,7 @@ you-zhu-yu 有助于
 y-z-y 有助于
 ti-gao 提高
 cheng-du 程度
-c-d 程度
+c-d 重点 程度
 xing 性
 ke 可
 du 都 读
@@ -459,7 +459,7 @@ b-m 避免
 pin-xie 拼写
 p-x 拼写
 cuo-wu 错误
-c-w 错误
+c-w 称为 错误
 dao-zhi 导致
 d-z 导致
 bu 不
@@ -475,13 +475,13 @@ tong-chang 通常
 t-c 通常
 shou-ci 首次
 lian-xu 连续
-you 右 有
+you 有 右
 yi-xiang 一项
 xun-chang 寻常
 x-c 寻常
 cong 从
 xiang-zuo 向左
-x-z 向左
+x-z 现在 向左
 hua-yang 花样
 h-y 花样
 xing-shi 形式
@@ -506,13 +506,86 @@ z-n 智能
 dui-xiang 对象
 tong-guo 通过
 jian-pan 键盘
-j-p 键盘
+j-p 机票 键盘
 yi-xi-lie 一系列
 y-x-l 一系列
 jie-shou 接收
 pin-jie 拼接
 p-j 拼接
 lue 略
-jian 见
+jian 建 见
 lei 类
 jian-jie 简介
+jian-kang 健康
+j-k 健康
+chan-hou 产后
+fu-cha 复查
+f-c 复查
+na 拿
+chu-sheng 出生
+c-s 参数 出生
+zheng 证
+mei-hua 梅花
+m-h 梅花
+ju 居
+ju-wei 居委
+deng-ji 登记
+d-j 登记
+xian-ka 显卡
+x-k 显卡
+zhi-jin 纸巾 织金
+jie 洁
+rou 柔
+jie-rou 洁柔
+j-r 洁柔
+ju-hua-suan 聚划算
+j-h-s 聚划算
+bao 包
+liang-bao 两包
+l-b 两包
+ma-ma 妈妈
+ji-piao 机票
+shang-hai 上海
+zhen-jiu 针灸
+ji-jia 技嘉
+an-quan 安全
+a-q 安全
+zuo-yi 座椅
+fan-hui-zhi 返回值
+f-h-z 返回值
+di-qi 第七
+d-q 第七
+zhang 章
+di-ba 第八
+d-b 第八
+jiang-hui 将会
+chong-dian 重点
+zhong-dian 重点
+tao-lun 讨论
+t-l 讨论
+xian-zai 现在
+liao-jie 了解
+yi-xie 一些
+ji-ben 基本
+j-b 基本
+te-zheng 特征
+t-z 特征
+sheng-cheng 生成
+er-qie 而且
+e-q 而且
+zhe-ge 这个
+biao-da-shi 表达式
+b-d-s 表达式
+cheng-wei 称为
+can-shu 参数
+zhi-dao 知道
+fang-shi 方式
+f-s 方式
+yuan-xing 原形 圆形
+tian-jia 添加
+wei-zhi 位置
+w-z 位置
+quan-ju 全局
+q-j 全局
+mo-shi 模式
+m-s 模式
