@@ -76,11 +76,11 @@
     (setq org-default-notes-file (concat org-directory "/GTD/notes.org"))
     (define-key global-map [f12] 'org-capture)
     (setq org-capture-templates
-          '(("w" "Work-Tasks-TODO"     entry (file+headline "~/GTD/Work.org" "Tasks")     "* TODO %?\n  %i\n  %T")
-            ("h" "Home-Tasks-TODO"     entry (file+headline "~/GTD/Home.org" "Tasks")     "* TODO %?\n  %i\n  %T")
-            ("f" "Finacy-Tasks-TODO"   entry (file+headline "~/GTD/Finacy.org" "Tasks")   "* TODO %?\n  %i\n  %T")
-            ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i\n  %T")
-            ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i\n  %T")
+          '(("w" "Work-Tasks-TODO"     entry (file+headline "~/GTD/Work.org" "Tasks")     "* TODO %?\n  %i  %T")
+            ("h" "Home-Tasks-TODO"     entry (file+headline "~/GTD/Home.org" "Tasks")     "* TODO %?\n  %i  %T")
+            ("f" "Finacy-Tasks-TODO"   entry (file+headline "~/GTD/Finacy.org" "Tasks")   "* TODO %?\n  %i  %T")
+            ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i  %T")
+            ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i  %T")
             ))
     ;; 添加Babel编译的语言
     (org-babel-do-load-languages
@@ -100,6 +100,7 @@
     (define-key evil-insert-state-map [escape] 'evil-normal-state)
   #+END_SRC
 * evil-leader
+  evil-insert-state-leader-key: file:~/.emacs.d/init-keybindings.org::evil-insert-state-leader-key
    #+BEGIN_SRC emacs-lisp
      ;; 开启evil-leader模式
      (global-evil-leader-mode)
@@ -111,7 +112,7 @@
      (evil-leader/set-key
        "ff" 'find-file
        "bb" 'switch-to-buffer
-       "bk" 'kill-buffer
+       "bk" 'kill-this-buffer
        "pg" 'counsel-git
        "ps" 'helm-do-ag-project-root
        "0"  'select-window-0
@@ -121,13 +122,14 @@
        "w/" 'split-window-right
        "w-" 'split-window-below
        ":"  'counsel-M-x
-       "wM" 'delete-other-windows
+       "wm" 'delete-other-windows
        "ppp" 'pyim-convert-pinyin-at-point
        "ppd" 'pyim-delete-word-from-personal-buffer
        "ppcp" 'pyim-create-word-at-point
        "ppcs" 'pyim-create-word-from-selection
        "clt"  'chongliang/timestamp
        "clo"  'chongliang/org-to-elc
+       "<tab>" 'mode-line-other-buffer ;; switch to last buffer
        )
    #+END_SRC
 * evil-surround
@@ -183,6 +185,13 @@
    file:~/.emacs.d/init-keybindings.org::ESS
 ** inferior-ess-mode
    #+BEGIN_SRC emacs-lisp
+     (add-hook 'inferior-ess-mode-hook
+               '(lambda()
+                  (add-hook 'write-file-functions
+                            (lambda ()
+                              (ess-nuke-trailing-whitespace)))
+                  (setq ess-nuke-trailing-whitespace-p t)
+                  (setq ess-smart-operators t)))
      (add-hook 'inferior-ess-mode-hook 'electric-spacing-mode)
    #+END_SRC
 * ploymode
@@ -248,4 +257,25 @@
     ;;           (re-search-backward "[ ]" nil t)
     ;;           (replace-match "" nil nil))))))
     ;; (advice-add 'pyim-convert-pinyin-at-point :after #'pyim-delete-space-after-pyim-convert-pinyin)
+  #+END_SRC
+* electric-operator
+  #+BEGIN_SRC emacs-lisp
+    (require 'electric-operator)
+    ;; ess(R)
+    (add-hook 'ess-mode-hook #'electric-operator-mode)
+    (electric-operator-add-rules-for-mode 'ess-mode
+      (cons "?" "?"))
+    (add-hook 'inferior-ess-mode-hook #'electric-operator-mode)
+    (electric-operator-add-rules-for-mode 'inferior-ess-mode
+      (cons "?" "?"))
+    ;; C++
+    (add-hook 'C++-mode-hook #'electric-operator-mode)
+    ;; python
+    (add-hook 'python-mode-hook #'electric-operator-mode)
+  #+END_SRC
+* python-mode
+  https://github.com/proofit404/anaconda-mode
+  #+BEGIN_SRC emacs-lisp
+    (add-hook 'python-mode-hook 'anaconda-mode)
+    (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
   #+END_SRC
