@@ -63,6 +63,7 @@
   file:~/.emacs.d/init-functions.org::occur自动匹配光标所在词-occur-dwim
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "M-s o") 'occur-dwim)
+    (evil-add-hjkl-bindings occur-mode 'emacs)
   #+END_SRC
 * 删除最后输入的一个单词
   #+BEGIN_SRC emacs-lisp
@@ -122,10 +123,31 @@
     (define-key evil-normal-state-map (kbd "S-<delete>") 'hungry-delete-forward)
   #+END_SRC
 * Evil-mode
+** evil-insert-state-leader-key
+   evil-leader: file:~/.emacs.d/init-packages.org::evil-leader
   #+BEGIN_SRC emacs-lisp
-    ;; config paste-key in insert-state
-    (define-key evil-insert-state-map (kbd "C-y") 'evil-paste-after)
-
+    ;; use M-m as a leader key in insert mode
+    (define-key evil-insert-state-map (kbd "M-m") nil)
+    (define-key evil-insert-state-map (kbd "M-m ff") #'find-file)
+    (define-key evil-insert-state-map (kbd "M-m bb") #'switch-to-buffer)
+    (define-key evil-insert-state-map (kbd "M-m bk") #'kill-this-buffer)
+    (define-key evil-insert-state-map (kbd "M-m pg") #'counsel-git)
+    (define-key evil-insert-state-map (kbd "M-m ps") #'helm-do-ag-project-root)
+    (define-key evil-insert-state-map (kbd "M-m 0")  #'select-window-0)
+    (define-key evil-insert-state-map (kbd "M-m 1")  #'select-window-1)
+    (define-key evil-insert-state-map (kbd "M-m 2")  #'select-window-2)
+    (define-key evil-insert-state-map (kbd "M-m 3")  #'select-window-3)
+    (define-key evil-insert-state-map (kbd "M-m w/") #'split-window-right)
+    (define-key evil-insert-state-map (kbd "M-m w-") #'split-window-below)
+    (define-key evil-insert-state-map (kbd "M-m :")  #'counsel-M-x)
+    (define-key evil-insert-state-map (kbd "M-m wm") #'delete-other-windows)
+    (define-key evil-insert-state-map (kbd "M-m ppp") #'pyim-convert-pinyin-at-point)
+    (define-key evil-insert-state-map (kbd "M-m ppd") #'pyim-delete-word-from-personal-buffer)
+    (define-key evil-insert-state-map (kbd "M-m ppcp") #'pyim-create-word-at-point)
+    (define-key evil-insert-state-map (kbd "M-m ppcs") #'pyim-create-word-from-selection)
+    (define-key evil-insert-state-map (kbd "M-m clt")  #'chongliang/timestamp)
+    (define-key evil-insert-state-map (kbd "M-m clo")  #'chongliang/org-to-elc)
+    (define-key evil-insert-state-map (kbd "M-m <tab>") #'mode-line-other-buffer) ;; switch to last buffer
   #+END_SRC
 * iedit-mode
   #+BEGIN_SRC emacs-lisp
@@ -146,4 +168,10 @@
     (require 'mwim)
     (global-set-key (kbd "C-a") 'mwim-beginning-of-code-or-line)
     (global-set-key (kbd "C-e") 'mwim-end-of-code-or-line)
+  #+END_SRC
+* c++ mode
+  函数定义：file:~/.emacs.d/init-functions.org::chongliang/cpp-ctrl-return
+  #+BEGIN_SRC emacs-lisp
+    ;; 新建一行之前添加 ";" 用于从 C++ 语句结束位置
+    (define-key c++-mode-map (kbd "C-<return>") 'chongliang/cpp-ctrl-return)
   #+END_SRC
