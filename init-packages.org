@@ -67,8 +67,13 @@
     (setq org-src-fontify-natively t)
     ;; agenda目录
     (setq org-agenda-files '("~/GTD"))
-    ;; 自动折行
-    (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+    (add-hook 'org-mode-hook (lambda ()
+                               ;; 自动折行
+                               (setq truncate-lines nil)
+                               ;; keybinding for inserting code blocks
+                               (local-set-key (kbd "C-c s")
+                                               'chongliang/org-insert-src-block)
+                               ))
     ;; 记录当一个Item标记为Done的时间并添加备注
     (setq org-log-done 'time)
     ;;; (setq org-log-done 'note)
@@ -107,6 +112,8 @@
 
      ;; leader-key
      (evil-leader/set-leader "<SPC>")
+     ;; (evil-leader/set-leader "M-m")
+     ;; (setq evil-leader/in-all-states t)
 
      ;; 设置快捷键
      (evil-leader/set-key
@@ -130,6 +137,7 @@
        "clt"  'chongliang/timestamp
        "clo"  'chongliang/org-to-elc
        "<tab>" 'mode-line-other-buffer ;; switch to last buffer
+       "clis" 'chongliang/isend-shell
        )
    #+END_SRC
 * evil-surround
@@ -269,7 +277,7 @@
     (electric-operator-add-rules-for-mode 'inferior-ess-mode
       (cons "?" "?"))
     ;; C++
-    (add-hook 'C++-mode-hook #'electric-operator-mode)
+    (add-hook 'c++-mode-hook #'electric-operator-mode)
     ;; python
     (add-hook 'python-mode-hook #'electric-operator-mode)
   #+END_SRC
