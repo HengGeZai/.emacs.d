@@ -40,6 +40,7 @@
                      electric-operator
                      anaconda-mode
                      company-anaconda
+                     isend
                    ) "Default packages")
 
     (setq package-selected-packages chongliang/packages)
@@ -102,23 +103,12 @@
       (setq-local filename (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/"))
       (if filename
           (progn
-<<<<<<< HEAD
             (save-buffer)
             (org-babel-load-file (buffer-file-name))
             (byte-compile-file
              (concat
-<<<<<<< HEAD
               (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name)))
               ".el")))))
-=======
-              (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el")))))
-=======
-            (org-babel-load-file (buffer-file-name))
-        (byte-compile-file
-         (concat
-          (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name))) ".el")))))
->>>>>>> a9b27910f49c9516c77712e443ab9c1d0d11086a
->>>>>>> e00dbb1c2a7529489fb4dd15b626174a79eaca50
   #+END_SRC
 * newline-at-last-line
   used in：file:~/.emacs.d/init-packages.org::ESS
@@ -153,3 +143,49 @@
       (insert ";")
       (newline-and-indent))
   #+END_SRC
+* chongliang/org-insert-src-block
+  #+BEGIN_SRC emacs-lisp
+        (defun chongliang/org-insert-src-block (src-code-type)
+          "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
+          (interactive
+           (let ((src-code-types
+                  '("emacs-lisp" "python" "C" "sh" "java" "js" "clojure" "C++" "css"
+                    "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
+                    "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
+                    "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
+                    "scheme" "sqlite")))
+             (list (ido-completing-read "Source code type: " src-code-types))))
+          (progn
+            (newline-and-indent)
+            (insert (format "#+BEGIN_SRC %s\n" src-code-type))
+            (newline-and-indent)
+            (insert "#+END_SRC\n")
+            (previous-line 2)
+            (org-edit-src-code)
+            (evil-insert 1)
+            ))
+  #+END_SRC
+* chongliang/isend-shell
+  #+BEGIN_SRC emacs-lisp
+    (defun chongliang/isend-shell (shell-type)
+      (interactive
+       (let ((shell-types
+              '("shell" "python" "python3")))
+         (list (ido-completing-read "Shell type: " shell-types))))
+      (progn
+        (delete-other-windows)
+        (cond ((string= shell-type "shell")
+               (ansi-term "/bin/bash" "shell"))
+              ((string= shell-type "python")
+               (ansi-term "/usr/bin/python" "python"))
+              ((string= shell-type "python3")
+               (ansi-term "/usr/bin/python3" "python3"))
+              (t "Wrong shell-type")
+              )
+        (split-window-right)
+        (mode-line-other-buffer)
+        (isend (concat "*" shell-type "*"))
+        ))
+  #+END_SRC
+
+
