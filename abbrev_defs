@@ -57,6 +57,12 @@
 
 (define-abbrev-table 'completion-list-mode-abbrev-table '())
 
+(define-abbrev-table 'diary-fancy-display-mode-abbrev-table '())
+
+(define-abbrev-table 'diary-mode-abbrev-table '())
+
+(define-abbrev-table 'edebug-eval-mode-abbrev-table '())
+
 (define-abbrev-table 'edit-abbrevs-mode-abbrev-table '())
 
 (define-abbrev-table 'eieio-custom-mode-abbrev-table '())
@@ -77,12 +83,12 @@
 
 (define-abbrev-table 'global-abbrev-table
   '(
-    ("12CL" "ChongLiang" nil 0)
-    ("12HGZ" "HengGeZai" nil 1)
-    ("12asd" "asd153246" nil 1)
-    ("12cl" "chongliang" nil 0)
-    ("12qq23" "231111669@qq.com" nil 0)
-    ("12qq52" "52655367@qq.com" nil 0)
+    ("CL" "ChongLiang" nil 1)
+    ("HGZ" "HengGeZai" nil 1)
+    ("asd" "asd153246" nil 1)
+    ("cl" "chongliang" nil 0)
+    ("qq23" "231111669@qq.com" nil 0)
+    ("qq52" "52655367@qq.com" nil 0)
    ))
 
 (define-abbrev-table 'help-mode-abbrev-table '())
@@ -137,11 +143,11 @@
 
 (define-abbrev-table 'shell-mode-abbrev-table
   '(
-    ("12bdup" "cd ~/baiduyun/; bypy syncup -v" nil 3)
-    ("12initb" "init-better-defaults.org" nil 3)
-    ("12initf" "init-functions.org" nil 3)
-    ("12initk" "init-keybindings.org" nil 3)
-    ("12initp" "init-packages.org" nil 3)
+    ("bdup" "cd ~/baiduyun/; bypy syncup -v" nil 3)
+    ("initb" "init-better-defaults.org" nil 3)
+    ("initf" "init-functions.org" nil 4)
+    ("initk" "init-keybindings.org" nil 3)
+    ("initp" "init-packages.org" nil 3)
    ))
 
 (define-abbrev-table 'snippet-mode-abbrev-table '())
@@ -153,6 +159,8 @@
 (define-abbrev-table 'tabulated-list-mode-abbrev-table '())
 
 (define-abbrev-table 'tar-mode-abbrev-table '())
+
+(define-abbrev-table 'term-mode-abbrev-table '())
 
 (define-abbrev-table 'text-mode-abbrev-table '())
 
