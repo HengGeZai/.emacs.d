@@ -106,7 +106,8 @@
   #+END_SRC
 * r-autoyas
   #+BEGIN_SRC emacs-lisp
-    (global-set-key (kbd "<f4>") 'r-autoyas-expand)
+    ;; (global-set-key (kbd "<f4>") 'r-autoyas-expand)
+    (define-key ess-mode-map (kbd "<backtab>") 'r-autoyas-expand)
   #+END_SRC
 * hungry-mode
   #+BEGIN_SRC emacs-lisp
