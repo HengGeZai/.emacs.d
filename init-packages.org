@@ -5,11 +5,17 @@
   file:~/.emacs.d/init-keybindings.org::company-mode
 #+BEGIN_SRC emacs-lisp
   ;; 开启全局 Company 补全
-  (global-company-mode 1)
+  ;; (global-company-mode 1)
   ;; 设置从1个字符开始补全，延时为0.01秒
-  (setq company-minimum-prefix-length 1)
-  (setq company-idle-delay 0.3)
+  ;; (setq company-minimum-prefix-length 1)
+  ;; (setq company-idle-delay 0.3)
 #+END_SRC
+* auto-company
+  #+BEGIN_SRC emacs-lisp
+    (ac-config-default)
+    (setq ac-auto-start 2)
+    (setq ac-delay 1)
+  #+END_SRC
 * smartparens
   #+BEGIN_SRC emacs-lisp
     ;; 全局匹配符号
@@ -272,10 +278,12 @@
     ;; ess(R)
     (add-hook 'ess-mode-hook #'electric-operator-mode)
     (electric-operator-add-rules-for-mode 'ess-mode
-      (cons "?" "?"))
+                                          (cons "?" "?")
+                                          (cons "=" " = "))
     (add-hook 'inferior-ess-mode-hook #'electric-operator-mode)
     (electric-operator-add-rules-for-mode 'inferior-ess-mode
-      (cons "?" "?"))
+                                          (cons "?" "?")
+                                          (cons "=" " = "))
     ;; C++
     (add-hook 'c++-mode-hook #'electric-operator-mode)
     ;; python
