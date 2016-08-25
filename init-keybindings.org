@@ -49,7 +49,6 @@
   #+BEGIN_SRC emacs-lisp
     ;; Agenda
     (global-set-key (kbd "C-c a") 'org-agenda)
-    (define-key org-mode-map (kbd "M-m os") #'chongliang/org-insert-src-block)
   #+END_SRC
 * hipple-expand（emacs自带的补全功能，补充comany的不足）
   #+BEGIN_SRC emacs-lisp
@@ -72,11 +71,11 @@
   #+END_SRC
 * company-mode
   #+BEGIN_SRC emacs-lisp
-    (define-key company-active-map (kbd "M-n") nil)
-    (define-key company-active-map (kbd "M-p") nil)
-    (define-key company-active-map (kbd "C-n") #'company-select-next)
-    (define-key company-active-map (kbd "C-p") #'company-select-previous)
-    (define-key company-active-map (kbd "C-<tab>") #'company-abort)
+    ;; (define-key company-active-map (kbd "M-n") nil)
+    ;; (define-key company-active-map (kbd "M-p") nil)
+    ;; (define-key company-active-map (kbd "C-n") #'company-select-next)
+    ;; (define-key company-active-map (kbd "C-p") #'company-select-previous)
+    ;; (define-key company-active-map (kbd "C-<tab>") #'company-abort)
   #+END_SRC
 * Evil-nerd-commenter
   #+BEGIN_SRC emacs-lisp
@@ -151,6 +150,7 @@
     (define-key evil-insert-state-map (kbd "M-m clo")  #'chongliang/org-to-elc)
     (define-key evil-insert-state-map (kbd "M-m <tab>") #'mode-line-other-buffer) ;; switch to last buffer
     (define-key evil-insert-state-map (kbd "M-m clis")  #'chongliang/isend-shell)
+    (define-key evil-insert-state-map (kbd "M-m S-;")  #'evil-ex)
   #+END_SRC
 * iedit-mode
   #+BEGIN_SRC emacs-lisp
