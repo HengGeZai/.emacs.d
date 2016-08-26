@@ -1,10 +1,10 @@
 ;; -*- coding: utf-8 -*-
-chu 处
-c 从 重 成 串 处
+chu 出 处
+c 出 从 重 成 串 处
 jin 今
-j 建 给 将 洁 居 见 即 经 嘉 敬 今
+j 减 机 建 给 将 洁 居 见 即 经 嘉 敬 今
 zhong 中 重
-z 在 中 值 章 证 重 再 这 占 只 则 主
+z 志 战 在 中 值 章 证 重 再 这 占 只 则 主
 guo 国
 g 给 该 各 国
 zhong-guo 中国
@@ -14,7 +14,7 @@ t 它 条 同 头 天
 jin-tian 今天
 j-t 今天 景天
 tian-qi 天气
-t-q 天气
+t-q 提取 天气
 hen-hao 很好
 h-h 换行 很好
 wo 我
@@ -22,7 +22,7 @@ w 委 为 喂 王 五 我
 xiang 像 想
 x 新 先 下 性 循 像 想
 dai 带
-d 的 到 对 都 读 大 段 带
+d 第 的 到 对 都 读 大 段 带
 lao-po 老婆
 l-p 老婆
 chu-qu 出去
@@ -38,7 +38,7 @@ q 去 前 其 气
 mai 买
 m 买 每 名 敏
 hong 红
-h 和 或 号 好 化 后 会 华 红
+h 话 和 或 号 好 化 后 会 华 红
 jing-tian 景天
 hong-jing-tian 红景天
 h-j-t 红景天
@@ -46,7 +46,7 @@ hao 号 好
 wu 五
 yun 运
 liu 六 流
-l 六 两 略 类 流 来 了 龙 黎 礼 梁
+l 冷 六 两 略 类 流 来 了 龙 黎 礼 梁
 qi 其 气
 wu-yun-liu-qi 五运六气
 w-y-l-q 五运六气
@@ -71,7 +71,7 @@ keng 铿
 k 可 会 铿
 liang-li-keng 梁礼铿
 l-l-k 梁礼铿
-hua 化 华
+hua 话 化 华
 liang-li-hua 梁礼华
 l-l-h 梁礼华
 wang 王
@@ -84,7 +84,7 @@ long-jia-min 龙嘉敏
 l-j-m 龙嘉敏
 zai 在 再
 bang 帮
-ji 给 即
+ji 机 给 即
 gei 给
 wei 委 为 喂
 nai 奶
@@ -94,7 +94,7 @@ w-n 喂奶
 zhong-yi 中医
 z-y 座椅 主要 自由 这样 中医
 shi 是 时
-s 是 时 上
+s 水 硕 是 时 上
 yi-men 一门
 y-m 一门
 huo 和 或
@@ -175,7 +175,7 @@ s-l 示例
 liao 了
 le 了
 huang-di 黄帝
-h-d 很大 黄帝
+h-d 活动 很大 黄帝
 nei 内
 huang-di-nei-jing 黄帝内经
 h-d-n-j 黄帝内经
@@ -187,7 +187,7 @@ yi 以 异 已
 ming 名
 zhe-yang 这样
 jiao-zuo 叫做
-j-z 叫做
+j-z 叫做 机战
 bao-han 包含
 b-h 包含
 zhe-shi 这时 这是
@@ -207,7 +207,7 @@ l-x 类型 连续 两项
 yue-ding 约定
 y-d 约定
 shuo-ming 说明
-s-m 声明 说明
+s-m 数码 声明 说明
 jiu-shi 旧式
 j-s 结束 接收 减少 加上 旧式
 feng-ge 风格
@@ -274,7 +274,7 @@ d-m 代码
 deng-tong 等同
 d-t 等同
 duan 段
-zhi 值 只
+zhi 志 值 只
 sheng-ming 声明
 xu-yao 需要
 x-y 需要
@@ -287,7 +287,7 @@ s-h 上海 时候
 tui-jian 推荐
 t-j 添加 推荐
 zhe-zhong 这种
-z-z 这种
+z-z 症状 这种
 zuo-fa 做法
 z-f 字符 做法
 xiao-xi 消息
@@ -402,7 +402,7 @@ mei 每
 tiao 条
 mei-tiao 每条
 m-t 每条
-zhan 占
+zhan 战 占
 yi-hang 一行
 yi-xing 一行
 mei-ge 每个
@@ -426,7 +426,7 @@ zhou-wei 周围
 kong-bai 空白
 k-b 空白
 bian-liang 变量
-b-l 变量
+b-l 病例 变量
 liang-xiang 两项
 nei-cun 内存
 n-c 内存
@@ -513,7 +513,7 @@ jie-shou 接收
 pin-jie 拼接
 p-j 拼接
 lue 略
-jian 建 见
+jian 减 建 见
 lei 类
 jian-jie 简介
 jian-kang 健康
@@ -589,3 +589,17 @@ quan-ju 全局
 q-j 全局
 mo-shi 模式
 m-s 模式
+zheng-zhuang 症状
+ge-ge 各个
+g-g 各个
+bing-li 病例
+ti-qu 提取
+ji-zhan 机战
+di 第
+shuo 硕
+shu-ma 数码
+feng 风
+f 风
+leng 冷
+huo-dong 活动
+shui 水
