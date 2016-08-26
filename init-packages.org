@@ -14,7 +14,12 @@
   #+BEGIN_SRC emacs-lisp
     (ac-config-default)
     (setq ac-auto-start 2)
-    (setq ac-delay 1)
+    (setq ac-delay 0.1)
+    (setq ac-quick-help-delay 3)
+    (define-key ac-completing-map "\M-n" nil) ;; was ac-next
+    (define-key ac-completing-map "\M-p" nil) ;; was ac-previous
+    (define-key ac-completing-map "\C-n" 'ac-next)
+    (define-key ac-completing-map "\C-p" 'ac-previous)
   #+END_SRC
 * smartparens
   #+BEGIN_SRC emacs-lisp
@@ -288,10 +293,16 @@
     (add-hook 'c++-mode-hook #'electric-operator-mode)
     ;; python
     (add-hook 'python-mode-hook #'electric-operator-mode)
+    (apply #'electric-operator-add-rules-for-mode 'ein-mode electric-operator-prose-rules)
   #+END_SRC
 * python-mode
   https://github.com/proofit404/anaconda-mode
   #+BEGIN_SRC emacs-lisp
     (add-hook 'python-mode-hook 'anaconda-mode)
     (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
+  #+END_SRC
+* ein
+  https://tkf.github.io/emacs-ipython-notebook/#id24
+  #+BEGIN_SRC emacs-lisp
+    (require 'ein)
   #+END_SRC
