@@ -111,17 +111,17 @@
 * hungry-mode
   #+BEGIN_SRC emacs-lisp
     ;; chonglaing/newline-return
-    (defun chongliang/newline-return()
-      (save-excursion
-        (funcall #'newline)))
+    ;; (defun chongliang/newline-return()
+    ;;   (save-excursion
+    ;;     (funcall #'newline)))
     ;; give advice
-    (advice-add 'hungry-delete-backward-impl :after-until #'chongliang/newline-return)
-    (advice-add 'hungry-delete-forward-impl :after-until #'chongliang/newline-return)
+    ;; (advice-add 'hungry-delete-backward-impl :after-until #'chongliang/newline-return)
+    ;; (advice-add 'hungry-delete-forward-impl :after-until #'chongliang/newline-return)
     ;; global-set-key
     (global-set-key (kbd "S-<backspace>") 'hungry-delete-backward)
     (global-set-key (kbd "S-<delete>") 'hungry-delete-forward)
-    (define-key evil-normal-state-map (kbd "S-<backspace>") 'hungry-delete-backward)
-    (define-key evil-normal-state-map (kbd "S-<delete>") 'hungry-delete-forward)
+    ;; (define-key evil-normal-state-map (kbd "S-<backspace>") 'hungry-delete-backward)
+    ;; (define-key evil-normal-state-map (kbd "S-<delete>") 'hungry-delete-forward)
   #+END_SRC
 * Evil-mode
 ** evil-insert-state-leader-key
