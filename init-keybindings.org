@@ -159,7 +159,8 @@
 * chinese-pyim
   设置：file:~/.emacs.d/init-packages.org::chinese-pyim
   #+BEGIN_SRC emacs-lisp
-    (global-set-key (kbd "S-<SPC>") 'pyim-convert-pinyin-at-point)
+    ;; (global-set-key (kbd "S-<SPC>") 'pyim-convert-pinyin-at-point)
+    (global-set-key (kbd "S-<SPC>") 'chongliang/chinese-pyim-shift-space)
 
     ;; pyim forward and backward
     ;; (global-set-key (kbd "M-f") 'pyim-forward-word)
