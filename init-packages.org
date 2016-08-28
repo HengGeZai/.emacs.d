@@ -118,38 +118,42 @@
 * evil-leader
   evil-insert-state-leader-key: file:~/.emacs.d/init-keybindings.org::evil-insert-state-leader-key
   #+BEGIN_SRC emacs-lisp
-     ;; 开启evil-leader模式
-     (global-evil-leader-mode)
+    ;; 开启evil-leader模式
+    (global-evil-leader-mode)
 
-     ;; leader-key
-     (evil-leader/set-leader "<SPC>")
-     ;; (evil-leader/set-leader "M-m")
-     ;; (setq evil-leader/in-all-states t)
+    ;; leader-key
+    (evil-leader/set-leader "<SPC>")
+    ;; (evil-leader/set-leader "M-m")
+    ;; (setq evil-leader/in-all-states t)
 
-     ;; 设置快捷键
-     (evil-leader/set-key
-       "ff" 'find-file
-       "bb" 'switch-to-buffer
-       "bk" 'kill-this-buffer
-       "pg" 'counsel-git
-       "ps" 'helm-do-ag-project-root
-       "0"  'select-window-0
-       "1"  'select-window-1
-       "2"  'select-window-2
-       "3"  'select-window-3
-       "w/" 'split-window-right
-       "w-" 'split-window-below
-       ":"  'counsel-M-x
-       "wm" 'delete-other-windows
-       "ppp" 'pyim-convert-pinyin-at-point
-       "ppd" 'pyim-delete-word-from-personal-buffer
-       "ppcp" 'pyim-create-word-at-point
-       "ppcs" 'pyim-create-word-from-selection
-       "clt"  'chongliang/timestamp
-       "clo"  'chongliang/org-to-elc
-       "<tab>" 'mode-line-other-buffer ;; switch to last buffer
-       "clis" 'chongliang/isend-shell
-       )
+    ;; 设置快捷键
+    (evil-leader/set-key
+      "ff" 'find-file
+      "bb" 'switch-to-buffer
+      "bk" 'kill-this-buffer
+      "pg" 'counsel-git
+      "ps" 'helm-do-ag-project-root
+      "0"  'select-window-0
+      "1"  'select-window-1
+      "2"  'select-window-2
+      "3"  'select-window-3
+      "w/" 'split-window-right
+      "w-" 'split-window-below
+      ":"  'counsel-M-x
+      "wm" 'delete-other-windows
+      "ppp" 'pyim-convert-pinyin-at-point
+      "ppd" 'pyim-delete-word-from-personal-buffer
+      "ppcp" 'pyim-create-word-at-point
+      "ppcs" 'pyim-create-word-from-selection
+      "clt"  'chongliang/timestamp
+      "clo"  'chongliang/org-to-elc
+      "<tab>" 'mode-line-other-buffer ;; switch to last buffer
+      "clis" 'chongliang/isend-shell
+      )
+    (evil-leader/set-key-for-mode 'markdown-mode
+      "clrr" 'chongliang/render-rmd)
+    (evil-leader/set-key-for-mode 'ess-mode
+      "clrr" 'chongliang/render-rmd)
   #+END_SRC
 * evil-surround
   #+BEGIN_SRC emacs-lisp
@@ -285,18 +289,18 @@
     ;; punctuation-half-width
     (setq-default pyim-punctuation-half-width-functions
                   '(pyim-probe-punctuation-after-punctuation pyim-probe-punctuation-line-beginning))
-
-    ;; delete space after pyim convert pinyin
-    ;; (defun pyim-delete-space-after-pyim-convert-pinyin ()
-    ;;   (interactive "*")
-    ;;   (save-excursion
-    ;;     (save-restriction
-    ;;       (save-match-data
-    ;;         (progn
-    ;;           (re-search-backward "[ ]" nil t)
-    ;;           (replace-match "" nil nil))))))
-    ;; (advice-add 'pyim-convert-pinyin-at-point :after #'pyim-delete-space-after-pyim-convert-pinyin)
   #+END_SRC
+** chinese-pyim-shift-space
+   #+BEGIN_SRC emacs-lisp
+     (defun chongliang/chinese-pyim-shift-space ()
+       "全角、半角符号转换和拼音－汉字转换，整合 chinese-pyim 中的 (pyim-punctuation-translate-at-point) 和 (pyim-convert-pinyin-at-point)"
+       (interactive)
+       (if (string-match (char-to-string (preceding-char)) ",.，。") ; ",.，。" 为需要切换全角、半角的标点符号
+           (pyim-punctuation-translate-at-point)
+         (pyim-convert-pinyin-at-point)))
+     ;; (global-set-key (kbd "S-<SPC>") 'chongliang/chinese-pyim-shift-space)
+   #+END_SRC
+
 * electric-operator
   #+BEGIN_SRC emacs-lisp
     (require 'electric-operator)

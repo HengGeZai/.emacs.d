@@ -189,8 +189,5 @@
         (isend (concat "*" shell-type "*"))
         ))
   #+END_SRC
-*
-*
-*
-*
-
+* chongliang/chinese-pyim-shift-space
+  详见： file:~/.emacs.d/init-packages.org::chinese-pyim-shift-space
