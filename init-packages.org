@@ -117,7 +117,7 @@
   #+END_SRC
 * evil-leader
   evil-insert-state-leader-key: file:~/.emacs.d/init-keybindings.org::evil-insert-state-leader-key
-   #+BEGIN_SRC emacs-lisp
+  #+BEGIN_SRC emacs-lisp
      ;; 开启evil-leader模式
      (global-evil-leader-mode)
 
@@ -150,7 +150,7 @@
        "<tab>" 'mode-line-other-buffer ;; switch to last buffer
        "clis" 'chongliang/isend-shell
        )
-   #+END_SRC
+  #+END_SRC
 * evil-surround
   #+BEGIN_SRC emacs-lisp
     (require 'evil-surround)
@@ -168,6 +168,7 @@
   #+BEGIN_SRC emacs-lisp
     (require 'yasnippet)
     (yas-global-mode 1)
+    (setq yas-indent-line nil)
   #+END_SRC
 * auto-yasnippet
   快捷键：file:~/.emacs.d/init-keybindings.org::auto-yasnippet
@@ -195,10 +196,29 @@
                            (lambda ()
                              (ess-nuke-trailing-whitespace)))
                  (setq ess-nuke-trailing-whitespace-p t)
-                 (setq ess-smart-operators t)))
+                 (setq ess-smart-operators t)
+                 (defun chongliang/render-rmd ()
+                   (interactive)
+                   (save-buffer)
+                   (let (file-name file-name2)
+                     (setq file-name (buffer-file-name))
+                     (setq file-name-2 (substring file-name 0 (- (length file-name) 4)))
+                     (save-window-excursion
+                       (ess-switch-to-ESS t)
+                       (insert (format "rmarkdown::render(\"%s\")" file-name))
+                       (inferior-ess-send-input)
+                       (ess-wait-for-process)
+                       (end-of-buffer)
+                       (cond ((re-search-backward ".pdf" (- (point-max) 50) t)
+                              (shell-command (format "firefox %s.pdf" file-name-2)))
+                             ((re-search-backward ".html" (- (point-max) 50) t)
+                              (shell-command (format "firefox %s.html" file-name-2)))
+                             (t (message "error in rendering"))))))
+                 ))
 
     ;; newline at last line
     (advice-add 'ess-eval-region-or-line-and-step :before #'chongliang/newline-at-last-line)
+
   #+END_SRC
 ** ess assign key
    file:~/.emacs.d/init-keybindings.org::ESS
@@ -305,4 +325,6 @@
   https://tkf.github.io/emacs-ipython-notebook/#id24
   #+BEGIN_SRC emacs-lisp
     (require 'ein)
+    (add-hook 'ein-mode-hook 'anaconda-mode)
+    (add-hook 'ein-mode-hook 'anaconda-eldoc-mode)
   #+END_SRC
