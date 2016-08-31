@@ -295,7 +295,7 @@
      (defun chongliang/chinese-pyim-shift-space ()
        "全角、半角符号转换和拼音－汉字转换，整合 chinese-pyim 中的 (pyim-punctuation-translate-at-point) 和 (pyim-convert-pinyin-at-point)"
        (interactive)
-       (if (string-match (char-to-string (preceding-char)) ",.，。") ; ",.，。" 为需要切换全角、半角的标点符号
+       (if (string-match (char-to-string (preceding-char)) ",./$，。、￥") ;  ",./，。、"为需要切换全角、半角的标点符号
            (pyim-punctuation-translate-at-point)
          (pyim-convert-pinyin-at-point)))
      ;; (global-set-key (kbd "S-<SPC>") 'chongliang/chinese-pyim-shift-space)
