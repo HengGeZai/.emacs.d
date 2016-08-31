@@ -101,7 +101,8 @@
                  (setq ess-S-assign-key (kbd "M--"))
                  (ess-toggle-S-assign-key t) ; enable above key definition
                  ;; leave my underscore key alone!
-                 (ess-toggle-underscore nil)))
+                 (ess-toggle-underscore nil)
+                 (local-set-key (kbd "C-<return>") 'chongliang/ess-eval-line-or-region)))
   #+END_SRC
 * r-autoyas
   #+BEGIN_SRC emacs-lisp

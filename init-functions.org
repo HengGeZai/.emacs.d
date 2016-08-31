@@ -112,25 +112,24 @@
               (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name)))
               ".el")))))
   #+END_SRC
-* newline-at-last-line
+* COMMENT chongliang/ess-eval-line-or-region
   used in：file:~/.emacs.d/init-packages.org::ESS
   #+BEGIN_SRC emacs-lisp
-    (defun chongliang/newline-at-last-line ()
-      (interactive)
-      (let (fpoint lpoint end)
-        (save-excursion
-          (forward-page)
-          (setq end (point)))
-        (move-beginning-of-line 1)
-        (setq fpoint (point))
-        (move-end-of-line 1)
-        (setq lpoint (point))
-        (if (and
-             (= 1 (count-lines fpoint end))
-             (= 0 (count-lines lpoint end)))
-            (progn
-              (ess-eval-line)
-              (newline)))))
+    (add-hook 'ess-mode-hook '(lambda()
+                                    (defun chongliang/ess-eval-line-or-region (&optional vis)
+                                      "Evaluate region if there is an active one, otherwise the current line. Prefix arg VIS toggles visibility of ess-code when evaluating the region (as for `ess-eval-region') and has no effect for evaluation of the line. If evaluate the last line, creat a new line"
+                                      (interactive "P")
+                                      (if (and transient-mark-mode mark-active ;; xemacs doesn't have use-region-p
+                                               (> (region-end) (region-beginning)))
+                                          (ess-eval-region (region-beginning) (region-end) vis)
+                                        (if (= (point-at-eol) (point-max))
+                                            (progn
+                                              (ess-eval-line)
+                                              (move-end-of-line 1)
+                                              (newline-and-indent))
+                                          (ess-eval-line-and-step))))
+                                    )
+              )
   #+END_SRC
 * chongliang/timestamp
   #+BEGIN_SRC emacs-lisp
