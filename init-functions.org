@@ -43,6 +43,7 @@
                      company-anaconda
                      isend
                      ein                    ;; emacs ipython notebook
+                     pangu-spacing
                    ) "Default packages")
 
     (setq package-selected-packages chongliang/packages)
@@ -83,10 +84,10 @@
             (indent-buffer)
     (message "Indented buffer.")))))
   #+END_SRC
-* occur自动匹配光标所在词-occur-dwim
+* occur-dwim
   #+BEGIN_SRC emacs-lisp
     (defun occur-dwim ()
-      "Call `occur' with a sane default."
+      "Call `occur' with a sane default.occur 自动匹配光标所在词"
       (interactive)
       (push (if (region-active-p)
                 (buffer-substring-no-properties
@@ -98,7 +99,7 @@
             regexp-history)
       (call-interactively 'occur))
   #+END_SRC
-* 将org编译成elc
+* 将 org 编译成 elc
   #+BEGIN_SRC emacs-lisp
     (defun chongliang/org-to-elc ()
       (interactive)
@@ -112,7 +113,7 @@
               (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name)))
               ".el")))))
   #+END_SRC
-* COMMENT chongliang/ess-eval-line-or-region
+* chongliang/ess-eval-line-or-region
   used in：file:~/.emacs.d/init-packages.org::ESS
   #+BEGIN_SRC emacs-lisp
     (add-hook 'ess-mode-hook '(lambda()
@@ -189,4 +190,4 @@
         ))
   #+END_SRC
 * chongliang/chinese-pyim-shift-space
-  详见： file:~/.emacs.d/init-packages.org::chinese-pyim-shift-space
+  详见：file:~/.emacs.d/init-packages.org::chinese-pyim-shift-space

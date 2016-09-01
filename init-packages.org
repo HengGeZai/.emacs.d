@@ -74,35 +74,38 @@
 * org-mode
   #+BEGIN_SRC emacs-lisp
     (require 'org)
-    ;; 代码高亮
-    (setq org-src-fontify-natively t)
-    ;; agenda目录
-    (setq org-agenda-files '("~/GTD"))
     (add-hook 'org-mode-hook (lambda ()
+                               ;; 代码高亮
+                               (setq org-src-fontify-natively t)
+                               ;; agenda目录
+                               (setq org-agenda-files '("~/GTD"))
                                ;; 自动折行
                                (setq truncate-lines nil)
                                ;; keybinding for inserting code blocks
                                (local-set-key (kbd "C-c s")
-                                               'chongliang/org-insert-src-block)
+                                              'chongliang/org-insert-src-block)
+                               ;; 记录当一个Item标记为Done的时间并添加备注
+                               (setq org-log-done 'time)
+                               ;; (setq org-log-done 'note)
+                               ;; orgcapture(旧org-remenber)模式设置
+                               (setq org-default-notes-file (concat org-directory "/GTD/notes.org"))
+                               (define-key global-map [f12] 'org-capture)
+                               (setq org-capture-templates
+                                     '(("w" "Work-Tasks-TODO"     entry (file+headline "~/GTD/Work.org" "Tasks")     "* TODO %?\n  %i  %T")
+                                       ("h" "Home-Tasks-TODO"     entry (file+headline "~/GTD/Home.org" "Tasks")     "* TODO %?\n  %i  %T")
+                                       ("f" "Finacy-Tasks-TODO"   entry (file+headline "~/GTD/Finacy.org" "Tasks")   "* TODO %?\n  %i  %T")
+                                       ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i  %T")
+                                       ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i  %T")
+                                       ))
+                               ;; 添加Babel编译的语言
+                               (org-babel-do-load-languages
+                                'org-babel-load-languages
+                                '((python . t)
+                                  (R . t)))
+                               ;; pangu-spacing-mode
+                               (pangu-spacing-mode)
+                               (set (make-local-variable 'pangu-spacing-real-insert-separtor) t)
                                ))
-    ;; 记录当一个Item标记为Done的时间并添加备注
-    (setq org-log-done 'time)
-    ;;; (setq org-log-done 'note)
-    ;; orgcapture(旧org-remenber)模式设置
-    (setq org-default-notes-file (concat org-directory "/GTD/notes.org"))
-    (define-key global-map [f12] 'org-capture)
-    (setq org-capture-templates
-          '(("w" "Work-Tasks-TODO"     entry (file+headline "~/GTD/Work.org" "Tasks")     "* TODO %?\n  %i  %T")
-            ("h" "Home-Tasks-TODO"     entry (file+headline "~/GTD/Home.org" "Tasks")     "* TODO %?\n  %i  %T")
-            ("f" "Finacy-Tasks-TODO"   entry (file+headline "~/GTD/Finacy.org" "Tasks")   "* TODO %?\n  %i  %T")
-            ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i  %T")
-            ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i  %T")
-            ))
-    ;; 添加Babel编译的语言
-    (org-babel-do-load-languages
-          'org-babel-load-languages
-          '((python . t)
-            (R . t)))
   #+END_SRC
 * window-numbering
   #+BEGIN_SRC emacs-lisp
@@ -178,9 +181,9 @@
   快捷键：file:~/.emacs.d/init-keybindings.org::auto-yasnippet
 * r-autoyas
   #+BEGIN_SRC emacs-lisp
-    (require 'r-autoyas)
     (add-hook 'ess-mode-hook
               '(lambda()
+                 (require 'r-autoyas)
                  ;; 保留参数名称
                  (setq r-autoyas-remove-explicit-assignments nil)
                  ;; 多少个参数后，每个参数折行
@@ -192,7 +195,7 @@
 
 * ESS
   快捷键：file:~/.emacs.d/init-keybindings.org::-yasnippet
-  newline-at-last-line：file:~/.emacs.d/init-functions.org::newline-at-last-line
+  chongliang/ess-eval-line-or-region：file:~/.emacs.d/init-functions.org::chongliang/ess-eval-line-or-region
   #+BEGIN_SRC emacs-lisp
     (add-hook 'ess-mode-hook
               '(lambda()
@@ -219,10 +222,6 @@
                               (shell-command (format "firefox %s.html" file-name-2)))
                              (t (message "error in rendering"))))))
                  ))
-
-    ;; newline at last line
-    (advice-add 'ess-eval-region-or-line-and-step :before #'chongliang/newline-at-last-line)
-
   #+END_SRC
 ** ess assign key
    file:~/.emacs.d/init-keybindings.org::ESS
@@ -235,7 +234,7 @@
                               (ess-nuke-trailing-whitespace)))
                   (setq ess-nuke-trailing-whitespace-p t)
                   (setq ess-smart-operators t)))
-     (add-hook 'inferior-ess-mode-hook 'electric-spacing-mode)
+     ;; (add-hook 'inferior-ess-mode-hook 'electric-spacing-mode)
    #+END_SRC
 * ploymode
   #+BEGIN_SRC emacs-lisp
