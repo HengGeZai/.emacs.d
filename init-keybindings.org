@@ -3,7 +3,7 @@
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "<f2>") 'open-init-file)
   #+END_SRC
-* open-GTD绑定到<f3>
+* open-GTD 绑定到<f3>
   file:~/.emacs.d/init-functions.org::openGTD
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "<f3>") 'open-GTD)
@@ -50,17 +50,17 @@
     ;; Agenda
     (global-set-key (kbd "C-c a") 'org-agenda)
   #+END_SRC
-* hipple-expand（emacs自带的补全功能，补充comany的不足）
+* hipple-expand（emacs 自带的补全功能，补充 comany 的不足）
   #+BEGIN_SRC emacs-lisp
-    (global-set-key (kbd "s-/") 'hippie-expand) ;; s为windows键
+    (global-set-key (kbd "s-/") 'hippie-expand) ;; s 为 windows 键
   #+END_SRC
 * dired-mode
   #+BEGIN_SRC emacs-lisp
-    ;; 用于dired-mode时不会不断新建buffer
+    ;; 用于 dired-mode 时不会不断新建 buffer
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
   #+END_SRC
 * orrur-mode
-  file:~/.emacs.d/init-functions.org::occur自动匹配光标所在词-occur-dwim
+  file:~/.emacs.d/init-functions.org::occur 自动匹配光标所在词-occur-dwim
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "M-s o") 'occur-dwim)
     (evil-add-hjkl-bindings occur-mode 'emacs)
@@ -107,7 +107,9 @@
 * r-autoyas
   #+BEGIN_SRC emacs-lisp
     ;; (global-set-key (kbd "<f4>") 'r-autoyas-expand)
-    (define-key ess-mode-map (kbd "<backtab>") 'r-autoyas-expand)
+    (add-hook 'ess-mode-hook (lambda()
+                               (local-set-key (kbd "<backtab>") 'r-autoyas-expand)))
+
   #+END_SRC
 * hungry-mode
   #+BEGIN_SRC emacs-lisp
@@ -178,5 +180,6 @@
   函数定义：file:~/.emacs.d/init-functions.org::chongliang/cpp-ctrl-return
   #+BEGIN_SRC emacs-lisp
     ;; 新建一行之前添加 ";" 用于从 C++ 语句结束位置
-    (define-key c++-mode-map (kbd "C-<return>") 'chongliang/cpp-ctrl-return)
+    (add-hook 'c++-mode-hook (lambda()
+                               (local-set-key (kbd "C-<return>") 'chongliang/cpp-ctrl-return)))
   #+END_SRC
