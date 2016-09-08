@@ -99,37 +99,42 @@
             regexp-history)
       (call-interactively 'occur))
   #+END_SRC
-* 将 org 编译成 elc
+* chongliang/org-to-elc
   #+BEGIN_SRC emacs-lisp
-    (defun chongliang/org-to-elc ()
-      (interactive)
-      (setq-local filename (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/"))
-      (if filename
-          (progn
-            (save-buffer)
-            (org-babel-load-file (buffer-file-name))
-            (byte-compile-file
-             (concat
-              (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name)))
-              ".el")))))
+    (add-hook 'org-mode-hook
+              '(lambda ()
+                 (defun chongliang/org-to-elc ()
+                   (interactive)
+                   (setq-local filename (string= (substring (buffer-file-name) 0 26) "/home/chongliang/.emacs.d/"))
+                   (if filename
+                       (progn
+                         (save-buffer)
+                         (org-babel-load-file (buffer-file-name))
+                         (byte-compile-file
+                          (concat
+                           (substring (buffer-file-name) 0 (string-match "\\(.org\\)" (buffer-file-name)))
+                           ".el")))))
+                 ))
+
   #+END_SRC
 * chongliang/ess-eval-line-or-region
   used in：file:~/.emacs.d/init-packages.org::ESS
   #+BEGIN_SRC emacs-lisp
-    (add-hook 'ess-mode-hook '(lambda()
-                                    (defun chongliang/ess-eval-line-or-region (&optional vis)
-                                      "Evaluate region if there is an active one, otherwise the current line. Prefix arg VIS toggles visibility of ess-code when evaluating the region (as for `ess-eval-region') and has no effect for evaluation of the line. If evaluate the last line, creat a new line"
-                                      (interactive "P")
-                                      (if (and transient-mark-mode mark-active ;; xemacs doesn't have use-region-p
-                                               (> (region-end) (region-beginning)))
-                                          (ess-eval-region (region-beginning) (region-end) vis)
-                                        (if (= (point-at-eol) (point-max))
-                                            (progn
-                                              (ess-eval-line)
-                                              (move-end-of-line 1)
-                                              (newline-and-indent))
-                                          (ess-eval-line-and-step))))
-                                    )
+    (add-hook 'ess-mode-hook
+              '(lambda()
+                 (defun chongliang/ess-eval-line-or-region (&optional vis)
+                   "Evaluate region if there is an active one, otherwise the current line. Prefix arg VIS toggles visibility of ess-code when evaluating the region (as for `ess-eval-region') and has no effect for evaluation of the line. If evaluate the last line, creat a new line"
+                   (interactive "P")
+                   (if (and transient-mark-mode mark-active ;; xemacs doesn't have use-region-p
+                            (> (region-end) (region-beginning)))
+                       (ess-eval-region (region-beginning) (region-end) vis)
+                     (if (= (point-at-eol) (point-max))
+                         (progn
+                           (ess-eval-line)
+                           (move-end-of-line 1)
+                           (newline-and-indent))
+                       (ess-eval-line-and-step))))
+                 )
               )
   #+END_SRC
 * chongliang/timestamp
@@ -140,32 +145,37 @@
   #+END_SRC
 * chongliang/cpp-ctrl-return
   #+BEGIN_SRC emacs-lisp
-    (defun chongliang/cpp-ctrl-return ()
-      (interactive)
-      (insert ";")
-      (newline-and-indent))
+    (add-hook 'c++-mode-hook
+              '(lambda ()
+                 (defun chongliang/cpp-ctrl-return ()
+                   (interactive)
+                   (insert ";")
+                   (newline-and-indent))
+                 ))
   #+END_SRC
 * chongliang/org-insert-src-block
   #+BEGIN_SRC emacs-lisp
-        (defun chongliang/org-insert-src-block (src-code-type)
-          "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
-          (interactive
-           (let ((src-code-types
-                  '("emacs-lisp" "python" "C" "sh" "java" "js" "clojure" "C++" "css"
-                    "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
-                    "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
-                    "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
-                    "scheme" "sqlite")))
-             (list (ido-completing-read "Source code type: " src-code-types))))
-          (progn
-            (newline-and-indent)
-            (insert (format "#+BEGIN_SRC %s\n" src-code-type))
-            (newline-and-indent)
-            (insert "#+END_SRC\n")
-            (previous-line 2)
-            (org-edit-src-code)
-            (evil-insert 1)
-            ))
+    (add-hook 'org-mode-hook
+              '(lambda ()
+                 (defun chongliang/org-insert-src-block (src-code-type)
+                   "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
+                   (interactive
+                    (let ((src-code-types
+                           '("emacs-lisp" "python" "C" "sh" "java" "js" "clojure" "C++" "css"
+                             "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
+                             "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
+                             "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
+                             "scheme" "sqlite")))
+                      (list (ido-completing-read "Source code type: " src-code-types))))
+                   (progn
+                     (newline-and-indent)
+                     (insert (format "#+BEGIN_SRC %s\n" src-code-type))
+                     (newline-and-indent)
+                     (insert "#+END_SRC\n")
+                     (previous-line 2)
+                     (org-edit-src-code)
+                     (evil-insert 1)))
+                 ))
   #+END_SRC
 * chongliang/isend-shell
   #+BEGIN_SRC emacs-lisp
@@ -191,3 +201,28 @@
   #+END_SRC
 * chongliang/chinese-pyim-shift-space
   详见：file:~/.emacs.d/init-packages.org::chinese-pyim-shift-space
+* chongliang/render-rmd
+  #+BEGIN_SRC emacs-lisp
+    (add-hook 'ess-mode-hook
+              '(lambda ()
+                 (defun chongliang/render-rmd ()
+                   (interactive)
+                   (save-buffer)
+                   (let (file-name file-name2)
+                     (setq file-name (buffer-file-name))
+                     (setq file-name-2 (substring file-name 0 (- (length file-name) 4)))
+                     (save-window-excursion
+                       (ess-switch-to-ESS t)
+                       (insert (format "rmarkdown::render(\"%s\")" file-name))
+                       (inferior-ess-send-input)
+                       (ess-wait-for-process)
+                       (end-of-buffer)
+                       (cond ((re-search-backward ".pdf" (- (point-max) 50) t)
+                              (shell-command (format "firefox %s.pdf" file-name-2)))
+                             ((re-search-backward ".html" (- (point-max) 50) t)
+                              (shell-command (format "firefox %s.html" file-name-2)))
+                             (t (message "error in rendering"))))))
+                 ))
+
+
+  #+END_SRC
