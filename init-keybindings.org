@@ -60,7 +60,7 @@
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
   #+END_SRC
 * orrur-mode
-  file:~/.emacs.d/init-functions.org::occur 自动匹配光标所在词-occur-dwim
+  file:~/.emacs.d/init-functions.org::occur-dwim
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "M-s o") 'occur-dwim)
     (evil-add-hjkl-bindings occur-mode 'emacs)
