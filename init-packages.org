@@ -6,7 +6,7 @@
 #+BEGIN_SRC emacs-lisp
   ;; 开启全局 Company 补全
   ;; (global-company-mode 1)
-  ;; 设置从1个字符开始补全，延时为0.01秒
+  ;; 设置从 1 个字符开始补全，延时为 0.01 秒
   ;; (setq company-minimum-prefix-length 1)
   ;; (setq company-idle-delay 0.3)
 #+END_SRC
@@ -37,7 +37,7 @@
     (sp-pair "（" "）")
   #+END_SRC
 * show-paren-mode
-  #+BEGIN_SRC emacs-lisp
+ #+BEGIN_SRC emacs-lisp
     ;; 全局显示配对符号
     (show-paren-mode)
 
@@ -74,20 +74,20 @@
 * org-mode
   #+BEGIN_SRC emacs-lisp
     (require 'org)
+    ;; agenda 目录
+    (setq org-agenda-files '("~/GTD"))
     (add-hook 'org-mode-hook (lambda ()
                                ;; 代码高亮
                                (setq org-src-fontify-natively t)
-                               ;; agenda目录
-                               (setq org-agenda-files '("~/GTD"))
                                ;; 自动折行
                                (setq truncate-lines nil)
                                ;; keybinding for inserting code blocks
                                (local-set-key (kbd "C-c s")
                                               'chongliang/org-insert-src-block)
-                               ;; 记录当一个Item标记为Done的时间并添加备注
+                               ;; 记录当一个 Item 标记为 Done 的时间并添加备注
                                (setq org-log-done 'time)
                                ;; (setq org-log-done 'note)
-                               ;; orgcapture(旧org-remenber)模式设置
+                               ;; orgcapture(旧 org-remenber)模式设置
                                (setq org-default-notes-file (concat org-directory "/GTD/notes.org"))
                                (define-key global-map [f12] 'org-capture)
                                (setq org-capture-templates
@@ -97,14 +97,14 @@
                                        ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i  %T")
                                        ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i  %T")
                                        ))
-                               ;; 添加Babel编译的语言
+                               ;; 添加 Babel 编译的语言
                                (org-babel-do-load-languages
                                 'org-babel-load-languages
                                 '((python . t)
                                   (R . t)))
                                ;; pangu-spacing-mode
-                               (pangu-spacing-mode)
-                               (set (make-local-variable 'pangu-spacing-real-insert-separtor) t)
+                               ;; (pangu-spacing-mode)
+                               ;; (set (make-local-variable 'pangu-spacing-real-insert-separtor) t)
                                ))
   #+END_SRC
 * window-numbering
@@ -121,7 +121,7 @@
 * evil-leader
   evil-insert-state-leader-key: file:~/.emacs.d/init-keybindings.org::evil-insert-state-leader-key
   #+BEGIN_SRC emacs-lisp
-    ;; 开启evil-leader模式
+    ;; 开启 evil-leader 模式
     (global-evil-leader-mode)
 
     ;; leader-key
@@ -189,7 +189,7 @@
                  ;; 多少个参数后，每个参数折行
                  (setq r-autoyas-number-of-commas-before-return 10)
                  ;; (setq r-autoyas-auto-expand-with-paren t)
-                 ;; 调用r-autoyas
+                 ;; 调用 r-autoyas
                  'r-autoyas-ess-activate))
   #+END_SRC
 
@@ -204,23 +204,8 @@
                              (ess-nuke-trailing-whitespace)))
                  (setq ess-nuke-trailing-whitespace-p t)
                  (setq ess-smart-operators t)
-                 (defun chongliang/render-rmd ()
-                   (interactive)
-                   (save-buffer)
-                   (let (file-name file-name2)
-                     (setq file-name (buffer-file-name))
-                     (setq file-name-2 (substring file-name 0 (- (length file-name) 4)))
-                     (save-window-excursion
-                       (ess-switch-to-ESS t)
-                       (insert (format "rmarkdown::render(\"%s\")" file-name))
-                       (inferior-ess-send-input)
-                       (ess-wait-for-process)
-                       (end-of-buffer)
-                       (cond ((re-search-backward ".pdf" (- (point-max) 50) t)
-                              (shell-command (format "firefox %s.pdf" file-name-2)))
-                             ((re-search-backward ".html" (- (point-max) 50) t)
-                              (shell-command (format "firefox %s.html" file-name-2)))
-                             (t (message "error in rendering"))))))
+                 ;; (setq-local ac-sources ac-sources)
+                 ;; (add-to-list 'ac-sources '(ac-source-R-objects ac-source-R ac-source-R-args))
                  ))
   #+END_SRC
 ** ess assign key
@@ -262,9 +247,10 @@
       'bash-completion-dynamic-complete)
   #+END_SRC
 * chinese-pyim
-  快捷键1：file:~/.emacs.d/init-keybindings.org::chinese-pyim
-  快捷键2：file:~/.emacs.d/init-packages.org::evil-leader
+  快捷键 1：file:~/.emacs.d/init-keybindings.org::chinese-pyim
+  快捷键 2：file:~/.emacs.d/init-packages.org::evil-leader
   #+BEGIN_SRC emacs-lisp
+    ;; use default chinese-pyim-pymap
     (require 'chinese-pyim)
 
     ;; use basedict
