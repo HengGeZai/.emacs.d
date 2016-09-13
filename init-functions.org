@@ -44,6 +44,7 @@
                      isend
                      ein                    ;; emacs ipython notebook
                      pangu-spacing
+                     zotxt
                    ) "Default packages")
 
     (setq package-selected-packages chongliang/packages)
@@ -165,7 +166,7 @@
                              "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
                              "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
                              "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
-                             "scheme" "sqlite")))
+                             "scheme" "sqlite" "shell")))
                       (list (ido-completing-read "Source code type: " src-code-types))))
                    (progn
                      (newline-and-indent)
@@ -225,4 +226,10 @@
                  ))
 
 
+  #+END_SRC
+* chongliang/insert-file-name-base
+  #+BEGIN_SRC emacs-lisp
+    (defun chongliang/insert-file-name-base ()
+         (interactive)
+         (insert (file-name-base)))
   #+END_SRC
