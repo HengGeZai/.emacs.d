@@ -2,7 +2,7 @@
   #+BEGIN_SRC emacs-lisp
     ;; (global-linum-mode 1)
   #+END_SRC
-* 设置scratch默认显示的消息
+* 设置 scratch 默认显示的消息
   #+BEGIN_SRC emacs-lisp
     ;; (setq initial-scratch-message ";; This buffer is for notes you don't want to save, and for Lisp evaluation.\n;; If you want to create a file, visit that file with C-x C-f\n;; If you want to config emacs, please type F2\n;; If you want to Agenda, please type C-c a\n")
   #+END_SRC
@@ -28,7 +28,7 @@
   #+BEGIN_SRC emacs-lisp
     (global-hl-line-mode 1)
   #+END_SRC
-* 默认最大化打开emcas
+* 默认最大化打开 emcas
   #+BEGIN_SRC emacs-lisp
     (setq initial-frame-alist (quote ((fullscreen . maximized))))
   #+END_SRC
@@ -36,20 +36,20 @@
   #+BEGIN_SRC emacs-lisp
     (global-auto-revert-mode t)
   #+END_SRC
-* 增强hipple-expand补全
+* 增强 hipple-expand 补全
   #+BEGIN_SRC emacs-lisp
-    (setq hippie-expand-try-functions-list '(try-expand-dabbrev
-                                             try-expand-dabbrev-all-buffers
-                                             try-expand-dabbrev-from-kill
-                                             try-complete-file-name-partially
-                                             try-complete-file-name
-                                             try-expand-all-abbrevs
-                                             try-expand-list
-                                             try-expand-line
-                                             try-complete-lisp-symbol-partially
-                                             try-complete-lisp-symbol))
+    ;; (setq hippie-expand-try-functions-list '(try-expand-dabbrev
+    ;;                                          try-expand-dabbrev-all-buffers
+    ;;                                          try-expand-dabbrev-from-kill
+    ;;                                          try-complete-file-name-partially
+    ;;                                          try-complete-file-name
+    ;;                                          try-expand-all-abbrevs
+    ;;                                          try-expand-list
+    ;;                                          try-expand-line
+    ;;                                          try-complete-lisp-symbol-partially
+    ;;                                          try-complete-lisp-symbol))
   #+END_SRC
-* 默认y/n代替yes/no
+* 默认 y/n 代替 yes/no
   #+BEGIN_SRC emacs-lisp
     (fset 'yes-or-no-p 'y-or-n-p)
   #+END_SRC
@@ -75,5 +75,5 @@
   #+END_SRC
 * abbrevs
   #+BEGIN_SRC emacs-lisp
-    (setq default-abbrev-mode t)
+    (setq-default abbrev-mode t)
   #+END_SRC
