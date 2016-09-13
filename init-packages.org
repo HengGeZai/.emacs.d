@@ -103,8 +103,8 @@
                                 '((python . t)
                                   (R . t)))
                                ;; pangu-spacing-mode
-                               ;; (pangu-spacing-mode)
-                               ;; (set (make-local-variable 'pangu-spacing-real-insert-separtor) t)
+                               (pangu-spacing-mode)
+                               (set (make-local-variable 'pangu-spacing-real-insert-separtor) t)
                                ))
   #+END_SRC
 * window-numbering
