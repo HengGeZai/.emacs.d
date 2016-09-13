@@ -3,6 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(org-zotxt-default-search-method :title-creator-year)
  '(pyim-page-length 9)
  '(pyim-punctuation-dict
    (quote
