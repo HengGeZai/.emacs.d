@@ -14,7 +14,7 @@
   #+BEGIN_SRC emacs-lisp
     (ac-config-default)
     (setq ac-auto-start 2)
-    (setq ac-delay 0.1)
+    (setq ac-delay 0.01)
     (setq ac-quick-help-delay 3)
     (define-key ac-completing-map "\M-n" nil) ;; was ac-next
     (define-key ac-completing-map "\M-p" nil) ;; was ac-previous
@@ -102,11 +102,42 @@
                                 'org-babel-load-languages
                                 '((python . t)
                                   (R . t)))
+                               (setq org-confirm-babel-evaluate nil)
                                ;; pangu-spacing-mode
                                (pangu-spacing-mode)
                                (set (make-local-variable 'pangu-spacing-real-insert-separtor) t)
+                               ;; babel-default-header-args:R
+                               (setq org-babel-default-header-args:R '((:session . "*R*")
+                                            (:results . "value")
+                                            (:exports . "both")
+                                            (:cache . "yes")
+                                            (:noweb . "yes")
+                                            (:hlines . "yes")
+                                            (:tangle . "yes")))
                                ))
   #+END_SRC
+* org-ref
+  #+BEGIN_SRC emacs-lisp
+    (add-hook 'org-mode-hook
+              (lambda ()
+                ;; 加载 org-ref
+                (require 'org-ref)
+                ;; 设置 bib 文件路径
+                ;; bib 默认文件
+                (setq reftex-default-bibliography '("~/org/bib/references.bib"))
+                ;; org 设置
+                (setq org-ref-bibliography-notes "~~/org/bib/notes.org" ; notes 所在文件
+                      org-ref-default-bibliography '("~/org/bib/references.bib") ; bib 文件
+                      org-ref-pdf-directory "~~/org/bib/bibtex-pdfs/") ; pdf 所在文件夹
+                ;; bib 补全
+                (setq bibtex-completion-bibliography "~/org/bib/references.bib" ; bib 文件
+                      bibtex-completion-library-path "~/org/bib/bibtex-pdfs"    ; pdf 所在文件夹
+                      bibtex-completion-notes-path "~/org/bib/helm-bibtex-notes") ; otes 所在文件夹
+                ))
+
+
+  #+END_SRC
+
 * window-numbering
   #+BEGIN_SRC emacs-lisp
     (window-numbering-mode 1)
