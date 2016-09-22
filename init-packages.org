@@ -77,6 +77,7 @@
     ;; agenda 目录
     (setq org-agenda-files '("~/GTD"))
     (add-hook 'org-mode-hook (lambda ()
+                               (require 'org-attach-screenshot)
                                ;; 代码高亮
                                (setq org-src-fontify-natively t)
                                ;; 自动折行
@@ -107,13 +108,18 @@
                                (pangu-spacing-mode)
                                (set (make-local-variable 'pangu-spacing-real-insert-separtor) t)
                                ;; babel-default-header-args:R
-                               (setq org-babel-default-header-args:R '((:session . "*R*")
-                                            (:results . "value")
-                                            (:exports . "both")
-                                            (:cache . "yes")
-                                            (:noweb . "yes")
-                                            (:hlines . "yes")
-                                            (:tangle . "yes")))
+                               (setq org-babel-default-header-args:R
+                                     '((:session . "*R*")
+                                       (:results . "value")
+                                       (:exports . "both")
+                                       (:cache . "yes")
+                                       (:noweb . "yes")
+                                       (:hlines . "yes")
+                                       (:tangle . "yes")))
+                               ;; org 默认使用"_下标"来定义一个下标，使用"^上标"定义一个上标，
+                               ;; 这里强制使用"_{下标}"来定义一个下标。"^{上标}"来定义一个上标。
+                               (setq org-export-with-sub-superscripts '{})
+                               (setq org-use-sub-superscripts '{})
                                ))
   #+END_SRC
 * org-ref
@@ -180,14 +186,21 @@
       "ppcp" 'pyim-create-word-at-point
       "ppcs" 'pyim-create-word-from-selection
       "clt"  'chongliang/timestamp
-      "clo"  'chongliang/org-to-elc
       "<tab>" 'mode-line-other-buffer ;; switch to last buffer
       "clis" 'chongliang/isend-shell
+      "clso" 'chongliang/screenshot-outside
+      "clsi" 'chongliang/screenshot-inside
+      "cloc" 'chongliang/org-create
+      )
+    (evil-leader/set-key-for-mode 'org-mode
+      "cloe"  'chongliang/org-to-elc
       )
     (evil-leader/set-key-for-mode 'markdown-mode
-      "clrr" 'chongliang/render-rmd)
+      "clrr" 'chongliang/render-rmd
+      )
     (evil-leader/set-key-for-mode 'ess-mode
-      "clrr" 'chongliang/render-rmd)
+      "clrr" 'chongliang/render-rmd
+     )
   #+END_SRC
 * evil-surround
   #+BEGIN_SRC emacs-lisp
@@ -199,6 +212,7 @@
 * which-key
   #+BEGIN_SRC emacs-lisp
     (which-key-mode 1)
+    (setq which-key-idle-delay 0.1)
   #+END_SRC
 * helm-ag
   快捷键：file:~/.emacs.d/init-keybindings.org::helm-ag
@@ -311,7 +325,8 @@
      (defun chongliang/chinese-pyim-shift-space ()
        "全角、半角符号转换和拼音－汉字转换，整合 chinese-pyim 中的 (pyim-punctuation-translate-at-point) 和 (pyim-convert-pinyin-at-point)"
        (interactive)
-       (if (string-match (char-to-string (preceding-char)) ",./$，。、￥") ;  ",./，。、"为需要切换全角、半角的标点符号
+       (if (string-match (char-to-string (preceding-char))
+                         ",./$[]():，。、￥（）【】：") ;  ",./，。、"为需要切换全角、半角的标点符号
            (pyim-punctuation-translate-at-point)
          (pyim-convert-pinyin-at-point)))
      ;; (global-set-key (kbd "S-<SPC>") 'chongliang/chinese-pyim-shift-space)

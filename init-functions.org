@@ -1,58 +1,59 @@
 * 包管理函数
   #+BEGIN_SRC emacs-lisp
     ;; 加载源
-    (when (>= emacs-major-version 24)
-        (require 'package)
-        (package-initialize)
-        ;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t))
-        (add-to-list 'package-archives '("melpa" . "http://elpa.zilongshanren.com/melpa/") t))
+    (require 'package)
+    (package-initialize)
+    (setq package-archives
+          '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+            ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+            ("gnu-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
 
     ;; cl - Common Lisp Extension
     (require 'cl)
     (defvar chongliang/packages '(
-                     company
-                     monokai-theme
-                     hungry-delete
-                     swiper
-                     counsel
-                     smartparens
-                     exec-path-from-shell
-                     popwin
-                     expand-region
-                     iedit
-                     evil
-                     evil-leader
-                     evil-surround
-                     evil-nerd-commenter
-                     window-numbering
-                     which-key
-                     helm-ag
-                     yasnippet
-                     auto-yasnippet
-                     ess
-                     polymode
-                     r-autoyas
-                     flycheck
-                     markdown-mode
-                     auto-complete
-                     bash-completion
-                     chinese-pyim
-                     mwim
-                     electric-operator
-                     anaconda-mode
-                     company-anaconda
-                     isend
-                     ein                    ;; emacs ipython notebook
-                     pangu-spacing
-                     zotxt
-                   ) "Default packages")
+                                  company
+                                  monokai-theme
+                                  hungry-delete
+                                  swiper
+                                  counsel
+                                  smartparens
+                                  exec-path-from-shell
+                                  popwin
+                                  expand-region
+                                  iedit
+                                  evil
+                                  evil-leader
+                                  evil-surround
+                                  evil-nerd-commenter
+                                  window-numbering
+                                  which-key
+                                  helm-ag
+                                  yasnippet
+                                  auto-yasnippet
+                                  ess
+                                  polymode
+                                  r-autoyas
+                                  flycheck
+                                  markdown-mode
+                                  auto-complete
+                                  bash-completion
+                                  chinese-pyim
+                                  mwim
+                                  electric-operator
+                                  anaconda-mode
+                                  company-anaconda
+                                  isend
+                                  ein                    ;; emacs ipython notebook
+                                  pangu-spacing
+                                  zotxt
+                                  ) "Default packages")
 
     (setq package-selected-packages chongliang/packages)
 
     (defun chongliang/packages-installed-p ()
-        (loop for pkg in chongliang/packages
-              when (not (package-installed-p pkg)) do (return nil)
-              finally (return t)))
+      (loop for pkg in chongliang/packages
+            when (not (package-installed-p pkg)) do (return nil)
+            finally (return t)))
   #+END_SRC
 * 快速打开配置文件
   #+BEGIN_SRC emacs-lisp
@@ -227,9 +228,78 @@
 
 
   #+END_SRC
-* chongliang/insert-file-name-base
+* chongliang/screenshot
   #+BEGIN_SRC emacs-lisp
-    (defun chongliang/insert-file-name-base ()
-         (interactive)
-         (insert (file-name-base)))
+    (defun chongliang/screenshot (prfx)
+      "if prfx is nil, emacs is invisible while screenshot. else is visible."
+      ;; (interactive)
+      (let (
+            ;; file name output: file name and the current date and time.
+            (filename (concat (buffer-name)
+                              (format-time-string " %Y-%m-%d %H:%M:%S.png")))
+            ;; type of editing file
+            (extensionname (file-name-extension (buffer-file-name)))
+            pathname scrfilename linkfilename status)
+        ;; the path of output
+        ;; (setq pathname (concat "~/Pictures/myscreenshots/"
+        ;;                        extensionname
+        ;;                        "/"
+        ;;                        (file-name-base)
+        ;;                        "/"))
+        (setq pathname (concat (file-name-directory (buffer-file-name))
+                               "Screenshots"
+                               "/"))
+        ;; if the path isn't exist create it
+        (unless (file-exists-p pathname)
+          (dired-create-directory pathname))
+        (setq scrfilename (concat pathname filename))
+        ;; arg of import to setting output file
+        (setq linkfilename (convert-standard-filename  (expand-file-name scrfilename)))
+        ;; if prfx is nil, meke emacs invisible
+        (unless prfx (make-frame-invisible nil t))
+        ;; newline and indent
+        (newline-and-indent)
+        ;; run import to screenshot
+        (setq status (apply 'call-process "import" nil nil nil (list linkfilename)))
+        ;; if prfx is nil, make emacs visible after screenshot
+        (unless prfx (make-frame-visible))
+        ;; whether screenshot is success or not
+        (unless (equal status 0)
+          (error "screenshot command exited with status %d: %s" status
+                 (mapconcat 'identity (cons "import" (list linkfilename)) " ")))
+        (message "wrote screenshot to %s" linkfilename)
+        ;; insert screenshot depend on file type
+        (cond ((equal extensionname "org")
+               (progn (insert (concat "[[file:" linkfilename "]]"))
+                      (org-display-inline-images nil t)))
+              )
+        (newline-and-indent)))
   #+END_SRC
+** chongliang/screenshot-outside
+   #+BEGIN_SRC emacs-lisp
+     (defun chongliang/screenshot-outside ()
+       (interactive)
+       (chongliang/screenshot nil))
+   #+END_SRC
+** chongliang/screenshot-inside
+   #+BEGIN_SRC emacs-lisp
+     (defun chongliang/screenshot-inside ()
+       (interactive)
+       (chongliang/screenshot t))
+   #+END_SRC
+* chongliang/org-create
+  #+BEGIN_SRC emacs-lisp
+    (defun chongliang/org-create (chongliang/org-create-filename)
+      (interactive "sfilename: ")
+      (unless (equal (file-name-extension chongliang/org-create-filename) "org")
+        (setq chongliang/org-create-filename (concat chongliang/org-create-filename ".org")))
+      (let ((chongliang/org-create-path (concat "~/Documents/org/" chongliang/org-create-filename)))
+        (if (file-exists-p chongliang/org-create-path)
+            (find-file (concat chongliang/org-create-path "/" chongliang/org-create-filename))
+          (dired-create-directory chongliang/org-create-path)
+          (find-file (concat chongliang/org-create-path "/" chongliang/org-create-filename))
+          (insert "header")
+          (yas-expand)
+          (message "create %s" (buffer-file-name)))))
+  #+END_SRC
+
