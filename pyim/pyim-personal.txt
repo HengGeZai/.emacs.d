@@ -1,18 +1,18 @@
 ;; -*- coding: utf-8 -*-
 chu 出 处
-c 长 从 成 串 查 出 常 次 词 层 错 重 处
+c 出 吃 长 从 成 串 查 常 次 词 层 错 重 处
 jin 金 仅 今
-j 就 金 将 截 几 仅 集 见 给 键 救 及 今 即 减 机 建 洁 居 经 嘉 敬
+j 及 击 就 金 将 截 几 仅 集 见 给 键 救 今 即 减 机 建 洁 居 经 嘉 敬
 zhong 中 种 重
-z 只 再 中 之 在 长 指 则 值 种 逐 最 做 自 字 作 照 装 这 志 战 章 证 重 占 主
+z 在 左 做 只 再 中 之 长 指 则 值 种 逐 最 自 字 作 照 装 这 志 战 章 证 重 占 主
 guo 国
 g 关 国 改 该 给 各 跟 个 够
 zhong-guo 中国
 z-g 这个 整个 足够 中国
 tian 天
-t 通 它 同 头 天 条
+t 天 太 头 她 通 它 同 条
 jin-tian 今天
-j-t 今天 景天
+j-t 今天 具体 景天
 tian-qi 天气
 t-q 天气 提取
 hen-hao 很好
@@ -20,9 +20,9 @@ h-h 很好 换行
 wo 我
 w 我 为 外 无 五 文 委 喂 王
 xiang 像 想 相 项 详
-x 下 新 像 想 行 先 写 型 学 相 须 项 选 欣 详 小 性 循
+x 醒 小 下 新 像 想 行 先 写 型 学 相 须 项 选 欣 详 性 循
 dai 代 带
-d 的 得 都 到 但 代 当 第 等 大 动 对 读 端 达 订 登 多 地 段 带
+d 的 对 到 点 得 都 但 代 当 第 等 大 动 读 端 达 订 登 多 地 段 带
 lao-po 老婆
 l-p 老婆
 chu-qu 出去
@@ -31,14 +31,14 @@ jiao-wai 郊外
 j-w 结尾 郊外 居委
 wan-shua 玩耍
 w-s 玩耍
-yao 要
-y 用 源 云 也 以 由 有 与 于 要 一 应 原 乐 月 颖 因 运 椅 元 议 样 右 异 已 预
+yao 要 摇
+y 又 要 摇 用 源 云 也 以 由 有 与 于 一 应 原 乐 月 颖 因 运 椅 元 议 样 右 异 已 预
 qu 去 取 区
 q 墙 其 前 去 取 区 期 气 圈 浅
 mai 买
 m 码 名 末 买 猫 每 敏
 hong 红
-h 会 后 侯 和 化 或 行 号 话 好 很 回 华 红
+h 很 会 后 侯 和 化 或 行 号 话 好 回 华 红
 jing-tian 景天
 hong-jing-tian 红景天
 h-j-t 红景天
@@ -46,12 +46,12 @@ hao 号 好
 wu 无 五
 yun 云 运
 liu 六 流
-l 了 立 炼 量 来 略 列 类 例 令 漏 乐 梁 篮 六 冷 两 流 龙 黎 礼
+l 了 拉 立 炼 量 来 略 列 类 例 令 漏 乐 梁 篮 六 冷 两 流 龙 黎 礼
 qi 其 期 气
 wu-yun-liu-qi 五运六气
 w-y-l-q 五运六气
 yun-qi 运气
-y-q 运气 有趣 一起
+y-q 一圈 运气 有趣 一起
 xue-shuo 学说
 x-s 形式 相似 相使 相识 显示 学说
 yun-qi-xue-shuo 运气学说
@@ -68,7 +68,7 @@ li-jing-bo 黎敬波
 l-j-b 黎敬波
 liang 量 梁 两
 keng 铿
-k 课 会 空 快 开 库 看 可 铿
+k 库 会 课 空 快 开 看 可 铿
 liang-li-keng 梁礼铿
 l-l-k 梁礼铿
 hua 化 话 华
@@ -82,27 +82,27 @@ jia 嘉
 min 敏
 long-jia-min 龙嘉敏
 l-j-m 龙嘉敏
-zai 再 在
+zai 在 再
 bang 帮
-ji 几 集 给 及 即 机
+ji 及 击 几 集 给 即 机
 gei 给
 wei 为 委 喂
 nai 奶
-n 内 年 拿 您 能 奶
+n 奶 内 年 拿 您 能
 wei-nai 喂奶
 w-n 喂奶
 zhong-yi 中医
-z-y 只要 在于 注意 这样 只有 摘要 这一 主要 中英 重要 这也 座椅 自由 中医
+z-y 主要 左右 只要 在于 注意 这样 只有 摘要 这一 中英 重要 这也 座椅 自由 中医
 shi 是 时 使
-s 是 上 时 数 四 设 三 使 所 圣 思 苏 森 生 说 算 尚 首 水 硕
+s 帅 是 时 说 睡 上 数 四 设 三 使 所 圣 思 苏 森 生 算 尚 首 水 硕
 yi-men 一门
 y-m 源码 以免 岳母 一门
 huo 和 或
 he 和
 yi-yang 一样
-y-y 原因 由于 一样 用于 运用 意义 引用 游泳 应用 有用 一眼
+y-y 引用 原因 由于 一样 用于 运用 意义 游泳 应用 有用 一眼
 ren 人
-r 入 如 让 柔 人
+r 如 入 让 柔 人
 ying-ge-lan 英格兰
 y-g-l 英格兰
 wo-men 我们
@@ -113,7 +113,7 @@ yi-yan 一眼
 yang 样
 ye 也
 shi-yong 使用 实用
-s-y 所以 所有 使用 苏颖 实用
+s-y 苏颖 所以 所有 使用 实用
 yi-ge 一个
 y-g 一个 一共 应该 有关 攸关
 yu 与 于 预
@@ -150,7 +150,7 @@ z-x 最小 整形 只想 这些 最先 自行 执行 逐行
 ren-he 任何
 r-h 然后 任何
 te-shu 特殊
-t-s 调试 同时 同事 提示 特殊
+t-s 提示 调试 同时 同事 特殊
 de 的 得
 cao-zuo 操作
 c-z 存在 操作 查找
@@ -159,7 +159,7 @@ diao-yong 调用
 d-y 第一 调用 对于 打印 定义 等于 大于 单元 都有
 tiao-yong 调用
 t-y 同样 调用 统一
-ta 它
+ta 她 它
 kuai 会 快
 hui 会 回
 zi-dong 自动
@@ -190,11 +190,11 @@ jiao-zuo 叫做
 j-z 加载 句子 叫做 机战
 bao-han 包含
 b-h 不会 包含 编号
-zhe-shi 这时 这是
-z-s 这时 这是 注释 只是 整数
+zhe-shi 这是 这时
+z-s 这是 这时 注释 只是 整数
 you-yu 由于
-ta-men 它们
-t-m 条目 它们 天猫
+ta-men 她们 它们
+t-m 她们 条目 它们 天猫
 wang-wang 往往
 w-w 往往
 bei 被
@@ -205,7 +205,7 @@ q-s 缺少 缺失 起始
 lei-xing 类型
 l-x 类型 联系 连续 两项
 yue-ding 约定
-y-d 用到 一旦 要点 有待 移动 约定
+y-d 移动 用到 一旦 要点 有待 约定
 shuo-ming 说明
 s-m 数目 使命 说明 声母 数码 声明
 jiu-shi 旧式
@@ -229,7 +229,7 @@ bu-shi 不是
 b-s 表示 标识 不是
 te-xing 特性
 t-x 通信 特性
-ru 入 如
+ru 如 入
 ming-cheng 名称
 m-c 名称
 kong-jian 空间
@@ -260,12 +260,12 @@ kai-tong 开通
 k-t 开头 开通
 yun-yong 运用
 yu-ju 语句
-y-j 语句 已经 研究 以及
+y-j 以及 语句 已经 研究
 ming-ming 命名
 m-m 命名 妈咪 妈妈
 ze 则
 zuo-wei 作为 做为
-z-w 作为 掌握 中文 周围 做为
+z-w 昨晚 作为 掌握 中文 周围 做为
 yi-xia 以下
 liang-duan 两端 两段
 l-d 两端 两段
@@ -277,7 +277,7 @@ duan 端 段
 zhi 只 之 指 值 志
 sheng-ming 声明
 xu-yao 需要
-x-y 相应 需要 现有 小于
+x-y 需要 相应 现有 小于
 yong 用
 da 大 达
 xiang-mu 项目
@@ -287,11 +287,11 @@ s-h 时候 上海
 tui-jian 推荐
 t-j 添加 统计 推荐
 zhe-zhong 这种
-z-z 最终 这种 正则 症状
+z-z 整整 自主 最终 这种 正则 症状
 zuo-fa 做法
 z-f 字符 做法
 xiao-xi 消息
-x-x 学习 信息 小型 想像 详细 消息 相须
+x-x 信息 学习 小型 想像 详细 消息 相须
 fu-zhi 赋值
 cha-ru 插入
 c-r 插入
@@ -300,7 +300,7 @@ y-s-f 运算符
 lian-jie 链接 连接
 l-j 路径 链接 连接 了解 立即
 zhi-jian 之间
-z-j 自己 追加 之间 中间 最近 字节 组件 增强 针灸 纸巾
+z-j 自己 追加 之间 中间 最近 字节 组件 增强 针灸 纸巾 左击
 ye-shi 也是
 y-s 压缩 优势 艺术 也是 有时
 hu-xiang 互相
@@ -338,7 +338,7 @@ qian 前 浅
 shua-xin 刷新
 s-x 实现 缩写 顺序 刷新
 shu-chu 输出
-s-c 删除 输出 生成 首次
+s-c 输出 删除 生成 首次
 jiang 将
 li-ji 立即
 xian-shi 显示
@@ -370,7 +370,7 @@ ti-shi 提示
 yuan-dai-ma 源代码
 y-d-m 源代码
 ge-shi 格式
-g-s 改善 格式
+g-s 格式 改善
 ge-shi-hua 格式化
 g-s-h 格式化
 jie-shu 结束
@@ -393,8 +393,8 @@ you-zhu-yu 有助于
 y-z-y 有助于
 ti-gao 提高
 cheng-du 程度
-c-d 传递 长度 成对 词典 重点 程度
-xing 行 型 性
+c-d 菜单 传递 长度 成对 词典 重点 程度
+xing 醒 行 型 性
 ke 课 可
 du 都 读
 dou 都
@@ -444,11 +444,11 @@ fu-ze 负责
 fen-pei 分配
 f-p 分配
 biao-ji 标记
-b-j 比较 标记 半角
+b-j 笔记 比较 标记 半角
 xi-jie 细节
 ran-hou 然后
 yong-lai 用来
-y-l 依赖 用来 一来 医疗 原理 一列
+y-l 原来 依赖 用来 一来 医疗 原理 一列
 wei-shen-me 为什么
 w-s-m 为什么
 bi-xu 必须
@@ -472,10 +472,10 @@ c-e 从而
 jian-shao 减少
 chu-cuo 出错
 tong-chang 通常
-t-c 填充 提出 推车 通常
+t-c 弹出 填充 提出 推车 通常
 shou-ci 首次
 lian-xu 连续
-you 由 有 右
+you 又 由 有 右
 yi-xiang 一项
 xun-chang 寻常
 x-c 选词 寻常
@@ -486,7 +486,7 @@ hua-yang 花样
 h-y 含有 婚宴 汉语 花样
 xing-shi 形式
 shu-zi 数字
-s-z 设置 数值 数字 所在
+s-z 设置 实在 数值 数字 所在
 cheng 成
 da-yin 打印
 xia-mian 下面
@@ -584,11 +584,11 @@ f-s 方式 负数 副食 发送
 yuan-xing 原形 圆形
 tian-jia 添加
 wei-zhi 位置
-w-z 网站 网址 位置 完整
+w-z 文章 网站 网址 位置 完整
 quan-ju 全局
 q-j 全角 全局
 mo-shi 模式
-m-s 模式
+m-s 马上 模式
 zheng-zhuang 症状
 ge-ge 各个
 g-g 各个
@@ -602,7 +602,7 @@ feng 风
 f 非 分 负 风
 leng 冷
 huo-dong 活动
-shui 水
+shui 睡 水
 jian-suo 检索
 guang-biao 光标
 g-b 光标 关闭
@@ -626,10 +626,10 @@ b-e 布尔
 ru-guo 如果
 r-g 如果 若干
 shi-bai 失败
-s-b 识别 失败
+s-b 鼠标 识别 失败
 cuo 错
 bao-cuo 报错
-b-c 报错 保存 补充
+b-c 不错 报错 保存 补充
 zhi-lei 之类
 ji-ge 几个
 j-g 结果 坚果 间隔 几个
@@ -638,7 +638,7 @@ fu 负
 fan-xiang 反向
 f-x 分析 发现 反向
 dang-cheng 当成
-d-c 单词 当成
+d-c 导出 单词 当成
 yi-dong 移动
 bing 并
 zheng-ze 正则
@@ -723,7 +723,7 @@ qie-huan 切换
 q-h 其后 切换
 bi-jiao 比较
 liu-chang 流畅
-l-c 流畅
+l-c 流程 流畅
 ling 令
 ci-wai 此外
 hai-neng 还能
@@ -733,7 +733,7 @@ gou 够
 wan-mei 完美
 zheng-he 整合
 liang-hao 良好
-l-h 联合 良好 量化
+l-h 灵活 联合 良好 量化
 yao-dian 要点
 an-zhuang 安装
 a-z 安装 安扎 按照
@@ -833,7 +833,7 @@ b-b-s 并不是
 sheng-mu 声母
 hen 很
 gong-neng 功能
-g-n 国内 功能
+g-n 功能 国内
 zuo-ce 左侧
 ruo-gan 若干
 bian-wei 变为
@@ -900,7 +900,7 @@ liu-qi 六气
 l-q 六气
 hen-hao-yong 很好用
 h-h-y 很好用
-zuo 做 作
+zuo 左 做 作
 xin-ku 辛苦
 pu 普
 p 盘 屏 排 普
@@ -1288,7 +1288,7 @@ b-c-z 不存在
 bu-hui 不会
 qing-kuai 轻快
 xiang-fan 相反
-x-f 相反
+x-f 下方 幸福 相反
 wen-jian-ming 文件名
 w-j-m 文件名
 an-zhao 按照
@@ -1317,7 +1317,7 @@ dan 但
 quan-bu 全部
 dan-du 单独
 cai-neng 才能
-c-n 才能
+c-n 才能 吃奶
 chuan-di 传递
 zui-zhong 最终
 zhi-dai 只待 指代
@@ -1372,3 +1372,34 @@ xiang-ying 相应
 zhi-yao 只要
 cheng-gong 成功
 c-g 成功
+zi-zhu 自主
+zheng-zheng 整整
+yi-quan 一圈
+yuan-lai 原来
+yue-lai-yue 越来越
+y-l-y 越来越
+ling-huo 灵活
+la 拉
+zuo-wan 昨晚
+dian 点
+zuo-you 左右
+chi 吃
+chi-nai 吃奶
+ma-shang 马上
+shi-zai 实在
+tai 太
+xing-fu 幸福
+xia-fang 下方
+ju-ti 具体
+shu-biao 鼠标
+zuo-ji 左击
+tan-chu 弹出
+cai-dan 菜单
+dao-chu 导出
+wen-zhang 文章
+wen-xian-ku 文献库
+w-x-k 文献库
+bi-ji 笔记
+liu-cheng 流程
+shuai 帅
+bu-cuo 不错

@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: readcsv1
-# key: readcsv1
-# --
-${1:name} <- read.csv("${2:file.name}", header = ${3:T}, stringsAsFactors = ${4:F})$0
