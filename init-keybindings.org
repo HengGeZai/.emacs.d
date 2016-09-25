@@ -98,10 +98,23 @@
     ;; set ess assign key
     (add-hook 'ess-mode-hook
               '(lambda()
+                 ;; set ess assign key
                  (setq ess-S-assign-key (kbd "M--"))
                  (ess-toggle-S-assign-key t) ; enable above key definition
-                 ;; leave my underscore key alone!
-                 (ess-toggle-underscore nil)
+                 (ess-toggle-underscore nil);; leave my underscore key alone!
+                 ;; my ess-eval key
+                 (local-set-key (kbd "C-<return>") 'chongliang/ess-eval-line-or-region)))
+  #+END_SRC
+** inferior-ess-mode
+  #+BEGIN_SRC emacs-lisp
+    ;; set ess assign key
+    (add-hook 'inferior-ess-mode-hook
+              '(lambda()
+                 ;; ess assign key
+                 (setq ess-S-assign-key (kbd "M--"))
+                 (ess-toggle-S-assign-key t) ; enable above key definition
+                 (ess-toggle-underscore nil) ;; leave my underscore key alone!
+                 ;; my ess-eval key
                  (local-set-key (kbd "C-<return>") 'chongliang/ess-eval-line-or-region)))
   #+END_SRC
 * r-autoyas
@@ -159,6 +172,8 @@
      (define-key evil-insert-state-map (kbd "M-m clso")  #'chongliang/screenshot-outside)
      ;; screenshot inside emacs
      (define-key evil-insert-state-map (kbd "M-m clsi")  #'chongliang/screenshot-inside)
+     ;; youdao dict online
+     (define-key evil-insert-state-map (kbd "M-m cldy")  #'chongliang/dict-youdao)
    #+END_SRC
 * iedit-mode
   #+BEGIN_SRC emacs-lisp

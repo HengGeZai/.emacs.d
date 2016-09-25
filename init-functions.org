@@ -302,4 +302,17 @@
           (yas-expand)
           (message "create %s" (buffer-file-name)))))
   #+END_SRC
-
+  
+* chongliang/dict-youdao
+  #+BEGIN_SRC emacs-lisp
+    (defun chongliang/dict-youdao (query)
+      "Show the explanation of QUERY from Youdao dictionary."
+      (interactive
+       (let* ((string (or (if (use-region-p)
+                              (buffer-substring
+                               (region-beginning) (region-end))
+                            (thing-at-point 'word))
+                          (read-string "Search Youdao Dictionary: " nil 'youdao-dictionary-history))))
+         (list string)))
+      (switch-to-buffer-other-window (eww (concat "http://www.youdao.com/w/" query))))
+  #+END_SRC

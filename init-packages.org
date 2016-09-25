@@ -77,7 +77,7 @@
     ;; agenda 目录
     (setq org-agenda-files '("~/GTD"))
     (add-hook 'org-mode-hook (lambda ()
-                               (require 'org-attach-screenshot)
+                               ;; (require 'org-attach-screenshot)
                                ;; 代码高亮
                                (setq org-src-fontify-natively t)
                                ;; 自动折行
@@ -130,15 +130,15 @@
                 (require 'org-ref)
                 ;; 设置 bib 文件路径
                 ;; bib 默认文件
-                (setq reftex-default-bibliography '("~/org/bib/references.bib"))
+                (setq reftex-default-bibliography '("~/Documents/org/bib/references.bib"))
                 ;; org 设置
-                (setq org-ref-bibliography-notes "~~/org/bib/notes.org" ; notes 所在文件
-                      org-ref-default-bibliography '("~/org/bib/references.bib") ; bib 文件
-                      org-ref-pdf-directory "~~/org/bib/bibtex-pdfs/") ; pdf 所在文件夹
+                (setq org-ref-bibliography-notes "~~/Documents/org/bib/notes.org" ; notes 所在文件
+                      org-ref-default-bibliography '("~/Documents/org/bib/references.bib") ; bib 文件
+                      org-ref-pdf-directory "~~/Documents/org/bib/bibtex-pdfs/") ; pdf 所在文件夹
                 ;; bib 补全
-                (setq bibtex-completion-bibliography "~/org/bib/references.bib" ; bib 文件
-                      bibtex-completion-library-path "~/org/bib/bibtex-pdfs"    ; pdf 所在文件夹
-                      bibtex-completion-notes-path "~/org/bib/helm-bibtex-notes") ; otes 所在文件夹
+                (setq bibtex-completion-bibliography "~/Documents/org/bib/references.bib" ; bib 文件
+                      bibtex-completion-library-path "~/Documents/org/bib/bibtex-pdfs"    ; pdf 所在文件夹
+                      bibtex-completion-notes-path "~/Documents/org/bib/helm-bibtex-notes") ; otes 所在文件夹
                 ))
 
 
@@ -191,6 +191,7 @@
       "clso" 'chongliang/screenshot-outside
       "clsi" 'chongliang/screenshot-inside
       "cloc" 'chongliang/org-create
+      "cldy" 'chongliang/dict-youdao
       )
     (evil-leader/set-key-for-mode 'org-mode
       "cloe"  'chongliang/org-to-elc
