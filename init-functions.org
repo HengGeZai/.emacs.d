@@ -236,7 +236,7 @@
       (let (
             ;; file name output: file name and the current date and time.
             (filename (concat (buffer-name)
-                              (format-time-string " %Y-%m-%d %H:%M:%S.png")))
+                              (format-time-string " %Y-%m-%d %H%M%S.png")))
             ;; type of editing file
             (extensionname (file-name-extension (buffer-file-name)))
             pathname scrfilename linkfilename status)
