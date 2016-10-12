@@ -15,11 +15,11 @@
 * 函数、变量、快捷键的帮助
   #+BEGIN_SRC emacs-lisp
     ;; function
-    (global-set-key (kbd "C-h C-f") 'find-function)
+    ;; (global-set-key (kbd "C-h C-f") 'find-function)
     ;; variable
-    (global-set-key (kbd "C-h C-v") 'find-variable)
+    ;; (global-set-key (kbd "C-h C-v") 'find-variable)
     ;; key
-    (global-set-key (kbd "C-h C-k") 'find-function-on-key)
+    ;; (global-set-key (kbd "C-h C-k") 'find-function-on-key)
   #+END_SRC
 * 自动缩进
   #+BEGIN_SRC emacs-lisp
@@ -33,8 +33,14 @@
      (global-set-key (kbd "C-x C-f") 'counsel-find-file)
      ;; describe-function
      (global-set-key (kbd "C-h f") 'counsel-describe-function)
+     ;; (if (not (display-graphic-p))
+     ;;     (global-set-key (kbd "C-x C-h f") 'counsel-describe-function)
+     ;;   (global-set-key (kbd "C-h f") 'counsel-describe-function))
      ;; describe-variable
      (global-set-key (kbd "C-h v") 'counsel-describe-variable)
+     ;; (if (not (display-graphic-p))
+     ;;     (global-set-key (kbd "C-x C-h v") 'counsel-describe-variable)
+     ;;   (global-set-key (kbd "C-h v") 'counsel-describe-variable))
      ;; imenu
      (global-set-key (kbd "M-s i") 'counsel-imenu)
      ;; git
@@ -101,19 +107,15 @@
                  ;; set ess assign key
                  (setq ess-S-assign-key (kbd "M--"))
                  (ess-toggle-S-assign-key t) ; enable above key definition
-                 (ess-toggle-underscore nil);; leave my underscore key alone!
+                 (ess-toggle-underscore nil) ; leave my underscore key alone!
                  ;; my ess-eval key
-                 (local-set-key (kbd "C-<return>") 'chongliang/ess-eval-line-or-region)))
+                 (local-set-key (kbd "C-RET") 'chongliang/ess-eval-line-or-region)))
   #+END_SRC
 ** inferior-ess-mode
   #+BEGIN_SRC emacs-lisp
     ;; set ess assign key
     (add-hook 'inferior-ess-mode-hook
               '(lambda()
-                 ;; ess assign key
-                 (setq ess-S-assign-key (kbd "M--"))
-                 (ess-toggle-S-assign-key t) ; enable above key definition
-                 (ess-toggle-underscore nil) ;; leave my underscore key alone!
                  ;; my ess-eval key
                  (local-set-key (kbd "C-<return>") 'chongliang/ess-eval-line-or-region)))
   #+END_SRC
@@ -206,4 +208,8 @@
 * chongliang/screenshots-outside
   #+BEGIN_SRC emacs-lisp
     (global-set-key (kbd "C-M-p") 'chongliang/screenshot-outside)
+  #+END_SRC
+* switch to buffer
+  #+BEGIN_SRC emacs-lisp
+    (global-set-key (kbd "C-M-b") 'ivy-switch-buffer)
   #+END_SRC
