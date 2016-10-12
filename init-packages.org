@@ -92,11 +92,12 @@
                                (setq org-default-notes-file (concat org-directory "/GTD/notes.org"))
                                (define-key global-map [f12] 'org-capture)
                                (setq org-capture-templates
-                                     '(("w" "Work-Tasks-TODO"     entry (file+headline "~/GTD/Work.org" "Tasks")     "* TODO %?\n  %i  %T")
-                                       ("h" "Home-Tasks-TODO"     entry (file+headline "~/GTD/Home.org" "Tasks")     "* TODO %?\n  %i  %T")
-                                       ("f" "Finacy-Tasks-TODO"   entry (file+headline "~/GTD/Finacy.org" "Tasks")   "* TODO %?\n  %i  %T")
-                                       ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i  %T")
-                                       ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i  %T")
+                                     '(("w" "Work-Tasks-TODO"     entry (file+headline "~/GTD/Work.org" "Tasks")     "* TODO %?\n  %i # create at %T")
+                                       ("s" "Study-Tasks-TODO"     entry (file+headline "~/GTD/Study.org" "Tasks")     "* TODO %?\n  %i # create at %T")
+                                       ("h" "Home-Tasks-TODO"     entry (file+headline "~/GTD/Home.org" "Tasks")     "* TODO %?\n  %i # create at %T")
+                                       ("f" "Finacy-Tasks-TODO"   entry (file+headline "~/GTD/Finacy.org" "Tasks")   "* TODO %?\n  %i # create at %T")
+                                       ("p" "Personal-Tasks-TODO" entry (file+headline "~/GTD/Personal.org" "Tasks")  "* TODO %?\n  %i # create at %T")
+                                       ("c" "Computer-Tasks-TODO" entry (file+headline "~/GTD/Computer.org" "Tasks") "* TODO %?\n  %i # create at %T")
                                        ))
                                ;; 添加 Babel 编译的语言
                                (org-babel-do-load-languages
@@ -120,6 +121,42 @@
                                ;; 这里强制使用"_{下标}"来定义一个下标。"^{上标}"来定义一个上标。
                                (setq org-export-with-sub-superscripts '{})
                                (setq org-use-sub-superscripts '{})
+                               ;; 基于 latex 的 pdf 中文输出
+                               ;; 添加 latex 输出引擎
+                               (add-to-list 'org-latex-classes
+                                            '("ctexart"
+                                              "\\documentclass[UTF8]{ctexart}"
+                                              ("\\section{%s}" . "\\section*{%s}")
+                                              ("\\subsection{%s}" . "\\subsection*{%s}")
+                                              ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                                              ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                                              ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+                               (add-to-list 'org-latex-classes
+                                            '("ctexrep" "\\documentclass[UTF8]{ctexrep}"
+                                              ("\\part{%s}" . "\\part*{%s}")
+                                              ("\\chapter{%s}" . "\\chapter*{%s}")
+                                              ("\\section{%s}" . "\\section*{%s}")
+                                              ("\\subsection{%s}" . "\\subsection*{%s}")
+                                              ("\\subsubsection{%s}" . "\\subsubsection*{%s}")))
+                               (add-to-list 'org-latex-classes
+                                            '("ctexbook" "\\documentclass[UTF8]{ctexbook}"
+                                              ("\\part{%s}" . "\\part*{%s}")
+                                              ("\\chapter{%s}" . "\\chapter*{%s}")
+                                              ("\\section{%s}" . "\\section*{%s}")
+                                              ("\\subsection{%s}" . "\\subsection*{%s}")
+                                              ("\\subsubsection{%s}" . "\\subsubsection*{%s}")))
+                               ;; 默认文档类型设置为 ctexart
+                               (setq org-latex-default-class "ctexart")
+                               ;; 修改 latex 默认编译方式
+                               (setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f" ;用于输出中文
+                                                             "bibtex %b" ;用于输出参考文献
+                                                             "xelatex -interaction nonstopmode %f"
+                                                             "xelatex -interaction nonstopmode %f"))
+                               ;; delete default byperref setting
+                               (delete '("" "hyperref" nil) org-latex-default-packages-alist)
+                               ;; add new hyperref format
+                               (add-to-list 'org-latex-default-packages-alist
+                                            '("colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green" "hyperref" nil))
                                ))
   #+END_SRC
 * org-ref
@@ -140,8 +177,6 @@
                       bibtex-completion-library-path "~/Documents/org/bib/bibtex-pdfs"    ; pdf 所在文件夹
                       bibtex-completion-notes-path "~/Documents/org/bib/helm-bibtex-notes") ; otes 所在文件夹
                 ))
-
-
   #+END_SRC
 
 * window-numbering
@@ -363,4 +398,10 @@
     (require 'ein)
     (add-hook 'ein-mode-hook 'anaconda-mode)
     (add-hook 'ein-mode-hook 'anaconda-eldoc-mode)
+  #+END_SRC
+* csv-mode
+  #+BEGIN_SRC emacs-lisp
+    (add-hook 'csv-mode-hook
+              (lambda ()
+                (csv-align-fields nil (point-min) (point-max))))
   #+END_SRC
