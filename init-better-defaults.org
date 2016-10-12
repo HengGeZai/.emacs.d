@@ -77,3 +77,9 @@
   #+BEGIN_SRC emacs-lisp
     (setq-default abbrev-mode t)
   #+END_SRC
+* ssh 终端下的 Backspace key
+  #+BEGIN_SRC emacs-lisp
+    ;; (if (not (display-graphic-p))
+    ;;     (global-set-key [(control ?h)] 'delete-backward-char))
+  #+END_SRC
+
