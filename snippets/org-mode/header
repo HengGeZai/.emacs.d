@@ -8,3 +8,10 @@
 #+DATE: `(format-time-string "<%Y-%m-%d %a>")`
 #+EMAIL: 231111669@qq.com
 $0
+
+
+* References
+bibliography:~/Documents/org/bib/references.bib
+bibliographystyle:gbt7714-2005
+#bibliographystyle-chinese: gbt7714-2005 gbt-7714-2015-author-year gbt-7714-2015-numerical
+#bibliographystyle: abbrv acm alpha apalike ieeetr plain unsrt
