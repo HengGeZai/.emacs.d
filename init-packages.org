@@ -186,6 +186,9 @@
 * Evil-mode
   快捷键：file:~/.emacs.d/init-keybindings.org::Evil-mode
   #+BEGIN_SRC emacs-lisp
+    (if (not (display-graphic-p))
+        (setq evil-want-C-i-jump nil) ;; fix TAB key function in org-mode when in terminal emacs
+      )
     (evil-mode 1)
     (setcdr evil-insert-state-map nil)
     (define-key evil-insert-state-map [escape] 'evil-normal-state)
