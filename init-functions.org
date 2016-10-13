@@ -262,7 +262,7 @@
         ;; run import to screenshot
         (setq status (apply 'call-process "import" nil nil nil (list linkfilename)))
         ;; if prfx is nil, make emacs visible after screenshot
-        (unless prfx (make-frame-visible))
+        (unless prfx (make-frame-visible nil))
         ;; whether screenshot is success or not
         (unless (equal status 0)
           (error "screenshot command exited with status %d: %s" status
