@@ -210,23 +210,28 @@
                  (defun chongliang/render-rmd ()
                    (interactive)
                    (save-buffer)
-                   (let (file-name file-name2)
+                   (let (file-name file-name2 point-start)
                      (setq file-name (buffer-file-name))
                      (setq file-name-2 (substring file-name 0 (- (length file-name) 4)))
                      (save-window-excursion
                        (ess-switch-to-ESS t)
+                       (ess-switch-to-end-of-ESS)
+                       (setq point-start (point))
                        (insert (format "rmarkdown::render(\"%s\")" file-name))
                        (inferior-ess-send-input)
                        (ess-wait-for-process)
                        (end-of-buffer)
-                       (cond ((re-search-backward ".pdf" (- (point-max) 50) t)
+                       (cond ((re-search-backward ".pdf" point-start t)
                               (shell-command (format "firefox %s.pdf" file-name-2)))
-                             ((re-search-backward ".html" (- (point-max) 50) t)
+                             ((re-search-backward ".html" point-start t)
                               (shell-command (format "firefox %s.html" file-name-2)))
                              (t (message "error in rendering"))))))
+                       ;; (cond ((re-search-backward ".pdf" (- (point-max) 200) t)
+                       ;;        (shell-command (format "firefox %s.pdf" file-name-2)))
+                       ;;       ((re-search-backward ".html" (- (point-max) 200) t)
+                       ;;        (shell-command (format "firefox %s.html" file-name-2)))
+                       ;;       (t (message "error in rendering"))))))
                  ))
-
-
   #+END_SRC
 * chongliang/screenshot
   #+BEGIN_SRC emacs-lisp
@@ -302,7 +307,7 @@
           (yas-expand)
           (message "create %s" (buffer-file-name)))))
   #+END_SRC
-  
+
 * chongliang/dict-youdao
   #+BEGIN_SRC emacs-lisp
     (defun chongliang/dict-youdao (query)
