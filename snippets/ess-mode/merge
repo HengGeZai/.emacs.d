@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: merge
+# key: merge
+# --
+merge(x = $1, y= $2, by = $3, all = $4)$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: %in%
+# key: in
+# --
+${1:a} %in% ${2:b}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+/*shapes: box polygon ellipse point egg triangle diamond
+          trapezium parallelogram hexagon octagon doublecircle
+          tripleoctagon invtriangle invtrapezium */
+
+digraph ${1:G}{
+  $0
+}

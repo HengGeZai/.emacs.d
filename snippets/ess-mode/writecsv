@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: writecsv
+# key: writecsv
+# --
+write.csv(${1:data}, \"${2:file.name}\", row.names = F)

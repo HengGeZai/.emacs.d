@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: as.data.frame
+# key: as.data.frame
+# --
+as.data.frame($1, stringsAsFactors = F)$0

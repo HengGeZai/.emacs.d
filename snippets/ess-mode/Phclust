@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: Phclust
+# key: Phclust
+# --
+# hclust
+
+## hclust.data
+${1:hclust.data} = $2 $0
+
+## dist
+hclust.dist.method <- c(m.1 = "euclidean", m.2 = "maximum", m.3 = "manhattan",
+                          m.4 = "canberra", m.5 = "binary", m.6 = "minkowski")
+
+${3:hclust.dist} = dist($1, method = hclust.dist.method[$4])
+heatmap(as.matrix($3),labRow = F, labCol = F)
+
+## hclust and plot
+hclust.method <- c(m.1 = "ward.D", m.2 = "ward.D2", m.3 = "single", m.4 = "complete", m.5 = "average", m.6 = "mcquitty", m.7 = "median", m.8 = "centroid")
+
+${5:hclust.result} = hclust($3, method = hclust.method[$6])
+plot($5)
+
+## cut tree
+${7:hclust.cutree} <- cutree($5, k = $7)

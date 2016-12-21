@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: spl
+# key: spl
+# --
+/*none line polyline curved ortho spline*/
+splines = ${1:ortho}

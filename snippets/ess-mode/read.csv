@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: read.csv
+# key: readcsv
+# --
+read.csv(\"${1:filename}\", header = ${2:T}, stringsAsFactors = ${3:F}, skip = 0, nrows = -1, fill = T)$0

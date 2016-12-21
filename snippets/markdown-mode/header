@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+---
+title: $1
+author: ${2:chongliang}
+output:
+  word_document:  ## odt_document html_document
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+classoption: "hyperref,"
+---
+
+# $0

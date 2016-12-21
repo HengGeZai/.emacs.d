@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: set chinese font
+# key: chinese
+# --
+                                        # set chinese font
+library(showtext)
+font.add("ukai", regular = "ukai.ttc")
+my.font <- "ukai"
+showtext.auto()
+
