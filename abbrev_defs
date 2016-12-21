@@ -105,6 +105,8 @@
     ("cl" "chongliang" nil 0)
     ("qq23" "231111669@qq.com" nil 0)
     ("qq52" "52655367@qq.com" nil 0)
+    ("ip192" "192.168.1" nil 1)
+    ("dnsd" "dragonlk0.eicp.net" nil 1)
    ))
 
 (define-abbrev-table 'helm-major-mode-abbrev-table '())

@@ -46,6 +46,8 @@
                                   ein                    ;; emacs ipython notebook
                                   pangu-spacing
                                   zotxt
+                                  org-ref
+                                  graphviz-dot-mode
                                   ) "Default packages")
 
     (setq package-selected-packages chongliang/packages)
@@ -164,10 +166,10 @@
                    (interactive
                     (let ((src-code-types
                            '("emacs-lisp" "python" "C" "sh" "java" "js" "clojure" "C++" "css"
-                             "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
+                             "calc" "asymptote" "graphviz-dot" "gnuplot" "ledger" "lilypond" "mscgen"
                              "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
                              "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
-                             "scheme" "sqlite" "shell")))
+                             "scheme" "sqlite")))
                       (list (ido-completing-read "Source code type: " src-code-types))))
                    (progn
                      (newline-and-indent)
@@ -225,6 +227,8 @@
                               (shell-command (format "firefox %s.pdf" file-name-2)))
                              ((re-search-backward ".html" point-start t)
                               (shell-command (format "firefox %s.html" file-name-2)))
+                             ((re-search-backward ".odt" point-start t)
+                              (shell-command (format "firefox %s.odt" file-name-2)))
                              (t (message "error in rendering"))))))
                        ;; (cond ((re-search-backward ".pdf" (- (point-max) 200) t)
                        ;;        (shell-command (format "firefox %s.pdf" file-name-2)))

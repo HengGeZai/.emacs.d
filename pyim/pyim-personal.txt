@@ -1,221 +1,221 @@
 ;; -*- coding: utf-8 -*-
 chu 出 处
-c 吃 馋 层 成 出 长 从 串 查 常 次 词 错 重 处
-jin 金 仅 今
-j 叫 脚 就 将 接 见 交 教 给 及 击 金 截 几 仅 集 键 救 今 即 减 机 建 洁 居 经 嘉 敬
+c 超 参 炒 出 层 呈 侧 次 词 晨 错 成 曾 差 从 促 池 长 朝 查 吃 馋 串 常 重 处
+jin 近 今 进 金 仅
+j 经 奖 近 及 建 机 即 件 减 就 九 见 今 阶 几 较 脚 间 菌 降 结 将 进 积 卷 均 集 夹 价 叫 接 交 教 给 击 金 截 仅 键 救 洁 居 嘉 敬
 zhong 中 种 重
-z 着 在 嘴 中 则 这 症 自 做 最 左 只 再 之 长 指 值 种 逐 字 作 照 装 志 战 章 证 重 占 主
+z 在 总 之 主 中 值 这 则 再 组 折 最 找 置 转 左 证 症 只 字 自 暂 周 种 长 纸 朝 嘴 张 指 直 着 做 逐 作 照 装 志 战 章 重 占
 guo 过 国
-g 过 个 跟 公 该 改 国 给 乖 关 各 够
+g 各 工 个 过 咯 感 干 共 公 高 根 该 更 跟 改 国 给 乖 关 够
 zhong-guo 中国
-z-g 整个 这个 足够 中国
-tian 填 天
-t 她 头 图 填 题 天 太 通 它 同 条
+z-g 这个 整个 足够 中国
+tian 天 填
+t 调 痰 天 同 痛 涕 头 图 它 她 填 题 太 通 条
 jin-tian 今天
-j-t 今天 具体 景天
+j-t 具体 今天 截图 箭头 景天
 tian-qi 天气
-t-q 天气 提取
+t-q 提取 天气
 hen-hao 很好
-h-h 很好 换行
-wo 我
-w 玩 我 为 完 无 外 五 文 委 喂 王
-xiang 详 像 想 相 项
-x 新 行 下 先 性 修 选 详 信 醒 小 像 想 写 型 学 相 须 项 欣 循
-dai 带 代
-d 地 动 的 打 对 都 多 带 到 端 当 盗 等 道 大 点 得 但 代 第 读 达 订 登 段
+h-h 还会 很好 换行
+wo 卧 我
+w 网 万 为 位 误 无 卧 五 微 维 晚 恶 我 温 玩 完 外 文 委 喂 王
+xiang 项 降 详 像 想 相
+x 学 型 下 先 心 性 写 新 小 血 项 现 信 降 胸 选 行 修 详 醒 像 想 相 须 欣 循
+dai 呆 待 带 代
+d 等 的 搭 对 都 到 道 调 度 动 多 点 但 大 单 呆 待 打 第 地 当 低 带 端 盗 得 代 读 达 订 登 段
 lao-po 老婆
 l-p 老婆
 chu-qu 出去
 c-q 出去 重启 抽取
 jiao-wai 郊外
-j-w 结尾 郊外 居委
+j-w 降维 结尾 郊外 居委
 wan-shua 玩耍
-w-s 玩耍
-yao 钥 要 摇
-y 呀 用 有 也 钥 于 应 员 以 由 又 元 要 摇 源 云 与 一 原 乐 月 颖 因 运 椅 议 样 右 异 已 预
-qu 去 取 区
-q 球 其 器 期 墙 前 去 取 区 气 圈 浅
+w-s 武术 维数 玩耍
+yao 药 要 钥 摇
+y 院 余 约 药 与 炎 要 有 用 以 原 由 一 右 易 夜 于 因 月 已 异 晕 也 页 仪 越 员 应 呀 钥 又 元 摇 源 云 乐 颖 运 椅 议 样 预
+qu 区 取 去
+q 器 前 期 求 起 七 青 权 全 清 气 区 其 取 球 墙 去 圈 浅
 mai 买
-m 们 买 名 免 码 末 猫 每 敏
+m 梦 码 买 慢 么 眠 秘 明 秒 名 描 面 们 免 末 猫 每 敏
 hong 红
-h 还 好 很 和 后 行 侯 话 或 号 会 货 化 回 华 红
+h 海 和 获 化 还 核 后 话 会 或 盒 很 咳 回 好 侯 号 黄 寒 乎 行 货 华 红
 jing-tian 景天
 hong-jing-tian 红景天
 h-j-t 红景天
 hao 好 号
-wu 无 五
-yun 云 运
+wu 误 无 五 恶
+yun 晕 云 运
 liu 六 流
-l 拉 里 了 例 来 令 六 类 立 炼 量 略 列 漏 乐 梁 篮 冷 两 流 龙 黎 礼
-qi 其 器 期 气
+l 岭 路 率 了 两 量 虑 来 六 零 例 料 类 力 拉 栏 里 令 立 炼 略 列 漏 乐 梁 篮 冷 流 龙 黎 礼
+qi 器 期 起 七 气 其
 wu-yun-liu-qi 五运六气
 w-y-l-q 五运六气
 yun-qi 运气
-y-q 要求 一圈 运气 有趣 一起
+y-q 运气 要求 一圈 有趣 一起
 xue-shuo 学说
-x-s 小时 形式 相似 相使 相识 显示 学说
+x-s 稀疏 显示 像素 消暑 相似 形式 系数 小时 相使 相识 学说
 yun-qi-xue-shuo 运气学说
 y-q-x-s 运气学说
 kuai-jie 快捷
-k-j 空间 快捷
+k-j 可见 空间 开机 快捷 课件
 kuai-jie-jian 快捷键
 k-j-j 快捷键
-li 里 例 立 黎 礼
+li 例 力 里 立 黎 礼
 jing 经 敬
 bo 波
-b 抱 并 不 把 被 背 包 拔 比 吧 变 表 报 帮 百 波
+b 杯 标 并 包 把 不 八 半 别 变 白 本 笔 比 彪 抱 被 背 拔 吧 表 报 帮 百 波
 li-jing-bo 黎敬波
 l-j-b 黎敬波
-liang 量 梁 两
+liang 两 量 梁
 keng 铿
-k 哭 会 空 课 库 快 开 看 可 铿
+k 库 可 会 咳 快 看 宽 课 卡 哭 空 开 铿
 liang-li-keng 梁礼铿
 l-l-k 梁礼铿
-hua 话 化 华
+hua 化 话 华
 liang-li-hua 梁礼华
 l-l-h 梁礼华
-wang 王
+wang 网 王
 wang-li 王黎
-w-l 为了 为例 王黎
+w-l 网络 为了 为例 王黎
 long 龙
-jia 嘉
+jia 夹 价 嘉
 min 敏
 long-jia-min 龙嘉敏
 l-j-m 龙嘉敏
 zai 在 再
 bang 帮
-ji 给 及 击 几 集 即 机
+ji 及 机 即 几 积 集 给 击
 gei 给
-wei 为 委 喂
+wei 为 位 微 维 委 喂
 nai 奶
-n 内 年 奶 拿 您 能
+n 年 内 尿 黏 纳 难 奶 拿 您 能
 wei-nai 喂奶
-w-n 喂奶
+w-n 未能 喂奶
 zhong-yi 中医
-z-y 主要 这样 重要 左右 只要 在于 注意 只有 摘要 这一 中英 这也 座椅 自由 中医
-shi 食 是 时 使
-s 手 食 是 私 上 时 四 帅 说 睡 数 设 三 使 所 圣 思 苏 森 生 算 尚 首 水 硕
+z-y 主要 中医 专业 住院 资源 在于 注意 只有 竹园 占用 这样 作业 作用 只要 着眼 重要 左右 摘要 这一 中英 这也 座椅 自由
+shi 式 是 时 十 食 使
+s 赛 书 上 率 式 是 尚 数 参 时 双 十 四 三 首 稍 素 梢 诉 岁 随 少 述 算 设 爽 手 食 私 帅 说 睡 使 所 圣 思 苏 森 生 水 硕
 yi-men 一门
-y-m 域名 源码 以免 岳母 一门
-huo 和 或 货
-he 和
+y-m 源码 要么 优美 页码 域名 以免 岳母 一门
+huo 和 获 或 货
+he 和 核 盒
 yi-yang 一样
-y-y 音乐 用于 一一 爷爷 引用 原因 由于 一样 运用 意义 游泳 应用 有用 一眼 呀呀
+y-y 运用 语言 医院 由于 用于 引用 原因 一样 诱因 沿用 应用 孕育 意义 游泳 一一 音乐 爷爷 有用 一眼 呀呀
 ren 人
-r 如 入 让 柔 人
+r 日 人 如 让 入 仍 柔
 ying-ge-lan 英格兰
 y-g-l 英格兰
 wo-men 我们
 w-m 我们 完美
 yi-qi 一起
-ba 把 拔 吧
+ba 把 八 拔 吧
 yi-yan 一眼
 yang 样
-ye 也
+ye 夜 也 页
 shi-yong 使用 实用
-s-y 私钥 使用 苏颖 所以 所有 实用
+s-y 实验 所有 肾炎 使用 剩余 试验 所以 私钥 苏颖 实用
 yi-ge 一个
-y-g 应该 一个 一共 有关 攸关
-yu 于 与 预
+y-g 一个 应该 一共 有关 攸关
+yu 余 与 于 预
 chu-li-qi 处理器
 c-l-q 处理器
 yu-chu-li-qi 预处理器
 y-c-l-q 预处理器
 gai 该 改
 cheng-xu 程序
-c-x 程序 出现
+c-x 程序 重新 出现 粗心 持续 词性
 jin-hang 进行
-j-h 激活 进行 将会 就会 酒会 结合 句号
-jin-xing 进行
-j-x 进行 继续
-zhu 逐 主
+j-h 结合 进行 交互 激活 将会 就会 酒会 句号
+jin-xing 进行 金星
+j-x 教学 进行 急性 界限 继续 镜像 金星
+zhu 主 逐
 bian-yi 编译
-b-y 不用 编译 不要 必要
+b-y 编译 伴有 必要 不用 不要
 zhi-qian 之前
-z-q 重启 债券 正确 之前 知情
+z-q 之前 正确 准确 重启 债券 知情
 dui 对
-yuan 员 元 源 原
+yuan 院 原 员 元 源
 wen-jian 文件
-w-j 文件 挖掘
+w-j 挖掘 文件 外径
 yuan-wen-jian 源文件
 y-w-j 源文件
 chu-li 处理
-c-l 材料 处理 出来
+c-l 处理 材料 出来
 bu-bi 不必
-b-b 爸爸 版本 并不 不必
+b-b 版本 爸爸 并不 不必
 zhi-hang 执行
-z-h 最后 账户 账号 帐号 转换 之后 整合 正好 执行 逐行
+z-h 组合 中华 之后 召回 转换 最后 症候 账户 账号 帐号 整合 正好 执行 逐行 证侯
 zhi-xing 执行
-z-x 自行 咨询 最小 整形 只想 这些 最先 执行 逐行
+z-x 撰写 置信 这些 整型 仔细 自行 证型 最小 在线 中心 纵向 咨询 整形 只想 最先 执行 逐行
 ren-he 任何
-r-h 然后 任何
+r-h 任何 然后
 te-shu 特殊
-t-s 提示 调试 同时 同事 特殊
+t-s 推算 提升 提速 提示 调试 同时 同事 特殊
 de 的 得
 cao-zuo 操作
 c-z 操作 存在 查找
 lai 来
 diao-yong 调用
-d-y 对于 打印 第一 调用 定义 等于 大于 单元 都有
+d-y 多元 第一 调用 定义 单元 对应 多于 等于 多余 大于 打印 大约 对于 都有
 tiao-yong 调用
-t-y 统一 同样 调用
-ta 她 它
+t-y 调用 同样 头晕 统一
+ta 它 她
 kuai 会 快
 hui 会 回
 zi-dong 自动
-z-d 指定 终端 知道 只待 自动 值得 自带 这段 诊断 最大 重点 指代
+z-d 最大 值得 终端 指定 自动 最低 知道 自带 只待 这段 诊断 重点 指代
 yun-hang 运行
-y-h 运行 用户 一行 优化 也会 引号
+y-h 运行 优化 以后 也会 用户 一行 引号
 yun-xing 运行
-y-x 以下 允许 运行 一行 一些 原形 圆形 一项 有些
+y-x 医学 优秀 运行 一些 有些 一行 以下 允许 原形 圆形 一项 越小
 zhi-ling 指令
-z-l 这里 资料 指令 之类 这类
+z-l 这里 指令 资料 之类 这类
 shi-li 示例
-s-l 省略 示例
-liao 了
+s-l 数量 顺利 受凉 示例 省略
+liao 了 料
 le 了 乐
 huang-di 黄帝
-h-d 互动 很多 活动 很大 黄帝
+h-d 互动 很多 获得 活动 厚度 很大 黄帝
 nei 内
 huang-di-nei-jing 黄帝内经
 h-d-n-j 黄帝内经
-a 按 阿
+a 案 按 阿
 tou 头
 tou-wen-jian 头文件
 t-w-j 头文件
-yi 以 一 椅 议 异 已
-ming 名
+yi 以 一 易 已 异 仪 椅 议
+ming 明 名
 zhe-yang 这样
 jiao-zuo 叫做
-j-z 节奏 家族 矩阵 加载 句子 叫做 机战
+j-z 矩阵 加重 加载 均值 禁止 节奏 家族 句子 叫做 机战
 bao-han 包含
-b-h 拨号 不会 包含 编号
+b-h 不会 变坏 包含 变化 拨号 编号 变好
 zhe-shi 这时 这是
-z-s 这时 证书 注释 这是 只是 整数
+z-s 这时 这是 字数 暂时 证书 注释 只是 整数
 you-yu 由于
 ta-men 她们 它们
 t-m 她们 条目 它们 天猫
 wang-wang 往往
-w-w 往往
-bei 被 背
+w-w 往往 无误
+bei 杯 被 背
 qi-ta 其他
-q-t 其他 秋天
-qi-shi 起始
-q-s 缺少 缺失 起始
+q-t 其他 清涕 秋天
+qi-shi 其实 起始
+q-s 确实 其实 全身 缺少 缺失 起始
 lei-xing 类型
 l-x 类型 联系 连续 两项
 yue-ding 约定
 y-d 要点 移动 用到 一旦 有待 约定
 shuo-ming 说明
-s-m 说明 数目 使命 声母 数码 声明
-jiu-shi 旧式
-j-s 即使 介绍 就算 结束 检索 减少 接收 加上 旧式
+s-m 说明 数目 什么 双面 扫瞄 失眠 使命 声母 数码 声明
+jiu-shi 就是 旧式
+j-s 介绍 讲授 技术 决赛 减少 计算 进食 近似 就是 加深 即使 就算 结束 检索 接收 加上 旧式
 feng-ge 风格
-f-g 覆盖 分割 风格
+f-g 反感 覆盖 分割 风格
 jie-wei 结尾
 ke-yi 可以
-k-y 可以
-xin 新 信 欣
+k-y 可以 可用
+xin 心 新 信 欣
 mei-you 没有
 m-y 没有 密钥 满月
 kuo-zhan 扩展
@@ -224,34 +224,34 @@ zhuan-huan 转换
 hou 后 侯
 jia-shang 加上
 qian-zhui 前缀
-q-z 其中 亲子 前缀
+q-z 权值 权重 其中 前缀 亲子
 bu-shi 不是
-b-s 不是 表示 标识
+b-s 表述 不是 鼻塞 表示 标识 标书
 te-xing 特性
-t-x 填写 天蝎 通信 特性
+t-x 图像 填写 天蝎 通信 特性
 ru 如 入
 ming-cheng 名称
 m-c 名称
 kong-jian 空间
 yong-yu 用于
 jie-jue 解决
-j-j 解决 精简 简介 接近 技嘉
+j-j 聚积 解决 奖金 精简 简介 接近 技嘉 卷积
 zhi-ding 指定
 da-xing 大型
-d-x 对象 读写 大小 等效 大型
+d-x 大学 大小 对象 读写 等效 大型
 bian-xie 编写
-b-x 必须 编写
+b-x 编写 并行 必须
 mou-xie 某些
-m-x 某些
+m-x 模形 某些 明显
 han-shu 函数
-h-s 横竖 函数 还是
+h-s 函数 回收 还是 很少 横竖
 ke-neng 可能
-k-n 可能
+k-n 可能 困难
 cun-zai 存在
 duo-ge 多个
-d-g 多个 蛋糕
+d-g 单个 多个 蛋糕
 feng-zhuang 封装
-f-z 放在 赋值 否则 反之 负责 封装 放着
+f-z 仿真 发作 翻转 放在 赋值 否则 反之 负责 封装 放着
 ban-ben 版本
 dou-you 都有
 du-you 都有
@@ -260,53 +260,53 @@ kai-tong 开通
 k-t 开头 开通
 yun-yong 运用
 yu-ju 语句
-y-j 已经 以及 语句 研究
+y-j 研究 以及 已经 语句 一阶
 ming-ming 命名
 m-m 密码 命名 妈咪 妈妈
 ze 则
 zuo-wei 作为 做为
-z-w 中文 昨晚 作为 掌握 周围 做为
+z-w 中文 掌握 展望 作为 昨晚 周围 做为
 yi-xia 以下
 liang-duan 两端 两段
 l-d 两端 两段
 dai-ma 代码
 d-m 代码
 deng-tong 等同
-d-t 代替 等同 动态 大题
+d-t 动态 代替 等同 大题
 duan 端 段
-zhi 只 之 指 值 志
+zhi 之 值 置 只 纸 指 直 志
 sheng-ming 声明
 xu-yao 需要
-x-y 需要 相应 现有 小于
+x-y 需要 小于 现有 相应
 yong 用
-da 打 大 达
+da 搭 大 打 达
 xiang-mu 项目
-x-m 下面 项目
+x-m 胸闷 下面 项目
 shi-hou 时候
-s-h 时候 上海
+s-h 时候 似乎 上海 视乎
 tui-jian 推荐
-t-j 添加 统计 推荐
+t-j 统计 条件 添加 推荐
 zhe-zhong 这种
-z-z 症状 正则 制作 整整 自主 最终 这种
+z-z 杂志 症状 杂质 作者 最早 柱状 纸张 这种 正则 制作 整整 自主 最终 转置
 zuo-fa 做法
-z-f 转发 字符 做法
+z-f 阵发 字符 转发 做法
 xiao-xi 消息
-x-x 选修 信息 学习 小型 想像 详细 消息 相须
+x-x 学习 信息 线性 选修 小型 想像 详细 消息 相须
 fu-zhi 赋值
 cha-ru 插入
 c-r 插入
 yun-suan-fu 运算符
 y-s-f 运算符
-lian-jie 链接 连接
-l-j 路径 链接 连接 了解 立即
+lian-jie 连接 链接
+l-j 逻辑 了解 连接 路径 理解 礼节 链接 立即
 zhi-jian 之间
-z-j 自己 主机 直接 中间 追加 之间 最近 字节 组件 增强 针灸 纸巾 左击
+z-j 直接 自觉 增加 之间 自己 主机 中间 追加 最近 字节 组件 增强 针灸 纸巾 左击
 ye-shi 也是
-y-s 也是 映射 以上 运算 压缩 优势 艺术 有时
+y-s 优势 用水 也是 要素 映射 以上 运算 压缩 艺术 有时
 hu-xiang 互相
-h-x 候选 互相
-xiang-ji 相继
-x-j 新建 细节 相继
+h-x 核心 狠心 横向 候选 互相
+xiang-ji 项集 相继
+x-j 下降 心悸 项集 相继 新建 细节
 huan-hang-fu 换行符
 h-h-f 换行符
 qu-bie 区别
@@ -318,11 +318,11 @@ shang 上 尚
 liang-zhe 两者
 l-z 例子 两者
 deng-xiao 等效
-tong 通 同
+tong 同 痛 通
 yi-tong 异同
 y-t 异同
-yi-ban 一般
-y-b 一般 一步
+yi-ban 一半 一般
+y-b 一遍 一半 样本 一般 一步
 qing-kuang-xia 情况下
 q-k-x 情况下
 yin-hao 引号
@@ -336,97 +336,97 @@ que-bao 确保
 ji-xu 继续
 qian 前 浅
 shua-xin 刷新
-s-x 首先 生效 实现 缩写 顺序 刷新
+s-x 腧穴 实现 少许 首先 顺序 熟悉 生效 缩写 刷新
 shu-chu 输出
-s-c 生成 输出 删除 首次
-jiang 将
+s-c 擅长 删除 生成 输出 首次 试错
+jiang 奖 降 将
 li-ji 立即
 xian-shi 显示
 ping-mu 屏幕
 p-m 屏幕
 er 而 二
-e 而 二
+e 而 二 恶
 bu-neng 不能
 b-n 不能
 ti-gong 提供
-t-g 通过 提高 提供
+t-g 投稿 通过 提供 提高
 bao-zheng 保证
-b-z 步骤 不足 标准 不再 标注 帮助 不在 保证
-zhe 着 这
+b-z 标准 不足 步骤 不再 标注 帮助 不在 保证
+zhe 这 折 着
 yi-wei-zhe 意味着
 y-w-z 意味着
 you-xie 有些
 xi-tong 系统
-x-t 系统 相同 下图
+x-t 系统 线条 相同 下图 胸痛
 you-shi 优势 有时
 nin 您
 shu-ru 输入
-s-r 私人 输入 生日
+s-r 输入 私人 生日
 xin-xi 信息
 cai-hui 才会
-c-h 称呼 产后 才会
+c-h 称呼 产后 才会 池化
 chu-xian 出现
 ti-shi 提示
 yuan-dai-ma 源代码
 y-d-m 源代码
 ge-shi 格式
-g-s 格式 改善
+g-s 个数 格式 改善
 ge-shi-hua 格式化
 g-s-h 格式化
 jie-shu 结束
 yin-ci 因此
-y-c 一层 远程 因此 一次 一串 异常 隐藏
+y-c 预测 因此 一次 隐藏 异常 远程 一层 一串
 ge-shi-shang 格式上
 g-s-s 格式上
 fu-yu 赋予
-f-y 赋予 肺炎
+f-y 肺炎 费用 赋予
 hen-da 很大
 zi-you 自由
 bu-guo 不过
-b-g 不过
+b-g 报告 不过 表格
 zun-cong 遵从
-z-c 组成 再次 支持 之差 左侧 造成 字词 指出 遵从
+z-c 筑城 支持 再次 组成 正常 注册 之差 左侧 造成 字词 指出 遵从
 xun 循
 he-li 合理
-h-l 忽略 合理
+h-l 忽略 合理 回虑
 you-zhu-yu 有助于
 y-z-y 有助于
 ti-gao 提高
 cheng-du 程度
-c-d 菜单 传递 长度 成对 词典 重点 程度
-xing 行 性 醒 型
-ke 课 可
-du 都 读
+c-d 肠道 长度 菜单 传递 成对 词典 重点 程度
+xing 型 性 行 醒
+ke 可 咳 课
+du 都 度 读
 dou 都
 mei 每
-tiao 条
+tiao 调 条
 mei-tiao 每条
-m-t 每条
+m-t 明天 每条
 zhan 战 占
 yi-hang 一行
 yi-xing 一行
 mei-ge 每个
 m-g 每个
 kai-shi 开始
-k-s 考试 开始 快速
+k-s 可视 咳嗽 开始 考试 快速
 hua-kuo-hao 花括号
 h-k-h 花括号
 liang-ge 两个
-l-g 两个
-ge 个 各
+l-g 滤过 两个
+ge 各 个 咯
 xiang-dui-yu 相对于
 x-d-y 相对于
 suo-jin 缩进
-s-j 试卷 释卷 数据 时间 诗句 实际 缩进
+s-j 数据 实践 首届 设计 神经 收集 随机 手机 时间 双击 实际 视觉 试卷 释卷 诗句 缩进
 xiang-guan 相关
-x-g 修改 效果 相关
+x-g 修改 相关 效果
 yuan-kuo-hao 圆括号
 y-k-h 圆括号
 zhou-wei 周围
 kong-bai 空白
 k-b 拷贝 空白
 bian-liang 变量
-b-l 变量 保留 悖论 病例
+b-l 病历 病例 变量 保留 悖论
 liang-xiang 两项
 nei-cun 内存
 n-c 内存
@@ -444,11 +444,11 @@ fu-ze 负责
 fen-pei 分配
 f-p 分配
 biao-ji 标记
-b-j 比较 笔记 标记 半角
+b-j 标记 比较 编辑 报价 笔记 半角
 xi-jie 细节
 ran-hou 然后
 yong-lai 用来
-y-l 摇篮 原来 依赖 用来 一来 医疗 原理 一列 以来
+y-l 医疗 原来 原理 依赖 摇篮 用来 一来 一列 以来
 wei-shen-me 为什么
 w-s-m 为什么
 bi-xu 必须
@@ -459,46 +459,46 @@ b-m 编码 避免
 pin-xie 拼写
 p-x 排序 拼写
 cuo-wu 错误
-c-w 此外 财务 错误 称为
+c-w 此外 错误 财务 称为
 dao-zhi 导致
-d-z 地址 导致 对着
+d-z 导致 地址 对着 动则
 bu 不
 zhi-qing 知情
 xia 下
 chuang-jian 创建
-c-j 成教 创建 常见 插件 餐具
+c-j 刺激 创建 成交 成教 常见 插件 餐具
 cong-er 从而
 c-e 从而
 jian-shao 减少
 chu-cuo 出错
 tong-chang 通常
-t-c 推车 填充 弹出 提出 通常
+t-c 提出 推车 填充 弹出 通常
 shou-ci 首次
 lian-xu 连续
-you 有 由 又 右
+you 有 由 右 又
 yi-xiang 一项
 xun-chang 寻常
-x-c 选词 寻常
+x-c 线程 选词 寻常
 cong 从
 xiang-zuo 向左
-x-z 选择 下载 续做 鞋子 现在 向左
+x-z 选择 修正 形状 卸载 鞋子 下载 续做 现在 向左
 hua-yang 花样
-h-y 好用 含有 婚宴 汉语 花样
+h-y 含有 好用 婚宴 汉语 花样
 xing-shi 形式
 shu-zi 数字
-s-z 设置 实在 数值 数字 所在
-cheng 成
+s-z 三种 设置 甚至 随着 数值 数组 实在 数字 所在
+cheng 呈 成
 da-yin 打印
 xia-mian 下面
 shi-li-cheng-xu 示例程序
 s-l-c-x 示例程序
-xian 先
+xian 先 现
 ti-huan 替换
 t-h 听话 替换
 zui-hou 最后
-dao 到 盗 道
+dao 到 道 盗
 neng-gou 能够
-n-g 能够
+n-g 能够 内高
 chong 重
 chou-qu 抽取
 zhi-neng 智能
@@ -511,38 +511,38 @@ yi-xi-lie 一系列
 y-x-l 一系列
 jie-shou 接收
 pin-jie 拼接
-p-j 拼接
+p-j 疲倦 平均 拼接
 lue 略
-jian 见 键 减 建
+jian 建 件 减 见 间 键
 lei 类
 jian-jie 简介
 jian-kang 健康
-j-k 即可 监考 健康
+j-k 较快 即可 监考 健康
 chan-hou 产后
 fu-cha 复查
-f-c 扶持 非常 复查 分层
-na 拿
+f-c 分词 方差 扶持 非常 复查 分层
+na 纳 拿
 chu-sheng 出生
-c-s 参数 测试 出生
-zheng 症 证
+c-s 从事 陈氏 参数 初始 层数 次数 出生 尝试 测试 此时 传输
+zheng 证 症
 mei-hua 梅花
 m-h 梅花
 ju 居
 ju-wei 居委
 deng-ji 登记
-d-j 点击 登记 第几 动脚
+d-j 大家 点击 第几 登记 动脚 搭建
 xian-ka 显卡
 x-k 辛苦 显卡
 zhi-jin 纸巾 织金
-jie 接 截 洁
+jie 阶 结 接 截 洁
 rou 柔
 jie-rou 洁柔
-j-r 既然 键入 洁柔
+j-r 今日 肌肉 进入 既然 键入 洁柔
 ju-hua-suan 聚划算
-j-h-s 聚划算
-bao 抱 包 报
+j-h-s 聚划算 交互式
+bao 包 抱 报
 liang-bao 两包
-l-b 列表 两包
+l-b 类别 列表 两包
 ma-ma 妈妈
 ji-piao 机票
 shang-hai 上海
@@ -554,10 +554,10 @@ zuo-yi 座椅
 fan-hui-zhi 返回值
 f-h-z 返回值
 di-qi 第七
-d-q 当前 读取 地球 第七
-zhang 长 章
+d-q 读取 当前 地球 第七
+zhang 长 张 章
 di-ba 第八
-d-b 代表 第八
+d-b 大便 对比 豆瓣 代表 第八
 jiang-hui 将会
 chong-dian 重点
 zhong-dian 重点
@@ -567,9 +567,9 @@ xian-zai 现在
 liao-jie 了解
 yi-xie 一些
 ji-ben 基本
-j-b 基本
+j-b 脚本 基本 局部
 te-zheng 特征
-t-z 途中 投资 体重 特征
+t-z 体征 特征 挑战 停止 途中 投资 体重
 sheng-cheng 生成
 er-qie 而且
 e-q 而且
@@ -580,26 +580,26 @@ cheng-wei 称为
 can-shu 参数
 zhi-dao 知道
 fang-shi 方式
-f-s 方式 负数 副食 发送
+f-s 附属 方式 负数 副食 发送
 yuan-xing 原形 圆形
 tian-jia 添加
 wei-zhi 位置
-w-z 位置 文章 网站 网址 完整
+w-z 为主 位置 网站 文章 网址 完整
 quan-ju 全局
-q-j 全角 全局
+q-j 抢救 清洁 全角 全局
 mo-shi 模式
-m-s 模式 马上
+m-s 描述 墨水 模式 马上
 zheng-zhuang 症状
 ge-ge 各个
 g-g 各个
-bing-li 病例
+bing-li 病历 病例
 ti-qu 提取
 ji-zhan 机战
-di 地 第
+di 第 地 低
 shuo 说 硕
 shu-ma 数码
 feng 风
-f 放 方 扶 饭 非 分 负 风
+f 份 法 发 非 方 泛 乏 分 放 扶 饭 负 风
 leng 冷
 huo-dong 活动
 shui 睡 水
@@ -612,43 +612,43 @@ deng-yu 等于
 dang-qian 当前
 xiao 小
 fen-bie 分别
-f-b 分别 发病 方便
+f-b 方便 分布 分别 发病
 ke-xuan 可选
 k-x 开心 可选 科学
 shi-fou 是否
-s-f 是否 算法 食饭
+s-f 是否 算法 四分 食饭
 shi-pi 是否
-s-p 是否
+s-p 是否 商品
 fan-hui 返回
-f-h 符号 分号 返回
+f-h 符合 符号 分号 返回
 bu-er 布尔
 b-e 布尔
 ru-guo 如果
-r-g 如果 若干
+r-g 如果 人工 若干
 shi-bai 失败
-s-b 鼠标 识别 失败
+s-b 失败 鼠标 识别
 cuo 错
 bao-cuo 报错
-b-c 保存 补充 不错 报错
+b-c 报错 不错 保存 补充
 zhi-lei 之类
 ji-ge 几个
-j-g 经过 结果 坚果 间隔 几个
+j-g 结果 价格 激光 经过 坚果 间隔 几个
 jie-guo 结果
 fu 扶 负
 fan-xiang 反向
 f-x 分析 发现 反向
 dang-cheng 当成
-d-c 导出 单词 当成
+d-c 导出 单词 当成 单层 对错
 yi-dong 移动
 bing 并
 zheng-ze 正则
 dang 当
 xun-huan 循环
-x-h 喜欢 循环 先后
+x-h 喜欢 消耗 循环 先后
 pan-duan 判断
 p-d 判断
 jian-yi 建议
-j-y 基于 建议 解压 仅有 具有
+j-y 经验 讲义 基于 禁用 建议 检验 解压 仅有 具有
 she 设
 te-bie 特别
 t-b 头部 特别
@@ -656,12 +656,12 @@ li-zi 例子
 cha-zhao 查找
 suo 所
 hang 行
-shou 手 首
+shou 首 手
 mo 末
 kai-tou 开头
 di-er-ge 第二个
 d-e-g 第二个
-zui 嘴 最
+zui 最 嘴
 jie-jin 接近
 ri-zi 日子
 r-z 日子
@@ -671,36 +671,36 @@ d-k 端口 打开
 hai-shi 还是
 huan-shi 还是
 dan-shi 但是
-d-s 动手 倒数 都是 调试 多少 第三 但是
+d-s 大赛 但是 单数 第三 多少 动手 倒数 都是 调试
 mei-fa 没法
 m-f 没法
 zheng-que 正确
 deng-dai 等待
-d-d 单独 等待
+d-d 堆叠 得到 达到 单独 等待
 wan-cheng 完成
-w-c 完成
+w-c 误差 完成
 fa-song 发送
 guan-bi 关闭
 zhi-hou 之后
-ci 次 词
-shi-jian 时间
+ci 次 词 差
+shi-jian 实践 时间
 guo-chang 过长
-g-c 改成 观察 给出 过长
+g-c 过程 观察 观测 改成 构成 给出 过长
 guo-zhang 过长
-g-z 跟着 规则 各种 各自 过长
+g-z 广州 规则 感知 跟着 各种 各自 过长
 gu-ji 估计
-g-j 根据 关键 改进 感觉 更加 估计
-gen 跟
+g-j 格局 根据 估计 构建 关键 工具 改进 感觉 更加
+gen 根 跟
 jin-cheng 进程
-j-c 聚餐 检查 基础 经常 进程
+j-c 基础 集成 检查 经常 聚餐 进程
 you-guan 有关 攸关
 yuan-yin 原因
 ling-wai 另外
-l-w 礼物 另外
+l-w 论文 礼物 另外
 zhe-ye 这也
 she-zhi 设置
 xiao-lv 效率
-x-l 向量 效率
+x-l 向量 训练 下来 效率
 you-dai 有待
 gai-shan 改善
 ji-yu 基于
@@ -708,23 +708,23 @@ kai-fa 开发
 k-f 开发
 zhong-wen 中文
 huan-jing 环境
-h-j 环境 合计
+h-j 合计 环境 缓解
 ge-ren 个人
 g-r 个人
 ren-wei 认为
-r-w 认为
+r-w 任务 认为
 zui-da 最大
 zai-yu 在于
 ji-da 极大
-j-d 记得 简单 极大
+j-d 京东 间断 接点 解读 解毒 较大 简单 季度 记得 极大
 zhong-ying-wen 中英文
 z-y-w 中英文
 qie-huan 切换
-q-h 其后 切换
+q-h 切换 其后
 bi-jiao 比较
 liu-chang 流畅
-l-c 流程 流畅
-ling 令
+l-c 临床 流程 凌晨 流畅
+ling 岭 零 令
 ci-wai 此外
 hai-neng 还能
 h-n 还能
@@ -733,28 +733,28 @@ gou 够
 wan-mei 完美
 zheng-he 整合
 liang-hao 良好
-l-h 灵活 联合 良好 量化
+l-h 灵活 联合 良好 量化 两盒
 yao-dian 要点
 an-zhuang 安装
-a-z 安装 安扎 按照
+a-z 安装 按照 安扎
 pei-zhi 配置
-p-z 拍子 配置
+p-z 拍子 配置 喷嘴
 ci-dian 词典
 xiang-xi 详细
 kan 看
 xie-de 写的
-x-d 相当 写的
+x-d 相当 新的 相等 写的
 wen-dang 文档
-w-d 稳定 我的 文档
+w-d 文档 稳定 我的
 zhe-li 这里
 bu-chong 补充
 chong-yao 重要
-c-y 成员 重要 常用 词语 抽样
+c-y 创意 抽样 词语 采用 成员 重要 常用
 zhong-yao 重要
 you-yong 游泳 有用
 rang 让
 zhong-ying 中英
-wen 文
+wen 温 文
 geng-jia 更加
 she-zhi-wei 设置为
 s-z-w 设置为
@@ -766,20 +766,20 @@ ying-wen 英文
 y-w 因为 有无 英文
 zhuang-tai 状态
 z-t 状态
-jiu 就 救
+jiu 就 九 救
 xuan-qu 选取
-x-q 选取
+x-q 选取 需求
 zi-ci 字词
 shu-ru-fa 输入法
 s-r-f 输入法
 bang-ding 绑定
-b-d 百度 不等 标点 绑定 背带
+b-d 标点 不对 百度 不等 绑定 背带
 zeng-jiang 增强
 quan-jiao 全角
 ban-jiao 半角
 fu-hao 符号
 han-zi 汉字
-h-z 或者 汇总 后缀 何种 汉字
+h-z 患者 汇总 或者 后缀 何种 汉字
 biao-dian-fu-hao 标点符号
 b-d-f-h 标点符号
 wo-de 我的
@@ -810,21 +810,21 @@ jie-he 结合
 he-bing 合并
 h-b 红包 合并
 qi-lai 起来
-q-l 起来
+q-l 清理 起来
 gan-jue 感觉
 suan 算
 shang-suan 尚算
-s-s 搜索 算是 尚算 所说 手手
+s-s 上述 损失 搜索 双数 算是 尚算 所说 手手
 hou-mian 后面
 h-m 后面
 kong-ge 空格
-k-g 空格
+k-g 口干 空格
 da-xiao 大小
 xie 写
 zi-mu 字母
-z-m 字母
+z-m 桌面 字母 最慢
 zheng-ru 正如
-z-r 正如
+z-r 载入 正如
 suo-shuo 所说
 han-yu 汉语
 bing-bu 并不
@@ -837,25 +837,25 @@ g-n 功能 国内
 zuo-ce 左侧
 ruo-gan 若干
 bian-wei 变为
-b-w 变为
+b-w 不为 变为
 jian-ru 键入
-an 按
+an 案 按
 ci-yu 词语
 san-ge 三个
-s-g 十个 手工 身高 三个
-zi 自 字
+s-g 手工 十个 身高 三个
+zi 字 自
 xiang-si 相似
 gui-ze 规则
 suan-fa 算法
 zhong-yi-yao 中医药
-z-y-y 中医药
+z-y-y 中医药 中医院
 yan-jiu 研究
 qian-yi 迁移 浅议
 q-y 前言 迁移 浅议
 guan-lian 关联
-g-l 管理 关联
+g-l 关联 概率 管理
 yuan-li 原理
-yi-yi 一一 意义
+yi-yi 意义 一一
 bu-zu 不足
 cai-chan 财产
 man-yue 满月
@@ -865,7 +865,7 @@ shen-gao 身高
 ti-zhong 体重
 mao 猫
 tian-mao 天猫
-bai 百
+bai 白 百
 xiao-xing 小型
 xi-yi-ji 洗衣机
 x-y-j 洗衣机
@@ -873,22 +873,22 @@ fu-shi 副食
 can-ju 餐具
 tui-che 推车
 gui-fei 贵妃
-g-f 官方 广泛 贵妃
+g-f 规范 官方 广泛 贵妃
 gui-fei-yi 贵妃椅
 g-f-y 贵妃椅
 yi-fu 衣服
-y-f 用法 衣服
+y-f 月份 约分 用法 衣服
 xie-zi 鞋子
 qiu-tian 秋天
 ma-mi 妈咪
 qin-zi 亲子
 zhuang 装
 yi-shu 艺术
-zhao 着 照
+zhao 找 朝 着 照
 yi-shu-zhao 艺术照
 y-s-z 艺术照
 sheng 圣 生
-quan 圈
+quan 权 全 圈
 jiu-sheng-quan 救生圈
 j-s-q 救生圈
 you-yong-chi 游泳池
@@ -900,27 +900,27 @@ liu-qi 六气
 l-q 六气
 hen-hao-yong 很好用
 h-h-y 很好用
-zuo 做 左 作
+zuo 左 做 作
 xin-ku 辛苦
 pu 普
-p 跑 盘 屏 排 普
+p 平 喷 偏 判 跑 盘 屏 排 普
 sen 森
 bei-lun 悖论
 xin-pu-sen-bei-lun 辛普森悖论
 x-p-s-b-l 辛普森悖论
 zhu-yi 注意
 chou-yang 抽样
-fen 分
-ceng 层
+fen 份 分
+ceng 层 曾
 fen-ceng 分层
 fen-ceng-chou-yang 分层抽样
 f-c-c-y 分层抽样
 wen-ben 文本
-w-b 外部 文本 尾部
+w-b 文本 外部 尾部
 bian-ma 编码
 chang-jian 常见
 dang-ran 当然
-d-r 当然 等人
+d-r 导入 当然 等人
 hen-duo 很多
 du-qu 读取
 zheng-ge 整个
@@ -930,29 +930,29 @@ zi-dai 自带
 qian-yan 前言
 lie-biao 列表
 cha-kan 查看
-c-k 查看 参考
+c-k 词库 参考 查看
 zhi-chi 支持
 que-ding 确定
-q-d 启动 确定
+q-d 轻度 缺点 驱动 启动 确定 全对
 cheng-hu 称呼
 ming-wei 名为
 m-w 名为
 de-hua 的话
-d-h 的话 到货
+d-h 顿号 导航 的话 到货
 zhong-duan 终端
 chu-lai 出来
 hou-xuan 候选
 shun-xu 顺序
-biao 表
+biao 标 彪 表
 gen-ju 根据
 suo-you 所有
 tong-ji 统计
-ku 哭 库
+ku 库 哭
 pin-lv 频率
-p-l 频率
+p-l 排列 频率
 pai-xu 排序
 pin-ci 频次 拼刺
-p-c 频次 拼刺
+p-c 排出 频次 拼刺
 duo 多
 pai 排
 qian-mian 前面
@@ -960,21 +960,21 @@ q-m 签名 前面
 fang-bian 方便
 xuan 选
 su-du 速度
-s-d 设定 速度
+s-d 深度 设定 速度 手动
 fu-jia 附加
 f-j 附加 附近
 zu-jian 组件
 kuai-su 快速
 chu-fa 触发
-c-f 除非 触发
+c-f 成分 差分 重复 乘法 除非 触发
 fen-hao 分号
 rong-yi 容易
-r-y 容易
+r-y 容易 入夜
 zao-cheng 造成
 an-jian 按键 安检
 a-j 按键 安检
 chong-tu 冲突
-c-t 冲突
+c-t 传统 冲突
 e-wai 额外
 e-w 额外
 chu-fa-jian 触发键
@@ -1009,29 +1009,29 @@ sou-suo 搜索
 jian-guo 坚果
 guan-fang 官方
 han-you 含有
-bian-hao 编号
+bian-hao 编号 变好
 zhe-yi 这一
 fang-fa 方法
-f-f 方法
-nian 年
+f-f 方法 反复
+nian 年 黏
 deng-ren 等人
 ti-chu 提出
 jin-nian 近年
 j-n 近年
 gou-wu 购物
-g-w 官网 购物
-lan 篮
+g-w 官网 改为 购物
+lan 栏 篮
 gou-wu-lan 购物篮
 g-w-l 购物篮
 shi-wu 事务
 s-w 设为 生物 事务
 ge-xiang 各项
-g-x 更新 各项 各行
+g-x 更新 关系 贡献 共享 改写 各项 各行
 you-qu 有趣
 yin 因
 jian-dan 简单
 te-dian 特点
-t-d 太多 特点
+t-d 团队 梯度 痰多 通道 太多 特点
 xian-hou 先后
 xiang-shi 相使 相识
 wa-jue 挖掘
@@ -1048,11 +1048,11 @@ xiang-xu 相须
 ke-xue 科学
 sheng-wu 生物
 xing-wei 行为
-x-w 询问 希望 行为
+x-w 降维 询问 希望 行为
 deng 等 登
 xiu-gai 修改
 shi-ming 使命
-su 苏
+su 素 诉 苏
 ying 应 颖
 su-ying 苏颖
 liu-lan-qi 浏览器
@@ -1064,11 +1064,11 @@ jia-zai 加载
 ji-ke 即可
 yin-yong 引用
 geng-xin 更新
-yue 钥 乐 月
-si 私 四 思
-xue 学
+yue 约 月 越 钥 乐
+si 四 私 思
+xue 学 血
 wen-xian 文献
-w-x 文献
+w-x 微小 文献
 yue-mu 岳母
 sheng-ri 生日
 tong-shi 同时 同事
@@ -1103,7 +1103,7 @@ d-w 定位
 di-fang 地方
 d-f 地方
 fu-jin 附近
-cha 查
+cha 差 查
 zui-jin 最近
 yi-ci 一次
 yin-wei 因为
@@ -1114,18 +1114,18 @@ zhi-you 只有
 lu-jing 路径
 wen-jian-jia 文件夹
 w-j-j 文件夹
-bu-quan 补全
-b-q 补全
+bu-quan 不全 补全
+b-q 不全 不清 补全
 du-xie 读写
 gong-tong 共同
-g-t 共同
+g-t 共同 咯痰
 yong-fa 用法
 shu-mu 数目
 zhi-shi 只是
 bu-tong 不同
-b-t 不同 不太 表头
+b-t 不同 表头 不太 白痰
 xie-ru 写入
-x-r 写入
+x-r 兴荣 显然 写入
 ge-zi 各自
 mo-ren-zhi 默认值
 m-r-z 默认值
@@ -1163,12 +1163,12 @@ yi-lai 依赖 一来 以来
 er-lai 二来
 e-l 二来
 yin-zi 因子
-y-z 样子 验证 原子 因子
+y-z 因子 一致 验证 优质 样子 原子
 dui-yu 对于
 zhe-lei 这类
 san 三
 huo-qu 获取
-h-q 好奇 获取
+h-q 获取 好奇
 bang-zhu 帮助
 zhe-duan 这段
 yi-lie 一列
@@ -1185,18 +1185,18 @@ gu-piao 股票
 g-p 股票
 gei-chu 给出
 lei-si 类似
-l-s 类似
+l-s 老师 类似
 fang-an 方案
-f-a 方案
+f-a 方案 肺癌
 bu-fu 不符
-b-f 不符
+b-f 步伐 不符
 zhe-shi-hou 这时侯
 z-s-h 这时侯
 zhi-de 值得
 zhong-jian 中间
 lou 漏
 wen-ti 问题
-w-t 问题
+w-t 无痰 问题
 huo-zhe 或者
 zhi-xiang 只想
 shi-ji 实际
@@ -1208,19 +1208,19 @@ chu-fei 除非
 fou-ze 否则
 wei-yu 位于
 mo-duan 末端
-m-d 目的 末端
+m-d 目的 密度 末端
 ge-hang 各行
-g-h 各行
+g-h 关乎 各行
 ge-xing 各行
-shu 数
+shu 书 数 述
 bu-deng 不等
 tian-chong 填充
-que-shi 缺失
+que-shi 确实 缺失
 que-shi-zhi 缺失值
 q-s-z 缺失值
 he-zhong 何种
 bu-ke 不可
-b-k 备课 不可
+b-k 不可 备课
 ling-yi-ge 另一个
 l-y-g 另一个
 zhu-hang 逐行
@@ -1241,20 +1241,20 @@ zhu-shi 注释
 kong-hang 空行
 dai-ti 代替
 mu-biao 目标
-m-b 模板 目标
+m-b 目标 模板
 suan-shi 算是
 fen-ge 分割
 dong 动
 yi-mian 以免
 dai-lai 带来
-d-l 登录 带来
+d-l 带来 大量 定论 登录
 da-bu-fen 大部份
 d-b-f 大部份
 xiao-guo 效果
 yi-gong 一共
 fang-mian 方面
 f-m 方面
-bi 比
+bi 笔 比
 fei-chang 非常
 zhi-cha 之差
 xiang-tong 相同
@@ -1271,13 +1271,13 @@ suo-xie 缩写
 di-yi 第一
 di-san 第三
 shu-zhi 数值
-zheng-xing 整形
+zheng-xing 整型 证型 整形
 she-ding 设定
 dou-shi 都是
 du-shi 都是
 di-ji 第几
 duo-shao 多少
-fu-shu 负数
+fu-shu 附属 负数
 fu-gai 覆盖
 xin-jian 新建
 yi-jing 已经
@@ -1295,8 +1295,8 @@ an-zhao 按照
 ri-qi 日期
 r-q 日期
 mu-lu 目录
-m-l 目录
-ping 屏
+m-l 目录 命令
+ping 平 屏
 jie-ping 截屏
 tu-pian 图片
 t-p 图片
@@ -1309,11 +1309,11 @@ tiao-shi 调试
 gai-jin 改进
 guan-jian 关键
 zhuan-bian 转变
-z-b 这边 准备 转变
+z-b 指标 这边 准备 转变
 yuan-zi 原子
 you-wu 有无
 gai-cheng 改成
-dan 但
+dan 但 单
 quan-bu 全部
 dan-du 单独
 cai-neng 才能
@@ -1337,9 +1337,9 @@ ce-shi 测试
 zhun-bei 准备
 zi-ji 自己
 bai-du 百度
-pan 盘
+pan 判 盘
 yun-pan 云盘
-y-p 云盘
+y-p 云盘 右偏
 bai-du-yun-pan 百度云盘
 b-d-y-p 百度云盘
 zhang-hao 账号 帐号
@@ -1353,7 +1353,7 @@ yuan-ma 源码
 xiao-shu-dian 小数点
 x-s-d 小数点
 bu-ke-yi 不可以
-b-k-y 不可以
+b-k-y 不可用 不可以
 sheng-lue 省略
 guo-nei 国内
 jing-chang 经常
@@ -1363,7 +1363,7 @@ zai-ci 再次
 guan-li-yuan 管理员
 g-l-y 管理员
 quan-xian 权限
-q-x 权限
+q-x 清洗 气象 权限
 suo-yi 所以
 xin-li-de 新立得
 x-l-d 新立得
@@ -1371,7 +1371,7 @@ que-shao 缺少
 xiang-ying 相应
 zhi-yao 只要
 cheng-gong 成功
-c-g 成功
+c-g 成果 成功
 zi-zhu 自主
 zheng-zheng 整整
 yi-quan 一圈
@@ -1383,7 +1383,7 @@ la 拉
 zuo-wan 昨晚
 dian 点
 zuo-you 左右
-chi 吃
+chi 池 吃
 chi-nai 吃奶
 ma-shang 马上
 shi-zai 实在
@@ -1401,7 +1401,7 @@ wen-xian-ku 文献库
 w-x-k 文献库
 bi-ji 笔记
 liu-cheng 流程
-shuai 帅
+shuai 率 帅
 bu-cuo 不错
 guai 乖
 ting-hua 听话
@@ -1414,7 +1414,7 @@ dao-huo 到货
 hao-yong 好用
 xi-huan 喜欢
 fang-wen 访问
-f-w 服务 访问
+f-w 范围 访问 服务
 wang-ye 网页
 er-jin-zhi 二进制
 e-j-z 二进制
@@ -1425,8 +1425,8 @@ zu-cheng 组成
 mo-ban 模板
 cheng-yuan 成员
 jian-kao 监考
-jiao 叫 脚 交 教
-cheng-jiao 成教
+jiao 较 脚 叫 交 教
+cheng-jiao 成交 成教
 kao-shi 考试
 shi-juan 试卷 释卷
 zhi-zuo 制作
@@ -1434,7 +1434,7 @@ xuan-xiu-ke 选修课
 x-x-k 选修课
 xuan-xiu 选修
 bei-ke 备课
-ti 题
+ti 涕 题
 da-ti 大题
 zi-xun 咨询
 jiang-xue-jin 奖学金
@@ -1444,7 +1444,7 @@ pao 跑
 qian-ming 签名
 cai-liao 材料
 xiu 修
-wan 玩 完
+wan 万 晚 玩 完
 hui-zong 汇总
 fa-bing 发病
 fu-wu 服务
@@ -1475,12 +1475,12 @@ xun-wen 询问
 shou-xian 首先
 yao-qiu 要求
 jia-mi 加密
-j-m 加密
+j-m 界面 加密
 zhi-jie 直接
 hui-che 回车
 h-c 回车
 dai-biao 代表
-mian 免
+mian 眠 面 免
 jiu-suan 就算
 bu-zhi-dao 不知道
 b-z-d 不知道
@@ -1491,7 +1491,7 @@ yong-hu-ming 用户名
 y-h-m 用户名
 di-zhi 地址
 li-ru 例如
-l-r 例如
+l-r 老人 落入 例如
 guang-yu-wang 广域网
 g-y-w 广域网
 dong-tai 动态
@@ -1513,11 +1513,11 @@ tai-duo 太多
 yu-ming 域名
 zhu-ji 主机
 bu-zhou 步骤
-gong 公
+gong 工 共 公
 gong-yao 公钥
-g-y 公钥
+g-y 关于 改用 共有 公有 公钥
 gong-yue 公钥
-fang 放 方
+fang 方 放
 si-ren 私人
 kao-bei 拷贝
 yan-zheng 验证
@@ -1540,13 +1540,13 @@ q-q 亲戚
 men 们
 hu-dong 互动
 quan-cheng 全程 全称
-q-c 全程 全称
+q-c 气促 清楚 全程 全称
 xiao-shi 小时
 hao-qi 好奇
 chan 馋
 yang-zi 样子
 kan-zhe 看着
-fan 饭
+fan 泛 饭
 shi-fan 食饭
 na-li 那里
 n-l 那里
@@ -1568,7 +1568,7 @@ dui-zhao 对着
 dui-zhe 对着
 dui-zhuo 对着
 pai-zi 拍子
-qiu 球
+qiu 求 球
 xing-fen 兴奋
 kai-xin 开心
 dong-shou 动手
@@ -1578,6 +1578,690 @@ dong-jue 动脚
 gen-zhe 跟着
 jie-pai 节拍
 huan 还
-hai 还
+hai 海 还 咳
 ya 呀
 ya-ya 呀呀
+xi-shu 稀疏 系数
+ju-li 距离
+j-l 经络 建立 精灵 剧烈 积累 记录 距离 聚类
+yu-ce 预测
+bao-jia 报价
+cheng-jiao-jia 成交价
+c-j-j 成交价
+di-yi-ci 第一次
+d-y-c 第一次
+di-er-ci 第二次
+d-e-c 第二次
+zhi-biao 指标
+zhi-biao-shu 指标数
+z-b-s 指标数
+bian-ma-shu 编码数
+b-m-s 编码数
+zui-di 最低
+yue-fen 月份 约分
+ji-du 季度
+di-ji-ge 第几个
+d-j-g 第几个
+jin-zhi 禁止
+chuan-tong 传统
+jin-yong 禁用
+da-dao 达到
+bi-ji-ben 笔记本
+b-j-b 笔记本
+shou-ti 手提
+s-t 酸痛 手提
+jie-tu 截图
+bu-dui 不对
+geng-duo 更多
+g-d 更多
+guan-yu 关于
+shou-ji 收集 手机
+chu-ming 出名
+c-m 出名
+chuan-shu 传输
+guo-cheng 过程
+geng 更
+ruan-jian 软件
+r-j 软件
+zhuo-mian 桌面
+gong-ju 工具
+ming-ling 命令
+bian-ji 编辑
+zheng-chang 正常
+shi-jue 视觉
+hu 乎
+shi-hu 视乎
+bi-yao-shi 必要时
+b-y-s 必要时
+wen-jian-xi-tong 文件系统
+w-j-x-t 文件系统
+jin-ru 进入
+shi-ji-shang 实际上
+s-j-s 实际上
+ji-suan-ji 计算机
+j-s-j 计算机
+deng-tong-yu 等同于
+d-t-y 等同于
+shuang 双 爽
+ce 侧
+dao-hang 导航
+fu-wu-qi 服务器
+f-w-q 服务器
+you-zhi 优质
+jiang-jin 奖金
+bao-xian-fei 保险费
+b-x-f 保险费
+fei-yong 费用
+zhi-chi-du 支持度
+z-c-d 支持度
+pin-shu 频数
+p-s 平素 频数
+mi-du 密度
+zhi-fang-tu 直方图
+z-f-t 直方图
+fan-wei 范围
+bai-fen-bi 百分比
+b-f-b 百分比
+zhi-xin-du 置信度
+z-x-d 置信度
+ti-sheng 提升
+ti-sheng-du 提升度
+t-s-d 提升度
+di-sheng-du 提升度
+d-s-d 提升度
+si-fen 四分
+zhong-wei-shu 中位数
+z-w-s 中位数
+si-fen-wei-shu 四分位数
+s-f-w-s 四分位数
+ping-jun-zhi 平均值
+p-j-z 平均值
+jun-zhi 均值
+gou-cheng 构成
+gou-cheng-bi 构成比
+g-c-b 构成比
+heng-xiang 横向
+biao-ge 表格
+zong-xiang 纵向
+tan-tao 探讨
+t-t 探讨 头痛
+ben 本
+cai-yong 采用
+ou-shi 欧氏
+o-s 欧氏
+bie 别
+pan-bie 判别
+p-b 判别
+zheng-hou 症候 证侯
+yao-su 要素
+huan-zhe 患者
+yue-xiao 越小
+zhuo-yan 着眼
+liang-liang 两两
+l-l 理论 两两
+fen-bu 分布
+zui-da-zhi 最大值
+z-d-z 最大值
+zui-xiao-zhi 最小值
+z-x-z 最小值
+pian 偏
+you-pian 右偏
+gao 高
+lin-chuang 临床
+jiao-da 较大
+ci-shi 此时
+shi-mian 失眠
+jing-xiang 镜像
+dou-ban 豆瓣
+hen-kuai 很快
+h-k 很快
+ming-zi 名字
+m-z 名字
+jian-tou 箭头
+de-dao 得到
+huo-de 获得
+jun 菌 均
+juan 卷
+dan-ge 单个
+xiao-shu 消暑
+xiang-su 像素
+shi-shi-shang 事实上
+s-s-s 事实上
+shu-xi 熟悉
+da-jia 大家
+shu-zu 数组
+gai-xie 改写
+di-yi-ge 第一个
+d-y-g 第一个
+tu-xiang 图像
+chi-hua 池化
+juan-ji 卷积
+bian-hua 变化
+jia-shen 加深
+li-jie 理解 礼节
+gan-zhi 感知
+gan-zhi-qi 感知器
+g-z-q 感知器
+zhi-qi 知器
+ti-du 梯度
+xia-jiang 下降
+shen-jing 神经
+wang-luo 网络
+cheng-fa 乘法
+da-yue 大约
+wei-hu 维护
+w-h 恶寒 维护
+quan-zhong 权重
+chu-shi-hua 初始化
+c-s-h 初始化
+pian-zhi-zhi 偏置值
+p-z-z 偏置值
+ji-lu 记录
+fang-cha 方差
+hen-shao 很少
+ting-zhi 停止
+xun-lian 训练
+da-yin-ji 打印机
+d-y-j 打印机
+chan-pin 产品
+c-p 产品
+zu 组
+sao-miao 扫瞄
+que-ren 确认
+q-r 确认
+kai-ji 开机
+sao-miao-yi 扫描仪
+s-m-y 扫描仪
+shuang-ji 双击
+zhong-xin 中心
+hai-hui 还会
+huan-hui 还会
+qu-dong 驱动
+zuo-yong 作用
+zhi-zhang 纸张
+ka 卡
+mo-shui 墨水
+pen-tou 喷头
+p-t 喷头
+qing-jie 清洁
+pen 喷
+pen-zui 喷嘴
+shou-dong 手动
+shuang-mian 双面
+dan-shu 单数
+ye-ma 页码
+shuang-shu 双数
+fan-zhuan 翻转
+chao 超 炒 朝
+fang-dao 放到
+f-d 放到
+chong-fu 重复
+zhi-bu-guo 只不过
+z-b-g 只不过
+jie-mian 界面
+tiao-zhan 挑战
+xing-neng 性能
+x-n 虚拟 信念 性能
+xiao-hao 消耗
+zai-ru 载入
+kuan 宽
+tong-dao 通道
+zuo-ye 作业
+xia-lai 下来
+lao-shi 老师
+zhu-ce 注册
+miao 秒 描
+miao-shu 描述
+guan-hu 关乎
+bu-fa 步伐
+di-yi-bu 第一步
+d-y-b 第一步
+gai-wei 改为
+qie-ge 切割
+q-g 全国 切割
+ke-jian 可见 课件
+guang-zhou 广州
+ri 日
+ping-jun 平均
+qi-wen 气温
+q-w 气温
+zhu-zhuang 柱状
+zhu-zhuang-tu 柱状图
+z-z-t 柱状图
+ji-guang 激光
+shang-pin 商品
+nei-gao 内高
+jia-ge 价格
+hou-du 厚度
+yong-shui 用水
+wai-jing 外径
+bing-ren 病人
+b-r 病人
+ti-su 提速
+xian-cheng 线程
+bu-ke-yong 不可用
+xie-zai 卸载
+wu-fa 无法
+w-f 无法
+fan-gan 反感
+zan-shi 暂时
+bu-qing 不清
+qing-chu 清楚
+bu-qing-chu 不清楚
+b-q-c 不清楚
+shen-me 什么
+chang-shi 尝试
+kan-kan 看看
+k-k 看看
+you-mei 优美
+nian-tie 粘贴
+n-t 粘贴
+zai-xian 在线
+jiao-ben 脚本
+jiao-kuai 较快
+gong-xiang 共享
+que-dian 缺点
+ming-xian 明显
+wu-ran 污染
+w-r 污染
+fen-kai 分开
+f-k 分开
+jiang-po-zheng 强迫症
+j-p-z 强迫症
+bu-bi-yao 不必要
+b-b-y 不必要
+zhan-yong 占用
+gui-fan-hua 规范化
+g-f-h 规范化
+zi-shu 字数 字述
+da-bian 大便
+ming-tian 明天
+ci-shu 次数
+mi 秘
+diao 调
+gan 感 干
+tou-yun 头晕
+tou-tong 头痛
+han 寒
+e-han 恶寒
+e-h 恶寒
+wu-han 恶寒
+xiao-bian 小便
+x-b 下标 性别 小便
+huang 黄
+shao 稍 梢 少
+tan 痰
+ge-tan 咯痰
+fa 法 发 乏
+fa-li 乏力
+f-l 乏力
+ke-sou 咳嗽
+wu-tan 无痰
+fa-re 发热
+f-r 发热
+e-xin 恶心
+e-x 恶心
+ou-tu 呕吐
+o-t 呕吐
+ji-rou 肌肉
+suan-tong 酸痛
+ou 偶
+o 偶
+cu 促
+qi-cu 气促
+xiong-men 胸闷
+kou-gan 口干
+qing 青 清
+qing-ti 清涕
+tan-duo 痰多
+huang-tan 黄痰
+h-t 黄痰
+nan 难
+bai-tan 白痰
+pi-juan 疲倦
+na-ke 纳可
+n-k 纳可
+chai 差
+xiong 胸
+xiong-tong 胸痛
+xin-ji 心悸
+na-dai 纳呆
+n-d 纳呆
+bi-se 鼻塞
+gong-you 共有 公有
+qiang-jiu 抢救
+yi-zhi 一致
+zui-zao 最早
+zhu-yuan 住院 竹园
+xing-bie 性别
+sui 岁 随
+fu-he 符合
+tiao-jian 条件
+cheng-fen 成分
+shu-liang 数量
+gong-xian 贡献
+lei-bie 类别
+ceng-shu 层数
+jiang-wei 降维
+xiang-wei 降维
+xian-tiao 线条
+xing-zhuang 形状
+zheng-fang-xing 正方形
+z-f-x 正方形
+ji-suan 计算
+dui-bi 对比
+ge-shu 个数
+quan-dui 全对
+zi-bian-ma 自编码
+z-b-m 自编码
+xi-shu-zi-bian-ma 稀疏自编码
+x-s-z-b-m 稀疏自编码
+zi-bian-ma-qi 自编码器
+z-b-m-q 自编码器
+xi-shu-zi-bian-ma-qi 稀疏自编码器
+x-s-z-b-m-q 稀疏自编码器
+mo-xing 模形
+ji-lei 积累
+ju-ji 聚积
+ju-lei 聚类
+zhan-wang 展望
+ding-lun 定论
+yi-kao 依靠
+y-k 依靠
+jing-yan 经验
+shi-yan 实验 试验
+shi-cuo 试错
+yang-ben 样本
+xu-qiu 需求
+shen-du 深度
+mei-yi-ge 每一个
+m-y-g 每一个
+dan-ceng 单层
+da-liang 大量
+yun-yu 孕育
+ren-gong 人工
+wei-shu 维数
+zeng-jia 增加
+sui-zhe 随着
+jie-du 解读 解毒
+kun-nan 困难
+man 慢
+luo-ru 落入
+ju-bu 局部
+bian-huai 变坏
+dui-die-zi-bian-ma-qi 堆叠自编码器
+d-d-z-b-m-q 堆叠自编码器
+quan-zhi 权值
+chu-shi 初始
+dui-die 堆叠
+xin-nian 信念
+yin-zang-ceng 隐藏层
+y-z-c 隐藏层
+yin-cang-ceng 隐藏层
+y-c-c 隐藏层
+jie-dian 接点
+jin-si 近似
+zhi-xin 置信
+ji-qi 机器
+j-q 近期 机器
+dun-hao 顿号
+qian-chu-li 前处理
+q-c-l 前处理
+fen-ci 分词
+zui-da-gai-shuai-fa 最大概率法
+z-d-g-s-f 最大概率法
+zui-da-gai-lv-fa 最大概率法
+z-d-g-l-f 最大概率法
+gai-lv 概率
+biao-zhun-hua 标准化
+b-z-h 标准化
+dao-ru 导入
+ci-ku 词库
+xing-rong-ci 形容词
+x-r-c 形容词
+guan-jian-ci 关键词
+g-j-c 关键词
+fen-ci-qi 分词器
+f-c-q 分词器
+ci-xing 词性
+pai-lie 排列
+zu-he 组合
+hui-shou 回收
+lao-nian 老年
+l-n 老年
+qing-nian 青年
+q-n 青年
+ti-zheng 体征
+jian-yan 检验
+ban-you 伴有
+ou-you 偶有
+o-y 偶有
+reng 仍
+wei-zhu 为主
+zi-jue 自觉
+yan-yong 沿用
+chang-dao 肠道
+guan-xi 关系
+zhou 周
+sheng-yu 剩余
+you-yin 诱因
+jin-xing-xing 进行性
+j-x-x 进行性
+jia-zhong 加重
+shen-zhi 甚至
+sao 梢
+quan-shen 全身
+ping-su 平素
+qing-du 轻度
+wei-xiao 微小
+shao-xu 少许
+zan 暂
+duo-yu 多于 多余
+yao-me 要么
+me 么
+pai-chu 排出
+guan-ce 观测
+bu-wei 不为
+you-mei-you 有没有
+y-m-y 有没有
+wan-quan 完全
+w-q 完全
+qing-li 清理
+fa-zuo 发作
+fan-fu 反复
+ru-ye 入夜
+shou-liang 受凉
+jin-ri 今日
+qing-xi 清洗
+xiang-deng 相等
+dui-cuo 对错
+bu-cheng-gong 不成功
+b-c-g 不成功
+ban 半
+dong-ze 动则
+niao 尿
+ye-niao 夜尿
+y-n 夜尿
+huan-jie 缓解
+ping-wo 平卧
+p-w 平卧
+chi-xu 持续
+jian-duan 间断
+chen 晨
+jin-qi 近期
+jin-shi 进食
+zhen-fa 阵发
+ling-chen 凌晨
+ci-ji 刺激
+tu-fa 突发
+t-f 突发
+ju-lie 剧烈
+wei-neng 未能
+zhun-que 准确
+lv 率 虑
+zhao-hui 召回
+hui-lv 回虑
+zhun-que-lv 准确率
+z-q-l 准确率 正确率
+zhun-que-shuai 准确率
+z-q-s 准确率 正确率
+zhao-hui-lv 召回率
+z-h-l 召回率
+zhao-hui-shuai 召回率
+z-h-s 召回率
+zheng-que-lv 正确率
+zheng-que-shuai 正确率
+yang-ben-liang 样本量
+y-b-l 样本量
+yi-jie 一阶
+cha-fen 差分
+xiu-zheng 修正
+wu-wu 无误
+ke-jian-ceng 可见层
+k-j-c 可见层
+gou-jian 构建
+dui-ying 对应
+xin-de 新的
+wu-cha 误差
+chuan-bo 传播
+c-b 传播
+jie-xian 界限
+zuo-zhe 作者
+cu-xin 粗心
+xia-biao 下标
+shun-li 顺利
+chong-xin 重新
+ling-yi-ban 另一半
+l-y-b 另一半
+zhuan 转
+zhuan-zhi 转置
+shen 参
+cen 参
+can 参
+lun-wen 论文
+yi-hou 以后
+zi-xi 仔细
+sui-ji 随机
+zui-man 最慢
+sun-shi 损失
+mai-pian 麦片
+m-p 麦片
+jing-dong 京东
+liang-he 两盒
+dao-han-shu 导函数
+d-h-s 导函数
+hui-gu 回顾
+h-g 回归 回顾
+gai-yong 改用
+yi-bian 一遍
+bing-xing 并行
+shang-shu 上述
+he-xin 核心
+ji-shu 技术
+hen-xin 狠心
+zhe-fang-mian 这方面
+z-f-m 这方面
+ren-wu 任务
+xian-ran 显然
+da-duo-shu 大多数
+d-d-s 大多数
+ke-yong 可用
+zi-yuan 资源
+si-hu 似乎
+shen-xiao-qiu 肾小球
+s-x-q 肾小球
+shen-yan 肾炎
+lv-guo 滤过
+lv-guo-lv 滤过率
+l-g-l 滤过率
+lv-guo-shuai 滤过率
+l-g-s 滤过率
+guang-dong-sheng 广东省
+g-d-s 广东省
+duo-yuan 多元
+xian-xing 线性
+hui-gui 回归
+xiang-liang-ji 向量机
+x-l-j 向量机
+jian-li 建立
+yu-yan 语言
+da-jian 搭建
+jiao-hu 交互
+jiao-hu-shi 交互式
+ke-shi 可视
+ke-shi-hua 可视化
+k-s-h 可视化
+da-xue 大学
+yi-yuan 医院
+jing-ling 精灵
+ji-xing 急性
+zhi-qi-guan 支气管
+z-q-g 支气管
+yan 炎
+fei-ai 肺癌
+qi-xiang 气象
+quan-guo 全国
+nian-fen 年份
+n-f 年份
+ge-ju 格局
+xing-rong 兴荣
+gui-fan 规范
+tou-gao 投稿
+zhong-hua 中华
+za-zhi 杂志 杂质
+san-zhong 三种
+zhu-cheng 筑城
+ji-cheng 集成
+she-ji 设计
+bao-gao 报告
+zhuan-xie 撰写
+biao-shu 表述 标书
+cheng-guo 成果
+xu-ni 虚拟
+fang-zhen 仿真
+you-xiu 优秀
+chuang-yi 创意
+san-deng-jiang 三等奖
+s-d-j 三等奖
+shou-jie 首届
+meng 梦
+lu 路
+yi-xue 医学
+zuo-pin 作品
+z-p 作品
+da-sai 大赛
+zong 总
+jue-sai 决赛
+zong-jue-sai 总决赛
+z-j-s 总决赛
+sai 赛
+mo-ni 模拟
+m-n 模拟
+tui-suan 推算
+jiao-xue 教学
+yi-xue-yuan 医学院
+y-x-y 医学院
+zhong-yi-yuan 中医院
+tuan-dui 团队
+li-lun 理论
+zhuan-ye 专业
+wu-shu 武术
+chen-shi 陈氏
+tai-ji-quan 太极拳
+t-j-q 太极拳
+lao-ren 老人
+jiang-shou 讲授
+nei-jing 内经
+n-j 内经
+jiang-yi 讲义
+nei-ke-xue 内科学
+n-k-x 内科学
+jing-luo 经络
+shu-xue 腧穴
+shu-xue-xue 腧穴学
+s-x-x 腧穴学
+mu-qian 目前
+m-q 目前
+shan-chang 擅长
+cong-shi 从事
+luo-ji 逻辑

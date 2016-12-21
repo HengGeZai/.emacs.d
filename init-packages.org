@@ -157,6 +157,10 @@
                                ;; add new hyperref format
                                (add-to-list 'org-latex-default-packages-alist
                                             '("colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green" "hyperref" nil))
+                               ;; babel languages support
+                               (org-babel-do-load-languages
+                                'org-babel-load-languages
+                                '((dot . t)))
                                ))
   #+END_SRC
 * org-ref
@@ -407,4 +411,21 @@
     (add-hook 'csv-mode-hook
               (lambda ()
                 (csv-align-fields nil (point-min) (point-max))))
+  #+END_SRC
+* pdf-tools
+  #+BEGIN_SRC emacs-lisp
+    ;; require pdf-tools
+    (pdf-tools-install)
+
+    ;; disable relative-line-numbers
+    (add-hook 'pdf-view-mode-hook 'relative-line-numbers--off)
+  #+END_SRC
+* graphviz-dot-mode
+  #+BEGIN_SRC emacs-lisp
+    ;; load package
+    (load-file "~/.emacs.d/lisp/graphviz-dot-mode.el")
+
+    ;; for org-mode
+    (delete '("dot" . fundamental) org-latex-default-packages-alist)
+    (add-to-list 'org-src-lang-modes '("dot" . graphviz-dot))
   #+END_SRC
